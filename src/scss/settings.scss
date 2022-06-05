@@ -1,0 +1,26 @@
+body {
+	display: grid;
+	grid-template-columns: minmax(320px, 1fr);
+	grid-template-rows: auto 1fr auto;
+}
+
+[class*="__wrap"] {
+	max-width: $wrap_max-w;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+}
+
+html,
+body,
+a,
+input,
+button,
+textarea {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $font-color_main;
+	background-color: $background-color_main;
+	scroll-behavior: smooth;
+}
