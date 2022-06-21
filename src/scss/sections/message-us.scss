@@ -1,0 +1,92 @@
+.message-us {
+	&__wrap {
+	}
+
+	&__title-h2 {
+		margin: 0 auto 80px;
+		text-align: center;
+		@media (max-width: 1054px) {
+			text-align: right;
+		}
+	}
+
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		gap: 30px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: contain;
+
+		@media (max-width: 1065px) {
+			opacity: 0.5;
+		}
+	}
+
+	&__contant {
+		position: relative;
+	}
+
+	&__speech {
+		position: absolute;
+		width: 670px;
+		top: -60px;
+		right: 0;
+		span {
+			padding: 0;
+		}
+		@media (max-width: 1054px) {
+			width: 600px;
+			text-align: right;
+		}
+		@media (max-width: 920px) {
+			width: 500px;
+		}
+		@media (max-width: 475px) {
+			display: none;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		padding-top: 50px;
+		@media (max-width: 475px) {
+			transform: scale(75%);
+		}
+	}
+
+	&__attention {
+		margin-top: 10px;
+	}
+}
+.title-banner {
+}
+.message-us-form {
+	&__text {
+		resize: none;
+		height: 170px;
+		padding: 10px 15px;
+	}
+
+	&__name {
+	}
+
+	&__email {
+	}
+
+	&__btn {
+		margin-top: 20px;
+	}
+}
+.form-input {
+}
+.btn {
+}

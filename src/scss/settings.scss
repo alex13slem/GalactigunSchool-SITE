@@ -1,18 +1,23 @@
-body {
-	display: grid;
-	grid-template-columns: minmax(320px, 1fr);
-	grid-template-rows: auto 1fr auto;
+.body-wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 [class*="__wrap"] {
-	max-width: $wrap_max-w;
+	max-width: calc($wrap_max-w + 32px);
 	margin-right: auto !important;
 	margin-left: auto !important;
 	padding-left: 16px !important;
 	padding-right: 16px !important;
 }
+[class*="__out-wrap"] {
+	max-width: $out-wrap_max-w;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
 
-html,
 body,
 a,
 input,
@@ -20,7 +25,7 @@ button,
 textarea {
 	font-family: $font-family;
 	font-size: $font-size;
+	font-weight: 400;
 	color: $font-color_main;
-	background-color: $background-color_main;
 	scroll-behavior: smooth;
 }

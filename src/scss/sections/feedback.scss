@@ -1,0 +1,77 @@
+.feedback {
+	background: url("@img/feedback/bgnd.png") 0 0 / 100% 100% no-repeat;
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+
+		@media (max-width: 1165px) {
+			justify-content: center;
+		}
+
+		@media (max-width: 415px) {
+			transform: scale(75%);
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: -102px;
+			left: -198px;
+			width: 793px;
+			height: 824px;
+			background: url("@img/feedback/cloud-left.png") 0 0 / contain no-repeat;
+			z-index: 0;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 29px;
+			right: -293px;
+			width: 959px;
+			height: 533px;
+			background: url("@img/feedback/cloud-rght.png") 0 0 / contain no-repeat;
+			z-index: 0;
+		}
+	}
+	&__img {
+		position: absolute;
+		left: 0;
+		max-height: 488px;
+		object-fit: contain;
+		z-index: 1;
+		@media (max-width: 1300px) {
+			left: -125px;
+		}
+		@media (max-width: 1165px) {
+			display: none;
+		}
+	}
+
+	&__contant {
+		position: relative;
+		z-index: 1;
+		max-width: 479px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__form-input {
+		margin-bottom: 10px;
+	}
+
+	&__form-btn {
+		margin-top: 20px;
+	}
+
+	&__attention {
+		margin-top: 10px;
+
+		font-size: 11px;
+		line-height: 1.1;
+	}
+}

@@ -1,16 +1,36 @@
-$wrap_max-w: 1070px;
+$wrap_max-w: 1170px;
+$out-wrap_max-w: 1595px;
 
-$font-family: Arial, Helvetica, sans-serif;
-$font-size: 16px;
-$font-color_main: #000;
+$header-height: 0;
+$footer-minHeight: 275px;
+$aside-width: 325px;
+$main-width: 1fr;
+
+$font-family: "Montserrat", sans-serif;
+$font-size: 18px;
+$font-color_main: #909090;
 $background-color_main: #fff;
 
 // -----------------------------------------------------
-@import "normalize";
+@import "./normalize.scss";
 @import "fonts";
 @import "settings";
 // -----------------------------------------------------
-
+@import "./modules/firm-style";
+@import "../../node_modules/swiper/swiper-bundle";
+// -----------------------------------------------------
 @import "./components/header";
-@import "./components/page1";
+@import "./components/aside";
+@import "./components/main";
 @import "./components/footer";
+// ------------------------------------------------------
+@import "./sections/side-nav";
+@import "./sections/courses";
+@import "./sections/history";
+@import "./sections/intro";
+@import "./sections/reviews";
+@import "./sections/feedback";
+@import "./sections/interest-video";
+@import "./sections/interest-articles";
+@import "./sections/FAQ";
+@import "./sections/message-us";

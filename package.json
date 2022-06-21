@@ -1,7 +1,7 @@
 {
   "name": "gulp2022",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic template for GULP",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -48,5 +48,13 @@
     "webp-converter": "2.2.3",
     "webpack": "latest",
     "webpack-stream": "latest"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex13slem/GalactigunSchool-SITE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex13slem/GalactigunSchool-SITE/issues"
+  },
+  "homepage": "https://github.com/alex13slem/GalactigunSchool-SITE#readme"
 }
