@@ -5,12 +5,36 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220621112925">
-	<title> </title>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220627213825">
+	<title>Главная</title>
 </head>
 
 <body>
 	<div class="body-wrap">
+		<div class="firm-burger">
+	<button class="firm-burger__button"></button>
+	<nav class="firm-burger__nav">
+		<ul class="firm-burger__ul firm-burger__ul_main">
+			<li class="firm-burger__li">
+				<input class="firm-burger__input" type="checkbox" id="burger_1">
+				<label class="firm-burger__li firm-burger__li_main" for="burger_1">Расписание занятий</label>
+				<ul class="firm-burger__ul firm-burger__ul_1">
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Курсы</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Ретриты</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Марафоны</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Вебинары</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Бесплатные</a></li>
+				</ul>
+			</li>
+			<li class="firm-burger__li"><a href="">Видео</a></li>
+			<li class="firm-burger__li"><a href="">Статьи</a></li>
+			<li class="firm-burger__li"><a href="">Наши мастера</a></li>
+			<li class="firm-burger__li"><a href="">О школе</a></li>
+			<li class="firm-burger__li"><a href="">Партнёрская программа</a></li>
+			<li class="firm-burger__li"><a href="">Музыка</a></li>
+		</ul>
+	</nav>
+</div>
 		<aside class="side-nav">
 	<button class="side-nav__btn btn"><a href="#">ЗАПИСАТЬСЯ НА КУРС</a></button>
 	<div class="side-nav__phone firm-phone">+7 915 8084849</div>
@@ -21,7 +45,7 @@
 	</picture>
 	<nav class="side-nav__navigate navigate">
 		<ul class="navigate__main">
-			<li>Расписание занятий
+			<li class="navigate__li">Расписание занятий
 				<ul class="navigate__ul-first">
 					<li><a href="">Курсы</a></li>
 					<li><a href="">Ретриты</a></li>
@@ -30,17 +54,17 @@
 					<li><a href="">Бесплатные</a></li>
 				</ul>
 			</li>
-			<li><a href="">Видео</a></li>
-			<li><a href="">Статьи</a></li>
-			<li><a href="">Наши мастера</a></li>
-			<li><a href="">О школе</a></li>
-			<li><a href="">Партнёрская программа</a></li>
-			<li><a href="">Музыка</a></li>
+			<li class="navigate__li"><a href="">Видео</a></li>
+			<li class="navigate__li"><a href="">Статьи</a></li>
+			<li class="navigate__li"><a href="">Наши мастера</a></li>
+			<li class="navigate__li"><a href="">О школе</a></li>
+			<li class="navigate__li"><a href="">Партнёрская программа</a></li>
+			<li class="navigate__li"><a href="">Музыка</a></li>
 		</ul>
 	</nav>
 	<img class="side-nav__logo" src="img/logo/dark/dark-w-title3.svg" alt="">
 </aside>
-		<main class="main side-nav-on">
+		<main class="main side-nav-switch">
 			<section class="main__courses courses">
 				<div class="courses__wrap">
 					<div class="courses__ribbon motivate-ribbon">
@@ -594,7 +618,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer side-nav-on">
+		<footer class="footer side-nav-switch">
 	<div class="footer__wrap">
 		<nav class="footer__col">
 			<ul class="footer__ul">
@@ -630,7 +654,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20220621112925"></script>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220627213825" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220627213825"></script>
 </body>
 
 </html>

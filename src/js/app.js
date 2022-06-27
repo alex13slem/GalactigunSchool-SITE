@@ -128,3 +128,18 @@ const swiper4 = new Swiper('.swiper4', {
 		prevEl: '.swiper-button-prev4',
 	},
 });
+
+// -------------------------------------------------------
+
+const burgerMain = document.querySelector('.firm-burger');
+const burgerBtnBody = burgerMain.querySelector('.firm-burger__button');
+
+burgerBtnBody.addEventListener('click', evt => {
+
+	burgerMain.classList.toggle('firm-burger_open');
+
+	burgerMain.classList.add('firm-burger_anim');
+	setTimeout(() => burgerMain.classList.remove('firm-burger_anim'), 1000);
+
+	setTimeout(() => burgerMain.classList.toggle('firm-burger_png'), 750);
+})

@@ -67,6 +67,10 @@ select {
 	}
 }
 
+button {
+	cursor: pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	* {
 		animation-duration: 0.01ms !important;

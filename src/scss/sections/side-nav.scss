@@ -46,6 +46,8 @@
 }
 
 .navigate {
+	position: relative;
+	z-index: 5;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -72,10 +74,13 @@
 
 	&__main {
 		margin-right: -10px;
+		position: relative;
+		z-index: 6;
 	}
 
-	&__main > li {
+	&__li {
 		position: relative;
+		z-index: 7;
 		padding-right: 10px;
 		list-style: none;
 
@@ -91,18 +96,19 @@
 			border-radius: 2px 0px 0px 2px;
 			background: $color-title-accent;
 
-			transition: 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
 		}
 
 		&:hover {
 			&::after {
+				transform-origin: right;
+				transform: scaleX(1.5);
 				opacity: 1;
-				width: 3px;
 				transition: 0.3s ease;
 			}
 			.navigate__ul-first {
-				transform: scaleX(100%);
 				opacity: 1;
+				visibility: visible;
 			}
 		}
 	}
@@ -110,11 +116,10 @@
 	&__ul-first {
 		position: absolute;
 		opacity: 0;
+		visibility: hidden;
 		top: 0;
 		left: 100%;
 		width: 190px;
-		transform-origin: left;
-		transform: scaleX(0%);
 
 		padding: 16px 19px;
 
