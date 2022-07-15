@@ -55,7 +55,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	}
 
 	@media (max-width: 475px) {
-		transform: scale(75%);
+		font-size: 70px;
 	}
 }
 .title-tag {

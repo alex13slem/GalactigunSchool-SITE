@@ -1,5 +1,7 @@
 import * as prjFunctions from "./modules/function.js";
+import * as sectionFaq from "./sections/FAQ.js";
 
+sectionFaq.accordionFaq();
 prjFunctions.isWebp();
 
 import Swiper, { Navigation, Pagination } from 'swiper';

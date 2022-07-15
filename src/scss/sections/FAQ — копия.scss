@@ -7,23 +7,24 @@
 		text-align: center;
 		@media (max-width: 460px) {
 			text-align: left;
+			font-size: 70px;
 		}
 	}
 
-	&__accordion {
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
-}
-.FAQ-accordion {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 30px;
-	&__column {
-		flex: 1 1 48%;
-	}
-	&__item {
-		margin-bottom: 30px;
 
+	&__column {
+		flex: 1 1 510px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__accord-item {
 		background: #ffffff;
 		border: 1px solid #d2d2d2;
 		border-radius: 7px;
@@ -33,24 +34,26 @@
 			width: 0;
 			height: 0;
 		}
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
-	&__title {
+
+	&__title-h3 {
 		position: relative;
-		min-height: 105px;
+		display: flex;
+		align-items: center;
+		height: 105px;
 
 		padding: 25px;
 		padding-right: 67px;
 
 		font-size: 24px;
-		text-align: left;
 
 		transition: background 0.3s ease;
 
 		cursor: pointer;
-		background: none;
+
+		@media (max-width: 420px) {
+			height: 160px;
+		}
 
 		&::before {
 			position: absolute;
@@ -64,27 +67,22 @@
 		&:hover {
 			background: #f5efff;
 		}
-
-		&.active {
-			&::before {
-				background: url("@img/FAQ/arrow-up.svg") 0 0 no-repeat;
-			}
-		}
 	}
-	&__answer {
-		padding: 0 25px;
-		max-height: 0;
-		overflow: hidden;
-		visibility: hidden;
 
+	&__answer {
+		display: none;
+		padding: 25px;
 		color: $color-title;
 
-		transition: 0.3s ease;
-		&.active {
-			visibility: visible;
-			max-height: 800px;
-			padding: 25px;
-			border-top: 1px solid #d2d2d2;
+		border-top: 1px solid #d2d2d2;
+	}
+
+	&__input:checked ~ &__answer {
+		display: block;
+	}
+	&__input:checked ~ &__title-h3 {
+		&::before {
+			background: url("@img/FAQ/arrow-up.svg") 0 0 no-repeat;
 		}
 	}
 }
