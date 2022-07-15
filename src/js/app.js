@@ -1,6 +1,10 @@
 import * as prjFunctions from "./modules/function.js";
 import * as sectionFaq from "./sections/FAQ.js";
+import * as sectionSideNav from "./sections/side-nav.js";
+import * as headerLessons from "./sections/header_lessons.js";
 
+sectionSideNav.toggleAside();
+headerLessons.sliderPrice();
 sectionFaq.accordionFaq();
 prjFunctions.isWebp();
 
