@@ -1,11 +1,15 @@
 .courses {
 	position: relative;
-	background: url("@img/bgrnd1.jpg") 0 100% / cover no-repeat;
+
+	&__scene {
+	}
 
 	&__wrap {
 	}
 
 	&__ribbon {
+		z-index: 1;
+		position: relative;
 		margin-bottom: 80px;
 	}
 
@@ -17,106 +21,149 @@
 		margin-top: 10px;
 		padding-left: 20px;
 	}
-}
-.title-h4 {
-}
-.swiper1 {
-	position: relative;
-	overflow: hidden;
-	padding: 0 20px 30px;
-	z-index: 5;
 
-	&__title {
-		margin-bottom: 20px;
+	.course-card {
+		&__info {
+			display: grid;
+			// grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr auto auto;
+			padding: 15px;
 
-		color: $color-firm-bcgrnd;
+			border: 1px solid #eae6f1;
+		}
+
+		&__title {
+			grid-row: 1 / 2;
+			margin: 0;
+		}
+
+		&__price {
+			margin-top: 2.5em;
+			grid-row: 3 / 4;
+		}
+
+		&__when {
+			margin-top: 1em;
+			grid-row: 4 / 5;
+		}
 	}
-
-	&__btn {
-		opacity: 1;
-		content: "";
-		z-index: 6;
+	.courses-decor {
 		position: absolute;
-		top: 73%;
-		height: 60px;
-		width: 60px;
-		border-radius: 60% 60% 100% 100%;
-		background: url("@img/FAQ/arrow-down.svg") 50% 50% no-repeat, rgba(251, 165, 42, 0.8);
-		&_p {
-			left: 30px;
-			transform: rotate(90deg);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		animation: courses_left 20s ease-in-out infinite;
+		&__elem {
+			z-index: 0;
+			position: absolute;
+
+			@keyframes courses_left {
+				0%,
+				100% {
+					transform: translateX(0%);
+				}
+				50% {
+					transform: translateX(2%);
+				}
+			}
+			&_1 {
+				background: url("@img/main-home/bg-cloud-left.png") 100% 0 no-repeat;
+				width: 412px;
+				height: 344px;
+				top: -0% !important;
+				left: auto !important;
+				right: -75%;
+				// animation: courses_left 25s ease-in-out infinite;
+			}
+			&_2 {
+				background: url("@img/main-home/bg-cloud-right.png") 100% 0 / contain no-repeat;
+				width: 1097px;
+				height: 666px;
+				top: 30% !important;
+				left: -3% !important;
+				// animation: courses_left 25s ease-in-out infinite;
+			}
 		}
-		&_n {
-			right: 30px;
-			transform: rotate(-90deg);
+	}
+	.title-h4 {
+	}
+	.swiper-courses {
+		position: relative;
+		overflow: hidden;
+		padding: 0 20px 30px;
+		z-index: 5;
+
+		&__title {
+			margin-bottom: 20px;
+
+			color: $color-firm-bcgrnd;
 		}
 
-		@media (max-width: 821px) {
+		&__btn {
 			opacity: 1;
+			content: "";
+			z-index: 6;
+			position: absolute;
+			top: 73%;
+			height: 60px;
+			width: 60px;
+			border-radius: 60% 60% 100% 100%;
+			background: url("@img/FAQ/arrow-down.svg") 50% 50% no-repeat, rgba(251, 165, 42, 0.8);
+			&_p {
+				left: 30px;
+				transform: rotate(90deg);
+			}
+			&_n {
+				right: 30px;
+				transform: rotate(-90deg);
+			}
+
+			@media (max-width: 821px) {
+				opacity: 1;
+			}
 		}
 	}
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.course-card {
-	&__info {
-		display: grid;
-		// grid-template-columns: 1fr;
-		grid-template-rows: auto 1fr auto auto;
-		padding: 15px;
+	.swiper-wrapper {
+	}
+	.swiper-slide {
 	}
 
-	&__title {
-		grid-row: 1 / 2;
-		margin: 0;
+	.course-title {
 	}
-
-	&__price {
-		margin-top: 2.5em;
-		grid-row: 3 / 4;
+	.course-price {
 	}
-
-	&__when {
-		margin-top: 1em;
-		grid-row: 4 / 5;
+	.course-when {
 	}
-}
-.course-title {
-}
-.course-price {
-}
-.course-when {
-}
-.courses-btns {
-	display: flex;
-	&__see {
-		margin-right: 30px;
+	.courses-btns {
+		display: flex;
+		&__see {
+			margin-right: 30px;
 
-		@media (max-width: 821px) {
-			margin: 0 auto;
+			@media (max-width: 821px) {
+				margin: 0 auto;
+			}
+		}
+
+		&__arrows {
+			margin-right: 10px;
+
+			@media (max-width: 630px) {
+				display: none;
+			}
 		}
 	}
+	.btn {
+	}
+	.btn-arrow {
+		&_l {
+		}
 
-	&__arrows {
-		margin-right: 10px;
-
-		@media (max-width: 630px) {
-			display: none;
+		&_r {
 		}
 	}
-}
-.btn {
-}
-.btn-arrow {
-	&_l {
+	.swiper-button-prev {
 	}
-
-	&_r {
+	.swiper-button-next {
 	}
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
 }

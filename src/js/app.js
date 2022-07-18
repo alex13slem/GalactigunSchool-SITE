@@ -1,49 +1,18 @@
 import * as prjFunctions from "./modules/function.js";
-import * as sectionFaq from "./sections/FAQ.js";
-import * as sectionSideNav from "./sections/side-nav.js";
 import * as headerLessons from "./sections/header_lessons.js";
+import * as sectionSideNav from "./sections/side-nav.js";
+import * as sectionCourses from "./sections/courses.js";
+import * as sectionFaq from "./sections/FAQ.js";
 
-sectionSideNav.toggleAside();
-headerLessons.sliderPrice();
-sectionFaq.accordionFaq();
 prjFunctions.isWebp();
+headerLessons.sliderPrice();
+headerLessons.customSelect();
+sectionSideNav.toggleAside();
+sectionCourses.cloudParallax();
+sectionCourses.swiper();
+sectionFaq.accordionFaq();
 
 import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper1 = new Swiper('.swiper1', {
-	modules: [Navigation, Pagination],
-
-	// loop: true,
-	// autoHeight: true,
-	slidesPerView: 1,
-	spaceBetween: 32,
-	breakpoints: {
-		1361: {
-			slidesPerView: 4,
-		},
-		1111: {
-			slidesPerView: 3,
-		},
-		822: {
-			slidesPerView: 2,
-		},
-		787: {
-			slidesPerView: 3,
-		},
-		538: {
-			slidesPerView: 2,
-		},
-	},
-
-	pagination: {
-		el: '.swiper-pagination',
-	},
-
-	navigation: {
-		nextEl: '.swiper-button-next1',
-		prevEl: '.swiper-button-prev1',
-	},
-});
 
 const swiper2 = new Swiper('.swiper2', {
 	modules: [Navigation, Pagination],

@@ -1,53 +1,60 @@
-<header class="header header_lessons">
-	<div class="header__wrap">
+<header class="header">
+	<div class="header-lessons">
+		<div class="header-lessons__wrap">
 
-		<div class="header__lessons-select lessons-select">
-			<h3 class="lessons-select__title header-font header-font_dark">ВИД занятий</h3>
-			<div class="lessons-select__select-form select-form">
-				Все
-				<ul class="select-form__ul">
-					<li><a href="">Курсы</a></li>
-					<li><a href="">Ретриты</a></li>
-					<li><a href="">Марафоны</a></li>
-					<li><a href="">Вебинары</a></li>
-					<li><a href="">Все</a></li>
-				</ul>
+			<div class="header-lessons__lessons-select lessons-select">
+				<h3 class="header-lessons__title lessons-select__title header-font header-font_dark">
+					ВИД занятий
+				</h3>
+				<select class="lessons-select__select-form select-form" name="lessons">
+
+					<option value="Курсы">Курсы</option>
+					<option value="Ретрты">Ретриты</option>
+					<option value="Марафоны">Марафоны</option>
+					<option value="Вебинары">Вебинары</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
 			</div>
-		</div>
 
-		<div class="header__teacher-select teacher-select">
-			<h3 class="teacher-select__title header-font header-font_dark">Выбрать учителя</h3>
-			<div class="teacher-select__select-form select-form">
-				Все
-				<ul class="select-form__ul">
-					<li><a href="">Вася</a></li>
-					<li><a href="">Петя</a></li>
-					<li><a href="">Саша</a></li>
-					<li><a href="">Митя</a></li>
-				</ul>
+			<div class="header-lessons__teacher-select teacher-select">
+				<h3 class="header-lessons__title teacher-select__title header-font header-font_dark">
+					Выбрать учителя
+				</h3>
+				<select class="teacher-select__select-form select-form" name="teachers">
+
+					<option value="Человек1">Человек</option>
+					<option value="Человек2">Человек</option>
+					<option value="Человек3">Человек</option>
+					<option value="Человек4">Человек</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
 			</div>
-		</div>
 
-		<div class="header__price header-price">
-			<h3 class="header-price__title header-font header-font_dark">Цена</h3>
-			<div class="header-price__slide-container price-slider" id="price-slider">
+			<div class="header-lessons__price header-price">
+				<h3 class="header-lessons__title header-price__title header-font header-font_dark">
+					Цена
+				</h3>
+				<div class="header-price__slide-container price-slider" id="price-slider"></div>
+			</div>
+
+			<div class="header-lessons__options">
+
+				<label for="online" class="header-lessons__checkbox">
+					Онлайн
+					<input type="checkbox" name="online" id="online" disabled>
+					<span></span>
+				</label>
+
+				<label for="live" class="header-lessons__checkbox">
+					Живая встреча
+					<input type="checkbox" name="live" id="live" checked>
+					<span></span>
+				</label>
 
 			</div>
-		</div>
-
-		<div class="header__options">
-
-			<label for="online" class="header__checkbox">
-				Онлайн
-				<input type="checkbox" name="online" id="online">
-			</label>
-
-			<label for="live" class="header__checkbox">
-				Живая встреча
-				<input type="checkbox" name="live" id="live" checked>
-			</label>
 
 		</div>
-
 	</div>
 </header>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220718115803">
+	<title>Расписание занятий</title>
+</head>
+
+<body>
+	<div class="body-wrap">
+
+		<header class="header">
+	<div class="header-lessons">
+		<div class="header-lessons__wrap">
+
+			<div class="header-lessons__lessons-select lessons-select">
+				<h3 class="header-lessons__title lessons-select__title header-font header-font_dark">
+					ВИД занятий
+				</h3>
+				<select class="lessons-select__select-form select-form" name="lessons">
+
+					<option value="Курсы">Курсы</option>
+					<option value="Ретрты">Ретриты</option>
+					<option value="Марафоны">Марафоны</option>
+					<option value="Вебинары">Вебинары</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
+			</div>
+
+			<div class="header-lessons__teacher-select teacher-select">
+				<h3 class="header-lessons__title teacher-select__title header-font header-font_dark">
+					Выбрать учителя
+				</h3>
+				<select class="teacher-select__select-form select-form" name="teachers">
+
+					<option value="Человек1">Человек</option>
+					<option value="Человек2">Человек</option>
+					<option value="Человек3">Человек</option>
+					<option value="Человек4">Человек</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
+			</div>
+
+			<div class="header-lessons__price header-price">
+				<h3 class="header-lessons__title header-price__title header-font header-font_dark">
+					Цена
+				</h3>
+				<div class="header-price__slide-container price-slider" id="price-slider"></div>
+			</div>
+
+			<div class="header-lessons__options">
+
+				<label for="online" class="header-lessons__checkbox">
+					Онлайн
+					<input type="checkbox" name="online" id="online" disabled>
+					<span></span>
+				</label>
+
+				<label for="live" class="header-lessons__checkbox">
+					Живая встреча
+					<input type="checkbox" name="live" id="live" checked>
+					<span></span>
+				</label>
+
+			</div>
+
+		</div>
+	</div>
+</header>
+		<div class="firm-burger">
+	<button class="firm-burger__button"></button>
+	<nav class="firm-burger__nav">
+		<ul class="firm-burger__ul firm-burger__ul_main">
+			<li class="firm-burger__li">
+				<input class="firm-burger__input" type="checkbox" id="burger_1">
+				<label class="firm-burger__li firm-burger__li_main" for="burger_1">Расписание занятий</label>
+				<ul class="firm-burger__ul firm-burger__ul_1">
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Курсы</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Ретриты</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Марафоны</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Вебинары</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Бесплатные</a></li>
+				</ul>
+			</li>
+			<li class="firm-burger__li"><a href="">Видео</a></li>
+			<li class="firm-burger__li"><a href="">Статьи</a></li>
+			<li class="firm-burger__li"><a href="">Наши мастера</a></li>
+			<li class="firm-burger__li"><a href="">О школе</a></li>
+			<li class="firm-burger__li"><a href="">Партнёрская программа</a></li>
+			<li class="firm-burger__li"><a href="">Музыка</a></li>
+		</ul>
+	</nav>
+</div>
+		<aside class="side-nav">
+	<a class="side-nav__btn btn" href="#">ЗАПИСАТЬСЯ НА КУРС</a>
+	<div class="side-nav__phone firm-phone">+7 915 8084849</div>
+	<div class="side-nav__soc-icons">
+		<a href=""><img src="img/social/telegram1.svg" alt=""></a>
+		<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
+		<a href=""><img src="img/social/youtube1.svg" alt=""></a>
+	</div>
+	<nav class="side-nav__navigate navigate">
+		<ul class="navigate__main">
+			<li class="navigate__li">Расписание занятий
+				<ul class="navigate__ul-first">
+					<li><a href="">Курсы</a></li>
+					<li><a href="">Ретриты</a></li>
+					<li><a href="">Марафоны</a></li>
+					<li><a href="">Вебинары</a></li>
+					<li><a href="">Бесплатные</a></li>
+				</ul>
+			</li>
+			<li class="navigate__li"><a href="">Видео</a></li>
+			<li class="navigate__li"><a href="">Статьи</a></li>
+			<li class="navigate__li"><a href="">Наши мастера</a></li>
+			<li class="navigate__li"><a href="">О школе</a></li>
+			<li class="navigate__li"><a href="">Партнёрская программа</a></li>
+			<li class="navigate__li"><a href="">Музыка</a></li>
+		</ul>
+	</nav>
+	<img class="side-nav__logo" src="img/logo/dark/dark-w-title3.svg" alt="">
+</aside>
+
+		<main class="main side-nav-switch">
+
+
+			<section class="main-home__message-us message-us">
+	<div class="message-us__wrap">
+		<h2 class="message-us__title-h2 title-banner">можешь <span>написать нам</span></h2>
+		<div class="message-us__body">
+			<div class="message-us__contant">
+				<p class="message-us__speech speech"><span>Напиши нам или задай любой интересующий тебя вопрос. Мы
+						в
+						короткие сроки свяжемся с тобой и
+						предоставим ответы.</span></p>
+				<form class="message-us__form message-us-form" action="" method="post">
+					<textarea class="message-us-form__text form-input"></textarea>
+					<input type="text" name="name" class="message-us-form__name form-input" placeholder="Ваше имя">
+					<input name="email" class="message-us-form__email form-input" inputmode="email" type="email"
+						placeholder="Ваш email">
+					<input class="message-us-form__btn btn" type="submit" value="отправить">
+					<p class="message-us__attention attention">Нажимая на кнопку Вы соглашаетесь на обработку
+						данных.
+				</form>
+
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+		<footer class="footer">
+	<div class="footer__wrap">
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">курсы</a></li>
+				<li class="footer__li"><a href="">ретриты</a></li>
+				<li class="footer__li"><a href="">марафоны</a></li>
+				<li class="footer__li"><a href="">вебинары</a></li>
+				<li class="footer__li"><a href="">бесплатные</a></li>
+			</ul>
+		</nav>
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">видео раздел</a></li>
+				<li class="footer__li"><a href="">статьи</a></li>
+				<li class="footer__li"><a href="">музыка</a href=""></li>
+			</ul>
+		</nav>
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">о школе</a></li>
+				<li class="footer__li"><a href="">наши мастера</a></li>
+				<li class="footer__li"><a href="">партнёрская программа</a></li>
+			</ul>
+		</nav>
+		<div class="footer__contacts">
+			<p class="footer__tel">+7 915 8084849</p>
+			<div class="footer__social">
+				<a href=""><img src="img/social/telegram1.svg" alt=""></a>
+				<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
+				<a href=""><img src="img/social/youtube1.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220718115803" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220718115803"></script>
+</body>
+
+</html>

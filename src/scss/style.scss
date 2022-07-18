@@ -24,7 +24,8 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./modules/firm-burger";
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/nouislider/dist/nouislider";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/choices.js/public/assets/styles/choices";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
@@ -33,6 +34,8 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/aside";
 @import "./components/main";
 @import "./components/footer";
+// ------------------------------------------------------
+@import "./components/main-home";
 // ------------------------------------------------------
 @import "./sections/side-nav";
 @import "./sections/courses";
@@ -44,3 +47,5 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/interest-articles";
 @import "./sections/FAQ";
 @import "./sections/message-us";
+// ----------------------------------------------------------
+@import "./sections/header_lessons";

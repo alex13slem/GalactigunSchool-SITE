@@ -1,4 +1,4 @@
-export function toggleAside() {
+export const toggleAside = () => {
 
 	const sideNav = document.querySelector('.side-nav');
 
@@ -7,10 +7,10 @@ export function toggleAside() {
 		const header = document.querySelector('.header');
 		const main = document.querySelector('.main');
 		const footer = document.querySelector('.footer');
-		const pageBody = [header, main, footer];
+		const pageBody = [header, main, footer].filter(Boolean);
 
-		for (let i = 0; i < pageBody.length; i++) {
-			pageBody[i].classList.add('side-nav-switch')
-		}
+		pageBody.forEach((el) => {
+			el.classList.add('side-nav-switch');
+		})
 	}
 }

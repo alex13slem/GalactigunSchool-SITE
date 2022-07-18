@@ -1,5 +1,6 @@
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
+import Choices from 'choices.js';
 
 export function sliderPrice() {
 	const sliderPrice = document.getElementById('price-slider');
@@ -17,4 +18,20 @@ export function sliderPrice() {
 			format: wNumb({ decimals: 0 })
 		})
 	}
+}
+
+export function customSelect() {
+	const element = document.querySelectorAll('.select-form');
+
+
+	// console.log(element)
+
+	element.forEach((el) => {
+		const choices = new Choices(el, {
+			searchEnabled: false,
+			itemSelectText: '',
+			shouldSort: false,
+		});
+	})
+
 }
