@@ -420,9 +420,14 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	border-radius: 7px;
 
 	padding-left: 20px;
+
+	transition: border 0.3s ease;
 	&:active,
 	&:focus,
 	&:target {
+		border: 1px solid #fba52a;
+	}
+	&:hover {
 		border: 1px solid #fba52a;
 	}
 	&::placeholder {

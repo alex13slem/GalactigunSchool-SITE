@@ -45,31 +45,31 @@
 	&__btn {
 		margin: 40px auto 0;
 	}
-}
-.title-banner {
-}
-.teach-card {
-	display: flex;
-	flex-direction: column;
-	max-width: 270px;
-	img {
-		object-fit: cover;
-		border-radius: 20px 20px 0px 0px;
-		margin-bottom: 18px;
+	.title-banner {
 	}
-	&__logo {
-		font-size: 36px;
-		margin-bottom: 12px;
-	}
+	.teach-card {
+		display: flex;
+		flex-direction: column;
+		max-width: 270px;
+		img {
+			object-fit: cover;
+			border-radius: 20px 20px 0px 0px;
+			margin-bottom: 18px;
+		}
+		&__logo {
+			font-size: 36px;
+			margin-bottom: 12px;
+		}
 
-	&__text {
-		font-size: 14px;
-		line-height: 1.3em;
+		&__text {
+			font-size: 14px;
+			line-height: 1.29em;
+		}
 	}
-}
-.title-h3 {
-}
-.title-sub {
-}
-.btn {
+	.title-h3 {
+	}
+	.title-sub {
+	}
+	.btn {
+	}
 }

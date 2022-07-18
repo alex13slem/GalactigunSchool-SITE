@@ -1,10 +1,11 @@
 .feedback {
+	position: relative;
 	background: url("@img/feedback/bgnd.png") 0 0 / 100% 100% no-repeat;
 
 	&__wrap {
 		position: relative;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 
 		@media (max-width: 1165px) {
 			justify-content: center;
@@ -13,38 +14,25 @@
 		@media (max-width: 415px) {
 			transform: scale(75%);
 		}
-
-		&::after {
-			position: absolute;
-			content: "";
-			top: -102px;
-			left: -198px;
-			width: 793px;
-			height: 824px;
-			background: url("@img/feedback/cloud-left.png") 0 0 / contain no-repeat;
-			z-index: 0;
-		}
-
-		&::before {
-			position: absolute;
-			content: "";
-			top: 29px;
-			right: -293px;
-			width: 959px;
-			height: 533px;
-			background: url("@img/feedback/cloud-rght.png") 0 0 / contain no-repeat;
-			z-index: 0;
-		}
 	}
 	&__img {
-		position: absolute;
-		left: 0;
+		@keyframes feedback-man {
+			0%,
+			100% {
+				transform: translateY(-2%);
+			}
+			50% {
+				transform: translateY(2%);
+			}
+		}
+
+		z-index: 1;
+		flex: 0 0 40%;
 		max-height: 488px;
 		object-fit: contain;
-		z-index: 1;
-		@media (max-width: 1300px) {
-			left: -125px;
-		}
+
+		animation: feedback-man 10s ease-in-out infinite;
+
 		@media (max-width: 1165px) {
 			display: none;
 		}
@@ -73,5 +61,43 @@
 
 		font-size: 11px;
 		line-height: 1.1;
+	}
+	.feedback-decor {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		animation: feedback_anim 20s ease-in-out infinite;
+		&__elem {
+			z-index: 0;
+			position: absolute;
+
+			@keyframes feedback_anim {
+				0%,
+				100% {
+					transform: translateX(0%);
+				}
+				50% {
+					transform: translateX(2%);
+				}
+			}
+			&_1 {
+				width: 793px;
+				height: 824px;
+				background: url("@img/feedback/cloud-left.png") 0 0 / contain no-repeat;
+				top: -0% !important;
+				left: -10% !important;
+			}
+			&_2 {
+				width: 959px;
+				height: 533px;
+				background: url("@img/feedback/cloud-rght.png") 0 0 / contain no-repeat;
+
+				top: 0% !important;
+				left: auto !important;
+				right: -10% !important;
+			}
+		}
 	}
 }

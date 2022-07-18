@@ -15,9 +15,9 @@ export const swiper = () => {
 		modules: [Navigation, Pagination],
 
 		loop: true,
-		// autoHeight: true,
 		slidesPerView: 1,
 		spaceBetween: 32,
+		speed: 1000,
 		breakpoints: {
 			1361: {
 				slidesPerView: 4,
