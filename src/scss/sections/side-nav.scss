@@ -17,8 +17,15 @@
 		display: none;
 	}
 
+	@media (max-width: 1600px) {
+		width: 260px;
+		&__btn {
+			font-size: 31px;
+		}
+	}
+
 	&__btn {
-		max-width: 305px;
+		width: auto;
 	}
 
 	&__phone {
@@ -140,6 +147,9 @@
 .side-nav-switch {
 	padding-left: $aside-width !important;
 
+	@media (max-width: 1600px) {
+		padding-left: 260px !important;
+	}
 	@media (max-width: 821px) {
 		padding-left: 0 !important;
 	}

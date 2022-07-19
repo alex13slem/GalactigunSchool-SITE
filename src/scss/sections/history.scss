@@ -14,7 +14,7 @@
 	&__privileges {
 		display: flex;
 		justify-content: space-between;
-		gap: 2rem;
+		gap: 30px;
 
 		@media (max-width: 1249px) {
 			flex-direction: column;
@@ -33,13 +33,15 @@
 		}
 		&__title {
 			font-family: $font-title;
-			margin-top: 20px;
+			margin-top: 19px;
+			line-height: 1em;
 		}
 		&__text {
 			margin-top: 28px;
 
-			// font-weight: 500;
-			line-height: 1.25rem;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.25em;
 			letter-spacing: -0.02em;
 		}
 	}

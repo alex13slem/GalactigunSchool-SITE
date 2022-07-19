@@ -5,7 +5,10 @@ export const cloudParallax = () => {
 
 	const scene = document.querySelector('.courses-decor');
 
-	const parallaxInstance = new Parallax(scene);
+	if (scene) {
+		const parallaxInstance = new Parallax(scene);
+	}
+
 
 }
 
@@ -17,7 +20,6 @@ export const swiper = () => {
 		loop: true,
 		slidesPerView: 1,
 		spaceBetween: 32,
-		speed: 1000,
 		breakpoints: {
 			1361: {
 				slidesPerView: 4,

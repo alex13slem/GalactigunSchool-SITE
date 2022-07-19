@@ -7,10 +7,10 @@
 
 [class*="__wrap"] {
 	max-width: calc($wrap_max-w + 32px);
-	margin-right: auto !important;
-	margin-left: auto !important;
-	padding-left: 16px !important;
-	padding-right: 16px !important;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 // [class*="__out-wrap"] {
 // 	max-width: $out-wrap_max-w;

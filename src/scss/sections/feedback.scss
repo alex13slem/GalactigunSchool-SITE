@@ -4,10 +4,14 @@
 
 	&__wrap {
 		position: relative;
-		display: flex;
-		justify-content: center;
+		// display: flex;
+		// justify-content: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
 
 		@media (max-width: 1165px) {
+			display: flex;
 			justify-content: center;
 		}
 
@@ -16,6 +20,8 @@
 		}
 	}
 	&__img {
+		grid-column: 1 / 2;
+		justify-self: center;
 		@keyframes feedback-man {
 			0%,
 			100% {
@@ -27,7 +33,7 @@
 		}
 
 		z-index: 1;
-		flex: 0 0 40%;
+		margin-right: -15%;
 		max-height: 488px;
 		object-fit: contain;
 
@@ -39,6 +45,7 @@
 	}
 
 	&__contant {
+		grid-column: 2 / 3;
 		position: relative;
 		z-index: 1;
 		max-width: 479px;

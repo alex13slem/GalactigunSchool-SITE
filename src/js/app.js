@@ -1,5 +1,7 @@
 import * as prjFunctions from "./modules/function.js";
+
 import * as headerLessons from "./sections/header_lessons.js";
+
 import * as sectionSideNav from "./sections/side-nav.js";
 import * as sectionCourses from "./sections/courses.js";
 import * as sectionReviews from "./sections/reviews.js";
@@ -8,11 +10,13 @@ import * as sectionFeedback from "./sections/feedback.js";
 import * as sectionInterestVideo from "./sections/interest-video.js";
 import * as sectionInterestArticles from "./sections/interest-acticles.js";
 
-prjFunctions.isWebp();
+import * as pageSchedule from "./sections/schedule.js";
 
+prjFunctions.isWebp();
+// ---------------------------------------
 headerLessons.sliderPrice();
 headerLessons.customSelect();
-
+// ---------------------------------------
 sectionSideNav.toggleAside();
 
 sectionCourses.cloudParallax();
@@ -27,8 +31,11 @@ sectionFeedback.cloudParallax();
 sectionInterestVideo.swiper();
 
 sectionInterestArticles.swiper();
+// ---------------------------------------
 
-
+// pageSchedule.swiper();
+pageSchedule.splide();
+pageSchedule.cloudParallax();
 
 // -------------------------------------------------------
 
