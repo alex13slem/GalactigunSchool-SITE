@@ -84,12 +84,14 @@
 			padding: 25px !important;
 			margin: -25px !important;
 		}
-		&__list {
-			gap: 30px;
+		&--grid {
 			.is-next,
 			.is-prev {
 				opacity: 0;
 			}
+		}
+		&__list {
+			gap: 30px;
 		}
 		&__slide {
 			transition: opacity 0.3s ease;
