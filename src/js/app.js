@@ -1,6 +1,6 @@
 import * as prjFunctions from "./modules/function.js";
 
-import * as headerLessons from "./sections/header_lessons.js";
+import * as headerSchedule from "./sections/header-schedule.js";
 
 import * as sectionSideNav from "./sections/side-nav.js";
 import * as sectionCourses from "./sections/courses.js";
@@ -14,8 +14,8 @@ import * as pageSchedule from "./sections/schedule.js";
 
 prjFunctions.isWebp();
 // ---------------------------------------
-headerLessons.sliderPrice();
-headerLessons.customSelect();
+headerSchedule.sliderPrice();
+headerSchedule.customSelect();
 // ---------------------------------------
 sectionSideNav.toggleAside();
 sectionSideNav.currentLink();
