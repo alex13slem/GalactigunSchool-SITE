@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220720153014">
+	<title>Расписание занятий</title>
+</head>
+
+<body>
+	<div class="body-wrap">
+
+		<header class="header">
+	<div class="header-schedule">
+		<div class="header-schedule__wrap">
+
+			<div class="header-schedule__lessons-select lessons-select">
+				<h3 class="header-schedule__title lessons-select__title header-font header-font_dark">
+					ВИД занятий
+				</h3>
+				<select class="lessons-select__select-form select-form" name="lessons">
+
+					<option value="Курсы">Курсы</option>
+					<option value="Ретрты">Ретриты</option>
+					<option value="Марафоны">Марафоны</option>
+					<option value="Вебинары">Вебинары</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
+			</div>
+
+			<div class="header-schedule__teacher-select teacher-select">
+				<h3 class="header-schedule__title teacher-select__title header-font header-font_dark">
+					Выбрать учителя
+				</h3>
+				<select class="teacher-select__select-form select-form" name="teachers">
+
+					<option value="Человек1">Человек</option>
+					<option value="Человек2">Человек</option>
+					<option value="Человек3">Человек</option>
+					<option value="Человек4">Человек</option>
+					<option value="Все" selected>Все</option>
+
+				</select>
+			</div>
+
+			<div class="header-schedule__price header-price">
+				<h3 class="header-schedule__title header-price__title header-font header-font_dark">
+					Цена
+				</h3>
+				<div class="header-price__slide-container price-slider" id="price-slider"></div>
+			</div>
+
+			<div class="header-schedule__options">
+
+				<label for="online" class="header-schedule__checkbox">
+					Онлайн
+					<input type="checkbox" name="online" id="online" disabled>
+					<span></span>
+				</label>
+
+				<label for="live" class="header-schedule__checkbox">
+					Живая встреча
+					<input type="checkbox" name="live" id="live" checked>
+					<span></span>
+				</label>
+
+			</div>
+
+		</div>
+	</div>
+</header>
+		<div class="firm-burger">
+	<button class="firm-burger__button"></button>
+	<nav class="firm-burger__nav">
+		<ul class="firm-burger__ul firm-burger__ul_main">
+			<li class="firm-burger__li">
+				<input class="firm-burger__input" type="checkbox" id="burger_1">
+				<label class="firm-burger__li firm-burger__li_main" for="burger_1">Расписание занятий</label>
+				<ul class="firm-burger__ul firm-burger__ul_1">
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Курсы</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Ретриты</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Марафоны</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Вебинары</a></li>
+					<li class="firm-burger__li firm-burger__li_1"><a href="">Бесплатные</a></li>
+				</ul>
+			</li>
+			<li class="firm-burger__li"><a href="">Видео</a></li>
+			<li class="firm-burger__li"><a href="">Статьи</a></li>
+			<li class="firm-burger__li"><a href="">Наши мастера</a></li>
+			<li class="firm-burger__li"><a href="">О школе</a></li>
+			<li class="firm-burger__li"><a href="">Партнёрская программа</a></li>
+			<li class="firm-burger__li"><a href="">Музыка</a></li>
+		</ul>
+	</nav>
+</div>
+		<aside class="side-nav">
+	<a class="side-nav__btn btn" href="#">ЗАПИСАТЬСЯ НА КУРС</a>
+	<div class="side-nav__phone firm-phone">+7 915 8084849</div>
+	<div class="side-nav__soc-icons">
+		<a href=""><img src="img/social/telegram1.svg" alt=""></a>
+		<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
+		<a href=""><img src="img/social/youtube1.svg" alt=""></a>
+	</div>
+	<nav class="side-nav__navigate navigate">
+		<ul class="navigate__main">
+			<li class="navigate__li"><a href="/schedule.html">Расписание занятий</a>
+				<ul class="navigate__ul-first">
+					<li><a href="/schedule-courses.html">Курсы</a></li>
+					<li><a href="/schedule-retreats.html">Ретриты</a></li>
+					<li><a href="/schedule-marathons.html">Марафоны</a></li>
+					<li><a href="/schedule-webinars.html">Вебинары</a></li>
+					<li><a href="/schedule-free.html">Бесплатные</a></li>
+				</ul>
+			</li>
+			<li class="navigate__li"><a href="">Видео</a></li>
+			<li class="navigate__li"><a href="">Статьи</a></li>
+			<li class="navigate__li"><a href="">Наши мастера</a></li>
+			<li class="navigate__li"><a href="">О школе</a></li>
+			<li class="navigate__li"><a href="">Партнёрская программа</a></li>
+			<li class="navigate__li"><a href="">Музыка</a></li>
+		</ul>
+	</nav>
+	<img class="side-nav__logo" src="img/logo/dark/dark-w-title3.svg" alt="">
+</aside>
+
+		<main class="main main-schedule side-nav-switch">
+			<div class="main-schedule__scene main-schedule-decor">
+				<div data-depth="0.1" class="main-schedule-decor__elem main-schedule-decor__elem_1"></div>
+				<div data-depth="0.3" class="main-schedule-decor__elem main-schedule-decor__elem_2"></div>
+			</div>
+			<section class="main-schedule-courses schedule">
+	<div class="schedule__wrap">
+		<h1 class="schedule__title title-h3">Курсы</h1>
+		<div class="schedule__splide main-schedule-courses__splide-init splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<a href="" class="schedule__btn btn">Перейти в раздел</a>
+
+	</div>
+</section>
+			<section class="main-schedule-retreats schedule">
+	<div class="schedule__wrap">
+		<h1 class="schedule__title title-h3">Ретриты</h1>
+		<div class="schedule__splide main-schedule-retreats__splide-init splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="" class="schedule__btn btn">Перейти в раздел</a>
+	</div>
+</section>
+			<section class="main-schedule-marathons schedule">
+	<div class="schedule__wrap">
+		<h1 class="schedule__title title-h3">Марафоны</h1>
+		<div class="schedule__splide main-schedule-marathons__splide-init splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="" class="schedule__btn btn">Перейти в раздел</a>
+	</div>
+</section>
+			<section class="main-schedule-webinars schedule">
+	<div class="schedule__wrap">
+		<h1 class="schedule__title title-h3">Вебинары</h1>
+		<div class="schedule__splide main-schedule-webinars__splide-init splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+					<li class="splide__slide course-card">
+						<a href="">
+							<img src="img/schedule/card-img1.png" alt="">
+							<div class="course-card__info">
+								<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
+									название
+									заголовок.
+									Стихия земли.</h5>
+								<p class="course-card__text">Рыбатекст используется дизайнерами, проектировщиками и
+									фронтендерами,
+									когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+									не
+									должен нести никакого смысла...</p>
+								<p class="course-card__price course-price">Бесплатно</p>
+								<p class="course-card__when course-when">Дата: 7 февраля</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="" class="schedule__btn btn">Перейти в раздел</a>
+
+	</div>
+</section>
+
+			<section class="main-home__message-us message-us">
+	<div class="message-us__wrap">
+		<h2 class="message-us__title-h2 title-banner">можешь <span>написать нам</span></h2>
+		<div class="message-us__body">
+			<p class="message-us__speech speech"><span>Напиши нам или задай любой интересующий тебя вопрос. Мы
+					в
+					короткие сроки свяжемся с тобой и
+					предоставим ответы.</span></p>
+			<div class="message-us__contant">
+
+				<form class="message-us__form message-us-form" action="" method="post">
+					<textarea class="message-us-form__text form-input"></textarea>
+					<input type="text" name="name" class="message-us-form__name form-input" placeholder="Ваше имя">
+					<input name="email" class="message-us-form__email form-input" inputmode="email" type="email"
+						placeholder="Ваш email">
+					<input class="message-us-form__btn btn" type="submit" value="отправить">
+					<p class="message-us__attention attention">Нажимая на кнопку Вы соглашаетесь на обработку
+						данных.
+				</form>
+
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+		<footer class="footer">
+	<div class="footer__wrap">
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">курсы</a></li>
+				<li class="footer__li"><a href="">ретриты</a></li>
+				<li class="footer__li"><a href="">марафоны</a></li>
+				<li class="footer__li"><a href="">вебинары</a></li>
+				<li class="footer__li"><a href="">бесплатные</a></li>
+			</ul>
+		</nav>
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">видео раздел</a></li>
+				<li class="footer__li"><a href="">статьи</a></li>
+				<li class="footer__li"><a href="">музыка</a href=""></li>
+			</ul>
+		</nav>
+		<nav class="footer__col">
+			<ul class="footer__ul">
+				<li class="footer__li"><a href="">о школе</a></li>
+				<li class="footer__li"><a href="">наши мастера</a></li>
+				<li class="footer__li"><a href="">партнёрская программа</a></li>
+			</ul>
+		</nav>
+		<div class="footer__contacts">
+			<p class="footer__tel">+7 915 8084849</p>
+			<div class="footer__social">
+				<a href=""><img src="img/social/telegram1.svg" alt=""></a>
+				<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
+				<a href=""><img src="img/social/youtube1.svg" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220720153014" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220720153014"></script>
+</body>
+
+</html>

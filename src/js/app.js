@@ -18,6 +18,7 @@ headerLessons.sliderPrice();
 headerLessons.customSelect();
 // ---------------------------------------
 sectionSideNav.toggleAside();
+sectionSideNav.currentLink();
 
 sectionCourses.cloudParallax();
 sectionCourses.swiper();

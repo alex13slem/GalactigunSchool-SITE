@@ -13122,6 +13122,9 @@ readers do not read off random characters that represent icons */
 .side-nav .navigate__ul-first a {
   font-size: 20px;
 }
+.side-nav .current-link {
+  color: #afa3c5;
+}
 
 .side-nav-switch {
   padding-left: 325px !important;

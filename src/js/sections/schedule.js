@@ -14,7 +14,7 @@ export const cloudParallax = () => {
 
 export const splide = () => {
 
-	const splideInit = (el) => document.querySelector(`.schedule-${el}__splide-init`);
+	const splideInit = (el) => document.querySelector(`.main-schedule-${el}__splide-init`);
 
 	const coursesSplideInit = splideInit('courses');
 	const marathonsSplideInit = splideInit('marathons');

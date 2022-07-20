@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Расписание занятий"
+})
+
+<body>
+	<div class="body-wrap">
+
+		@@include('html/header-schedule.html')
+		@@include('html/firm-burger.html')
+		@@include('html/side-nav.html')
+
+		<main class="main main-schedule side-nav-switch">
+			<div class="main-schedule__scene main-schedule-decor">
+				<div data-depth="0.1" class="main-schedule-decor__elem main-schedule-decor__elem_1"></div>
+				<div data-depth="0.3" class="main-schedule-decor__elem main-schedule-decor__elem_2"></div>
+			</div>
+			@@include('html/sections/main-schedule-courses.html')
+			@@include('html/sections/main-schedule-retreats.html')
+			@@include('html/sections/main-schedule-marathons.html')
+			@@include('html/sections/main-schedule-webinars.html')
+
+			@@include('html/sections/message-us.html')
+
+		</main>
+
+		@@include('html/footer.html')
+
+	</div>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

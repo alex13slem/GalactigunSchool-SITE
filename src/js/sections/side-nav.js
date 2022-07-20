@@ -1,6 +1,6 @@
-export const toggleAside = () => {
+const sideNav = document.querySelector('.side-nav');
 
-	const sideNav = document.querySelector('.side-nav');
+export const toggleAside = () => {
 
 	if (sideNav) {
 
@@ -12,5 +12,12 @@ export const toggleAside = () => {
 		pageBody.forEach((el) => {
 			el.classList.add('side-nav-switch');
 		})
+	}
+}
+
+export const currentLink = () => {
+
+	if (sideNav) {
+		sideNav.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
 	}
 }
