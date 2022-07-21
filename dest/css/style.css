@@ -14249,3 +14249,64 @@ readers do not read off random characters that represent icons */
 .schedule__btn {
   margin-top: 30px;
 }
+
+.part-schedule__title {
+  margin-bottom: 40px;
+  line-height: 1em;
+  color: #290173;
+}
+.part-schedule__subtitle {
+  margin-bottom: 80px;
+  max-width: 770px;
+  font-weight: 400;
+  line-height: 1.22rem;
+  color: #383838;
+}
+.part-schedule__cards-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 30px;
+}
+.part-schedule__card {
+  height: 435px;
+}
+.part-schedule__card img {
+  flex: 0 0 145px;
+}
+.part-schedule .course-card {
+  border-radius: 15px;
+}
+.part-schedule .course-card__info {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 0 0 15px 15px;
+}
+.part-schedule .course-card__title {
+  margin: 0;
+  max-height: 2.2em;
+  overflow: hidden;
+}
+.part-schedule .course-card__text {
+  max-height: 10.26em;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+.part-schedule .course-card__price {
+  margin-top: 19px;
+  max-height: 1.29em;
+  overflow: hidden;
+}
+.part-schedule .course-card__when {
+  max-height: 1em;
+  overflow: hidden;
+  line-height: 1em;
+}
+.part-schedule-courses__wrap {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

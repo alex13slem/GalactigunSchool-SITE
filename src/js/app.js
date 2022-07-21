@@ -34,9 +34,10 @@ sectionInterestVideo.swiper();
 sectionInterestArticles.swiper();
 // ---------------------------------------
 
-// pageSchedule.swiper();
 pageSchedule.splide();
 pageSchedule.cloudParallax();
+pageSchedule.priceFilter();
+
 
 // -------------------------------------------------------
 

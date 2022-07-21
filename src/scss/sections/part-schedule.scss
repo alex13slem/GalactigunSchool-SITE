@@ -1,0 +1,85 @@
+.part-schedule {
+	&__title {
+		margin-bottom: 40px;
+
+		line-height: 1em;
+		color: $color-firm-bcgrnd;
+	}
+
+	&__subtitle {
+		margin-bottom: 80px;
+		max-width: 770px;
+
+		font-weight: 400;
+		line-height: 1.22rem;
+		color: $color-title;
+	}
+
+	&__cards-block {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 270px);
+		gap: 30px;
+	}
+
+	&__card {
+		height: 435px;
+
+		img {
+			flex: 0 0 145px;
+		}
+	}
+	.course-card {
+		border-radius: 15px;
+
+		&__info {
+			flex: 1 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 18px;
+
+			border-radius: 0 0 15px 15px;
+		}
+
+		&__title {
+			margin: 0;
+			max-height: 2.2em;
+			overflow: hidden;
+		}
+
+		&__text {
+			max-height: 10.26em;
+			overflow: hidden;
+
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.14em;
+		}
+
+		&__price {
+			margin-top: 19px;
+			max-height: 1.29em;
+			overflow: hidden;
+		}
+
+		&__when {
+			max-height: 1em;
+			overflow: hidden;
+
+			line-height: 1em;
+		}
+	}
+	.course-title {
+	}
+	.course-price {
+	}
+	.course-when {
+	}
+}
+
+.part-schedule-courses {
+	&__wrap {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}

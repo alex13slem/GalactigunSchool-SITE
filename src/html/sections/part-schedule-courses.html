@@ -1,118 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220720191633">
-	<title>Курсы</title>
-</head>
-
-<body>
-	<div class="body-wrap">
-
-		<header class="header">
-	<div class="header-part-schedule">
-		<div class="header-part-schedule__wrap">
-
-			<div class="header-part-schedule__lessons-select lessons-select">
-				<h3 class="header-part-schedule__title lessons-select__title header-font header-font_dark">
-					Выбрать подгруппу
-				</h3>
-				<select class="lessons-select__select-form select-form" name="lessons">
-
-					<option value="Курсы">Группа</option>
-					<option value="Ретрты">Группа</option>
-					<option value="Марафоны">Группа</option>
-					<option value="Вебинары">Группа</option>
-					<option value="Все" selected>Все</option>
-
-				</select>
-			</div>
-
-			<div class="header-part-schedule__teacher-select teacher-select">
-				<h3 class="header-part-schedule__title teacher-select__title header-font header-font_dark">
-					Выбрать учителя
-				</h3>
-				<select class="teacher-select__select-form select-form" name="teachers">
-
-					<option value="Человек1">Человек</option>
-					<option value="Человек2">Человек</option>
-					<option value="Человек3">Человек</option>
-					<option value="Человек4">Человек</option>
-					<option value="Все" selected>Все</option>
-
-				</select>
-			</div>
-
-			<div class="header-part-schedule__price header-price">
-				<h3 class="header-part-schedule__title header-price__title header-font header-font_dark">
-					Цена
-				</h3>
-				<div class="header-price__slide-container price-slider" id="price-slider"></div>
-			</div>
-
-		</div>
-	</div>
-</header>
-		<div class="firm-burger">
-	<button class="firm-burger__button"></button>
-	<nav class="firm-burger__nav">
-		<ul class="firm-burger__ul firm-burger__ul_main">
-			<li class="firm-burger__li">
-				<input class="firm-burger__input" type="checkbox" id="burger_1">
-				<label class="firm-burger__li firm-burger__li_main" for="burger_1">Расписание занятий</label>
-				<ul class="firm-burger__ul firm-burger__ul_1">
-					<li class="firm-burger__li firm-burger__li_1"><a href="">Курсы</a></li>
-					<li class="firm-burger__li firm-burger__li_1"><a href="">Ретриты</a></li>
-					<li class="firm-burger__li firm-burger__li_1"><a href="">Марафоны</a></li>
-					<li class="firm-burger__li firm-burger__li_1"><a href="">Вебинары</a></li>
-					<li class="firm-burger__li firm-burger__li_1"><a href="">Бесплатные</a></li>
-				</ul>
-			</li>
-			<li class="firm-burger__li"><a href="">Видео</a></li>
-			<li class="firm-burger__li"><a href="">Статьи</a></li>
-			<li class="firm-burger__li"><a href="">Наши мастера</a></li>
-			<li class="firm-burger__li"><a href="">О школе</a></li>
-			<li class="firm-burger__li"><a href="">Партнёрская программа</a></li>
-			<li class="firm-burger__li"><a href="">Музыка</a></li>
-		</ul>
-	</nav>
-</div>
-		<aside class="side-nav">
-	<a class="side-nav__btn btn" href="#">ЗАПИСАТЬСЯ НА КУРС</a>
-	<div class="side-nav__phone firm-phone">+7 915 8084849</div>
-	<div class="side-nav__soc-icons">
-		<a href=""><img src="img/social/telegram1.svg" alt=""></a>
-		<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
-		<a href=""><img src="img/social/youtube1.svg" alt=""></a>
-	</div>
-	<nav class="side-nav__navigate navigate">
-		<ul class="navigate__main">
-			<li class="navigate__li"><a href="/main-schedule.html">Расписание занятий</a>
-				<ul class="navigate__ul-first">
-					<li><a href="/schedule-courses.html">Курсы</a></li>
-					<li><a href="/schedule-retreats.html">Ретриты</a></li>
-					<li><a href="/schedule-marathons.html">Марафоны</a></li>
-					<li><a href="/schedule-webinars.html">Вебинары</a></li>
-					<li><a href="/schedule-free.html">Бесплатные</a></li>
-				</ul>
-			</li>
-			<li class="navigate__li"><a href="">Видео</a></li>
-			<li class="navigate__li"><a href="">Статьи</a></li>
-			<li class="navigate__li"><a href="">Наши мастера</a></li>
-			<li class="navigate__li"><a href="">О школе</a></li>
-			<li class="navigate__li"><a href="">Партнёрская программа</a></li>
-			<li class="navigate__li"><a href="">Музыка</a></li>
-		</ul>
-	</nav>
-	<img class="side-nav__logo" src="img/logo/dark/dark-w-title3.svg" alt="">
-</aside>
-
-		<main class="main part-schedule">
-
-			<section class="part-schedule-courses">
+<section class="part-schedule-courses">
 	<div class="part-schedule-courses__wrap">
 		<h1 class="part-schedule__title title-banner">курсы</h1>
 		<h4 class="part-schedule__subtitle">Какой-то текст описание предложение или два, может быть вполне больше. То есть
@@ -123,7 +9,7 @@
 		<div class="part-schedule__cards-block">
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -141,7 +27,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -159,7 +45,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -177,7 +63,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -195,7 +81,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -213,7 +99,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -231,7 +117,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -249,7 +135,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -267,7 +153,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -285,7 +171,7 @@
 			</article>
 			<article class="part-schedule__card course-card">
 				<a href="">
-					<img src="img/schedule/card-img1.png" alt="">
+					<img src="@img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
 						<h5 class="course-card__title course-title">Стихия земли. Бесплатный курс или другое
 							название
@@ -304,68 +190,3 @@
 		</div>
 	</div>
 </section>
-			<section class="main-home__feedback feedback">
-	<div class="feedback__scene feedback-decor">
-		<div data-depth="0.1" class="feedback-decor__elem feedback-decor__elem_1"></div>
-		<div data-depth="0.05" class="feedback-decor__elem feedback-decor__elem_2"></div>
-	</div>
-	<div class="feedback__wrap">
-		<img src="img/feedback/man.png" alt="" class="feedback__img">
-		<div class="feedback__contant">
-			<h3 class="feedback__title title-h3"><span>напиши нам о себе</span> и мы подберём для тебя подходящий курс</h3>
-			<form class="feedback__form" action="" method="post">
-				<input class="feedback__form-input form-input" name="name" type="text" placeholder="Ваше имя">
-				<input class="feedback__form-input form-input" name="email" type="email" inputmode="email"
-					placeholder="Ваша почта">
-				<input class="feedback__form-btn btn" type="submit" value="отправить">
-			</form>
-			<p class="feedback__attention">Нажимая на кнопку Вы соглашаетесь на обработку данных.</p>
-		</div>
-	</div>
-</section>
-
-
-		</main>
-
-		<footer class="footer">
-	<div class="footer__wrap">
-		<nav class="footer__col">
-			<ul class="footer__ul">
-				<li class="footer__li"><a href="">курсы</a></li>
-				<li class="footer__li"><a href="">ретриты</a></li>
-				<li class="footer__li"><a href="">марафоны</a></li>
-				<li class="footer__li"><a href="">вебинары</a></li>
-				<li class="footer__li"><a href="">бесплатные</a></li>
-			</ul>
-		</nav>
-		<nav class="footer__col">
-			<ul class="footer__ul">
-				<li class="footer__li"><a href="">видео раздел</a></li>
-				<li class="footer__li"><a href="">статьи</a></li>
-				<li class="footer__li"><a href="">музыка</a href=""></li>
-			</ul>
-		</nav>
-		<nav class="footer__col">
-			<ul class="footer__ul">
-				<li class="footer__li"><a href="">о школе</a></li>
-				<li class="footer__li"><a href="">наши мастера</a></li>
-				<li class="footer__li"><a href="">партнёрская программа</a></li>
-			</ul>
-		</nav>
-		<div class="footer__contacts">
-			<p class="footer__tel">+7 915 8084849</p>
-			<div class="footer__social">
-				<a href=""><img src="img/social/telegram1.svg" alt=""></a>
-				<a href=""><img src="img/social/whatsapp1.svg" alt=""></a>
-				<a href=""><img src="img/social/youtube1.svg" alt=""></a>
-			</div>
-		</div>
-	</div>
-</footer>
-
-	</div>
-	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220720191633" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220720191633"></script>
-</body>
-
-</html>

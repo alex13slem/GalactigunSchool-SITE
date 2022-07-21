@@ -230,3 +230,14 @@ export const splide = () => {
 	// 	}
 	// })
 }
+
+export const priceFilter = () => {
+
+	const priceFilter = document.getElementById("price-slider");
+
+	if (priceFilter) {
+		const priceMin = priceFilter.querySelector('.noUi-handle-lower').getAttribute('aria-valuenow');
+		console.log(priceMin)
+
+	}
+}

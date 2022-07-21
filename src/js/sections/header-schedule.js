@@ -3,7 +3,13 @@ import wNumb from 'wnumb';
 import Choices from 'choices.js';
 
 export function sliderPrice() {
+
 	const sliderPrice = document.getElementById('price-slider');
+
+	const coursePrices = [...document.querySelectorAll('.course-card__price')].map(el => el.getAttribute('price'));
+
+	const coursePriceMin = Math.min(...coursePrices);
+	const coursePriceMax = Math.max(...coursePrices)
 
 	if (sliderPrice) {
 		noUiSlider.create(sliderPrice, {
@@ -11,8 +17,8 @@ export function sliderPrice() {
 			connect: true,
 			step: 100,
 			range: {
-				'min': 0,
-				'max': 50000
+				'min': coursePriceMin,
+				'max': coursePriceMax
 			},
 			tooltips: true,
 			format: wNumb({ decimals: 0 })
