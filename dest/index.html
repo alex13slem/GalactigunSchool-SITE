@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220720191633">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220721132713">
 	<title>Курсы</title>
 </head>
 
@@ -14,19 +14,18 @@
 
 		<header class="header">
 	<div class="header-part-schedule">
-		<div class="header-part-schedule__wrap">
+		<div class="header-part-schedule__wrap" id="header-filters">
 
 			<div class="header-part-schedule__lessons-select lessons-select">
 				<h3 class="header-part-schedule__title lessons-select__title header-font header-font_dark">
 					Выбрать подгруппу
 				</h3>
-				<select class="lessons-select__select-form select-form" name="lessons">
+				<select class="lessons-select__select-form select-form" name="subgroup">
 
-					<option value="Курсы">Группа</option>
-					<option value="Ретрты">Группа</option>
-					<option value="Марафоны">Группа</option>
-					<option value="Вебинары">Группа</option>
-					<option value="Все" selected>Все</option>
+					<option value="Онлайн">Онлайн</option>
+					<option value="Дома">Дома</option>
+					<option value="На природе">На природе</option>
+					<option value="" selected>Все</option>
 
 				</select>
 			</div>
@@ -37,11 +36,9 @@
 				</h3>
 				<select class="teacher-select__select-form select-form" name="teachers">
 
-					<option value="Человек1">Человек</option>
-					<option value="Человек2">Человек</option>
-					<option value="Человек3">Человек</option>
-					<option value="Человек4">Человек</option>
-					<option value="Все" selected>Все</option>
+					<option value="Человек1">Человек1</option>
+					<option value="Человек2">Человек2</option>
+					<option value="" selected>Все</option>
 
 				</select>
 			</div>
@@ -121,7 +118,7 @@
 			описывающий текст, в том числе и с seo адаптацией для поисковиков. Создай свой баланс во всех сферах жизни: в
 			здоровье, семье и самореализации!</h4>
 		<div class="part-schedule__cards-block">
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="0">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -134,12 +131,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="0">Бесплатно</p>
+						<p class="course-card__price course-price">Бесплатно</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="2000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -152,12 +149,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="2000">2000 р.</p>
+						<p class="course-card__price course-price">2000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="4000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -170,12 +167,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="4000">4000 р.</p>
+						<p class="course-card__price course-price">4000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="6000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -188,12 +185,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="6000">6000 р.</p>
+						<p class="course-card__price course-price">6000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="0">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -206,12 +203,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="0">Бесплатно</p>
+						<p class="course-card__price course-price">Бесплатно</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="2000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -224,12 +221,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="2000">2000 р.</p>
+						<p class="course-card__price course-price">2000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="4000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -242,12 +239,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="4000">4000 р.</p>
+						<p class="course-card__price course-price">4000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="6000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -260,12 +257,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="6000">6000 р.</p>
+						<p class="course-card__price course-price">6000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="4000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -278,12 +275,12 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="4000">4000 р.</p>
+						<p class="course-card__price course-price">4000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
 			</article>
-			<article class="part-schedule__card course-card">
+			<article class="part-schedule__card course-card" price="6000">
 				<a href="">
 					<img src="img/schedule/card-img1.png" alt="">
 					<div class="course-card__info">
@@ -296,7 +293,7 @@
 							когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
 							не
 							должен нести никакого смысла...</p>
-						<p class="course-card__price course-price" price="6000">6000 р.</p>
+						<p class="course-card__price course-price">6000 р.</p>
 						<p class="course-card__when course-when">Дата: 7 февраля</p>
 					</div>
 				</a>
@@ -364,8 +361,8 @@
 </footer>
 
 	</div>
-	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220720191633" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220720191633"></script>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220721132713" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220721132713"></script>
 </body>
 
 </html>

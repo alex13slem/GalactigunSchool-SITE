@@ -6,7 +6,7 @@ export function sliderPrice() {
 
 	const sliderPrice = document.getElementById('price-slider');
 
-	const coursePrices = [...document.querySelectorAll('.course-card__price')].map(el => el.getAttribute('price'));
+	const coursePrices = [...document.querySelectorAll('.course-card')].map(el => el.getAttribute('price'));
 
 	const coursePriceMin = Math.min(...coursePrices);
 	const coursePriceMax = Math.max(...coursePrices)
@@ -29,9 +29,6 @@ export function sliderPrice() {
 export function customSelect() {
 	const element = document.querySelectorAll('.select-form');
 
-
-	// console.log(element)
-
 	element.forEach((el) => {
 		const choices = new Choices(el, {
 			searchEnabled: false,
@@ -39,5 +36,29 @@ export function customSelect() {
 			shouldSort: false,
 		});
 	})
+
+}
+
+export const courseFilter = () => {
+
+	const sliderPrice = document.querySelector('#price-slider');
+	sliderPrice.noUiSlider.on('update', (el) => {
+		sliderPrice.value = sliderPrice.noUiSlider.get();
+		sliderPrice.dispatchEvent(new CustomEvent('input'));
+	})
+
+	const [selectSubgroup] = document.getElementsByName('subgroup');
+	const [selectTeachers] = document.getElementsByName('teachers');
+
+
+	const filters = [sliderPrice, selectSubgroup, selectTeachers]
+	filters.forEach(el => el.addEventListener('input', filterGoods));
+	filters.forEach(el => el.addEventListener('change', filterGoods));
+	function filterGoods(el) {
+
+
+		console.log(el.target.value)
+	}
+
 
 }

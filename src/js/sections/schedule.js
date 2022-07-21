@@ -233,11 +233,20 @@ export const splide = () => {
 
 export const priceFilter = () => {
 
-	const priceFilter = document.getElementById("price-slider");
+	// const priceFilter = document.getElementById("price-slider");
 
-	if (priceFilter) {
-		const priceMin = priceFilter.querySelector('.noUi-handle-lower').getAttribute('aria-valuenow');
-		console.log(priceMin)
+	// const a = document.getElementsByName('group');
+	// const b = a.addEventListener('change', function () {
+	// 	alert(this.value);
+	// });
+	// console.log(b)
+	// a.addEventListener('input', function () {
+	// 	alert(this.value);
+	// });
 
-	}
+	// if (priceFilter) {
+	// 	const priceMin = priceFilter.querySelector('.noUi-handle-lower').getAttribute('aria-valuenow');
+	// 	console.log(priceMin)
+
+	// }
 }

@@ -16,6 +16,7 @@ prjFunctions.isWebp();
 // ---------------------------------------
 headerSchedule.sliderPrice();
 headerSchedule.customSelect();
+headerSchedule.courseFilter();
 // ---------------------------------------
 sectionSideNav.toggleAside();
 sectionSideNav.currentLink();
