@@ -1,3 +1,14 @@
+.main-home {
+	.courses {
+		padding-top: 60px;
+		padding-bottom: 76px;
+		@media (max-width: 480px) {
+			padding-top: 30px;
+			padding-bottom: 37px;
+		}
+	}
+}
+
 .courses {
 	position: relative;
 
@@ -5,8 +16,6 @@
 	padding-left: 30px;
 
 	background: url("@img/courses/bg-courses.png") 0 0 / 100% 100% no-repeat;
-	&__scene {
-	}
 
 	&__wrap {
 	}

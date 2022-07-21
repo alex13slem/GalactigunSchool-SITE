@@ -1,3 +1,15 @@
+.main-home,
+.main-product-page {
+	.FAQ {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		@media (max-width: 480px) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+}
+
 .FAQ {
 	&__title-h2 {
 		margin: 0 auto 60px;
@@ -7,18 +19,20 @@
 		}
 	}
 
-	&__accordion {
-	}
-	&__content {
+	&__grid {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		gap: 30px;
 	}
+
 	&__column {
 		flex: 1 0 47.5%;
 	}
 	&__article {
-		margin-bottom: 30px;
+		flex: auto 0 1;
+		max-width: 570px;
+		// margin-bottom: 30px;
 
 		&:last-child {
 			margin-bottom: 0;

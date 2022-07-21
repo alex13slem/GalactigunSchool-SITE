@@ -5,71 +5,69 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220721132713">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220721232352">
 	<title>Расписание занятий</title>
 </head>
 
 <body>
 	<div class="body-wrap">
 
-		<header class="header">
-	<div class="header-schedule">
-		<div class="header-schedule__wrap">
+		<header class="header header-main-schedule">
+	<div class="header-main-schedule__wrap">
 
-			<div class="header-schedule__lessons-select lessons-select">
-				<h3 class="header-schedule__title lessons-select__title header-font header-font_dark">
-					ВИД занятий
-				</h3>
-				<select class="lessons-select__select-form select-form" name="lessons">
+		<div class="header-main-schedule__lessons-select lessons-select">
+			<h3 class="header-main-schedule__title lessons-select__title header-font header-font_dark">
+				ВИД занятий
+			</h3>
+			<select class="lessons-select__select-form select-form" name="lessons">
 
-					<option value="Курсы">Курсы</option>
-					<option value="Ретрты">Ретриты</option>
-					<option value="Марафоны">Марафоны</option>
-					<option value="Вебинары">Вебинары</option>
-					<option value="Все" selected>Все</option>
+				<option value="Курсы">Курсы</option>
+				<option value="Ретрты">Ретриты</option>
+				<option value="Марафоны">Марафоны</option>
+				<option value="Вебинары">Вебинары</option>
+				<option value="Все" selected>Все</option>
 
-				</select>
-			</div>
+			</select>
+		</div>
 
-			<div class="header-schedule__teacher-select teacher-select">
-				<h3 class="header-schedule__title teacher-select__title header-font header-font_dark">
-					Выбрать учителя
-				</h3>
-				<select class="teacher-select__select-form select-form" name="teachers">
+		<div class="header-main-schedule__teacher-select teacher-select">
+			<h3 class="header-main-schedule__title teacher-select__title header-font header-font_dark">
+				Выбрать учителя
+			</h3>
+			<select class="teacher-select__select-form select-form" name="teachers">
 
-					<option value="Человек1">Человек</option>
-					<option value="Человек2">Человек</option>
-					<option value="Человек3">Человек</option>
-					<option value="Человек4">Человек</option>
-					<option value="Все" selected>Все</option>
+				<option value="Человек1">Человек</option>
+				<option value="Человек2">Человек</option>
+				<option value="Человек3">Человек</option>
+				<option value="Человек4">Человек</option>
+				<option value="Все" selected>Все</option>
 
-				</select>
-			</div>
+			</select>
+		</div>
 
-			<div class="header-schedule__price header-price">
-				<h3 class="header-schedule__title header-price__title header-font header-font_dark">
-					Цена
-				</h3>
-				<div class="header-price__slide-container price-slider" id="price-slider"></div>
-			</div>
+		<div class="header-main-schedule__price header-price">
+			<h3 class="header-main-schedule__title header-price__title header-font header-font_dark">
+				Цена
+			</h3>
+			<div class="header-price__slide-container price-slider" id="price-slider"></div>
+		</div>
 
-			<div class="header-schedule__options">
+		<div class="header-main-schedule__options">
 
-				<label for="online" class="header-schedule__checkbox">
-					Онлайн
-					<input type="checkbox" name="online" id="online" disabled>
-					<span></span>
-				</label>
+			<label for="online" class="header-main-schedule__checkbox">
+				Онлайн
+				<input type="checkbox" name="online" id="online" disabled>
+				<span></span>
+			</label>
 
-				<label for="live" class="header-schedule__checkbox">
-					Живая встреча
-					<input type="checkbox" name="live" id="live" checked>
-					<span></span>
-				</label>
-
-			</div>
+			<label for="live" class="header-main-schedule__checkbox">
+				Живая встреча
+				<input type="checkbox" name="live" id="live" checked>
+				<span></span>
+			</label>
 
 		</div>
+
 	</div>
 </header>
 		<div class="firm-burger">
@@ -127,7 +125,7 @@
 </aside>
 
 		<main class="main main-schedule side-nav-switch">
-			<div class="main-schedule__scene main-schedule-decor">
+			<div class="main-schedule-decor decor-init">
 				<div data-depth="0.1" class="main-schedule-decor__elem main-schedule-decor__elem_1"></div>
 				<div data-depth="0.3" class="main-schedule-decor__elem main-schedule-decor__elem_2"></div>
 			</div>
@@ -659,7 +657,7 @@
 	</div>
 </section>
 
-			<section class="main-home__message-us message-us">
+			<section class="message-us">
 	<div class="message-us__wrap">
 		<h2 class="message-us__title-h2 title-banner">можешь <span>написать нам</span></h2>
 		<div class="message-us__body">
@@ -724,8 +722,8 @@
 </footer>
 
 	</div>
-	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220721132713" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220721132713"></script>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220721232352" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220721232352"></script>
 </body>
 
 </html>

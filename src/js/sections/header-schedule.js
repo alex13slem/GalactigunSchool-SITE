@@ -42,22 +42,29 @@ export function customSelect() {
 export const courseFilter = () => {
 
 	const sliderPrice = document.querySelector('#price-slider');
-	sliderPrice.noUiSlider.on('update', (el) => {
-		sliderPrice.value = sliderPrice.noUiSlider.get();
-		sliderPrice.dispatchEvent(new CustomEvent('input'));
-	})
 
-	const [selectSubgroup] = document.getElementsByName('subgroup');
-	const [selectTeachers] = document.getElementsByName('teachers');
-
-
-	const filters = [sliderPrice, selectSubgroup, selectTeachers]
-	filters.forEach(el => el.addEventListener('input', filterGoods));
-	filters.forEach(el => el.addEventListener('change', filterGoods));
-	function filterGoods(el) {
+	if (sliderPrice) {
+		sliderPrice.noUiSlider.on('update', (el) => {
+			sliderPrice.value = sliderPrice.noUiSlider.get();
+			sliderPrice.dispatchEvent(new CustomEvent('input'));
+		})
+		const [selectSubgroup] = document.getElementsByName('subgroup');
+		const [selectTeachers] = document.getElementsByName('teachers');
 
 
-		console.log(el.target.value)
+		const filters = [sliderPrice, selectSubgroup, selectTeachers]
+		filters.forEach(el => el.addEventListener('input', filterGoods));
+		filters.forEach(el => el.addEventListener('change', filterGoods));
+
+		function filterGoods(el) {
+
+			const cardOnPage = [...document.querySelectorAll('.course-card')];
+			const coursePrice = cardOnPage.map(el => el.getAttribute('price'));
+			const courseTeacher = cardOnPage.map(el => el.getAttribute('teacher'));
+			const courseSubgroup = cardOnPage.map(el => el.getAttribute('subgroup'));
+
+		}
+
 	}
 
 

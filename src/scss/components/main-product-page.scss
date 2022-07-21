@@ -1,0 +1,32 @@
+.main-product-page {
+	.feedback {
+		padding: 75px 0;
+		background: url("@img/product-page/bg-feedback.jpg") 100% 0 / cover no-repeat;
+		&__scene {
+			display: none;
+		}
+
+		&__img {
+			display: none;
+		}
+
+		&__title {
+			color: #fff;
+		}
+
+		&__attention {
+			color: #fff;
+		}
+	}
+
+	.FAQ {
+		&__title-h2 {
+			font-size: 48px;
+			line-height: 0.92em;
+			color: $color-title;
+			span {
+				color: $color-title;
+			}
+		}
+	}
+}

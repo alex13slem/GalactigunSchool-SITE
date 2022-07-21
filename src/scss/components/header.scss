@@ -1,7 +1,7 @@
 .header {
 	z-index: 100;
 	position: relative;
-	background: $color-firm-bcgrnd;
+
 	&::after {
 		z-index: -1;
 		position: absolute;
@@ -18,11 +18,12 @@
 			display: none;
 		}
 
-		background: linear-gradient(
-			90deg,
-			darken($color-firm-bcgrnd, 9%) 0%,
-			darken($color-firm-bcgrnd, 9%) 80%,
-			$color-firm-bcgrnd 100%
-		);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0) 100%);
+		// background: linear-gradient(
+		// 	90deg,
+		// 	darken($color-firm-bcgrnd, 9%) 0%,
+		// 	darken($color-firm-bcgrnd, 9%) 80%,
+		// 	$color-firm-bcgrnd 100%
+		// );
 	}
 }

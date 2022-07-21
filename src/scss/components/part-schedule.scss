@@ -1,0 +1,184 @@
+.part-schedule {
+	background: url("@img/schedule/bg-schedule.png") 0 0 / 100% 700px no-repeat;
+	&-decor {
+		@keyframes clouds_anim {
+			0%,
+			100% {
+				transform: translateX(0%);
+			}
+			50% {
+				transform: translateX(2%);
+			}
+		}
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1253px;
+		animation: clouds_anim 20s ease-in-out infinite;
+		&__elem {
+			z-index: 0;
+			position: absolute !important;
+
+			&_1 {
+				background: url("@img/schedule/cloud-right-schedule.png") 100% 0 / contain no-repeat;
+				width: 754px;
+				height: 344px;
+				top: 170px !important;
+				left: auto !important;
+				right: calc(50% - 1235px);
+			}
+			&_2 {
+				background: url("@img/schedule/cloud-right-schedule.png") 100% 0 / contain no-repeat;
+				width: 1502px;
+				height: 666px;
+				bottom: auto !important;
+				top: 0% !important;
+				left: calc(50% - 1720px) !important;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		line-height: 1em;
+		color: $color-firm-bcgrnd;
+	}
+
+	&__subtitle {
+		margin-bottom: 80px;
+		max-width: 770px;
+
+		font-weight: 400;
+		line-height: 1.22rem;
+		color: $color-title;
+	}
+
+	&__cards-block {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 270px);
+		gap: 30px;
+	}
+
+	&__card {
+		height: 435px;
+
+		img {
+			flex: 0 0 145px;
+		}
+	}
+	.course-card {
+		border-radius: 15px;
+
+		&__info {
+			flex: 1 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 18px;
+
+			border-radius: 0 0 15px 15px;
+		}
+
+		&__title {
+			margin: 0;
+			max-height: 2.2em;
+			overflow: hidden;
+		}
+
+		&__text {
+			max-height: 10.26em;
+			overflow: hidden;
+
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.14em;
+		}
+
+		&__price {
+			margin-top: 19px;
+			max-height: 1.29em;
+			overflow: hidden;
+		}
+
+		&__when {
+			max-height: 1em;
+			overflow: hidden;
+
+			line-height: 1em;
+		}
+	}
+	.course-title {
+	}
+	.course-price {
+	}
+	.course-when {
+	}
+}
+
+.part-schedule-courses {
+	&__wrap {
+		z-index: 1;
+		position: relative;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+.part-schedule-also {
+	padding-top: 78px;
+	padding-bottom: 50px;
+	background: url("@img/schedule/bg-decor3-schedule.png") calc(50% - 710px) calc(100% + 110px) no-repeat;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 52px;
+	}
+
+	&__marathons-block {
+		margin-bottom: 31px;
+	}
+
+	&__block-title {
+		margin-bottom: 21px;
+	}
+
+	&__cards-block {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 270px);
+		gap: 30px;
+	}
+
+	&__card-item {
+	}
+
+	&__webinars-block {
+	}
+	.title-h3 {
+	}
+	.title-h4 {
+	}
+	.course-card {
+		border-radius: 15px 15px 0px 0px;
+		&__info {
+			border-radius: 0;
+		}
+
+		&__title {
+		}
+
+		&__price {
+			margin-top: calc(1.29em * 2);
+		}
+
+		&__when {
+		}
+	}
+	.course-title {
+	}
+	.course-price {
+	}
+	.course-when {
+	}
+}

@@ -50,4 +50,44 @@
 			padding-top: 80px;
 		}
 	}
+	.course-card {
+		border-radius: 17px;
+		height: 435px;
+		img {
+			flex: 0 0 145px;
+			object-fit: cover;
+			border-radius: 17px 17px 0px 0px;
+		}
+		&__info {
+			flex: 0 0 290px;
+			padding: 18px 19px 14px;
+			border-radius: 0 0 17px 17px;
+		}
+
+		&__title {
+			margin: 0;
+			max-height: 44px;
+			overflow: hidden;
+		}
+		&__text {
+			max-height: 145px;
+			margin-top: 1em;
+
+			font-size: 14px;
+			line-height: 1.14em;
+			overflow: hidden;
+		}
+		&__price {
+			max-height: 14px;
+			margin-top: 1em;
+			overflow: hidden;
+		}
+
+		&__when {
+			line-height: 1em;
+			margin-top: 1em;
+			max-height: 1em;
+			overflow: hidden;
+		}
+	}
 }

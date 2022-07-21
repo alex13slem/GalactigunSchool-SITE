@@ -1,3 +1,15 @@
+.main-home,
+.part-schedule {
+	.feedback {
+		padding-top: 130px;
+		padding-bottom: 132px;
+		@media (max-width: 480px) {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	}
+}
+
 .feedback {
 	position: relative;
 	background: url("@img/feedback/bgnd.png") 0 0 / 100% 100% no-repeat;

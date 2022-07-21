@@ -1,0 +1,64 @@
+.schedule {
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 52px;
+
+		color: $color-firm-bcgrnd;
+	}
+
+	&__splide {
+		margin: -25px;
+		padding: 25px;
+	}
+
+	.splide {
+		&__track {
+			padding: 25px !important;
+			margin: -25px !important;
+		}
+		&--grid {
+			.is-next,
+			.is-prev {
+				opacity: 0;
+			}
+		}
+		&__list {
+			gap: 30px;
+		}
+		&__slide {
+			transition: opacity 0.3s ease;
+		}
+		&__arrow {
+			opacity: 1 !important;
+			svg {
+				display: none;
+			}
+			&:disabled {
+				opacity: 0.8 !important;
+			}
+		}
+		.btn-arrow {
+			svg {
+				display: none;
+			}
+			position: absolute;
+			top: calc(50% - 20px);
+			&_l {
+				left: -105px !important;
+			}
+			&_r {
+				right: -105px !important;
+			}
+		}
+	}
+
+	&__btn {
+		margin-top: 30px;
+	}
+}

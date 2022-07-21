@@ -17,7 +17,6 @@ export const toggleAside = () => {
 
 export const currentLink = () => {
 
-	if (sideNav) {
-		sideNav.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
-	}
+	sideNav.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
+
 }

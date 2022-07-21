@@ -16,7 +16,7 @@ prjFunctions.isWebp();
 // ---------------------------------------
 headerSchedule.sliderPrice();
 headerSchedule.customSelect();
-headerSchedule.courseFilter();
+// headerSchedule.courseFilter();
 // ---------------------------------------
 sectionSideNav.toggleAside();
 sectionSideNav.currentLink();
@@ -43,14 +43,17 @@ pageSchedule.priceFilter();
 // -------------------------------------------------------
 
 const burgerMain = document.querySelector('.firm-burger');
-const burgerBtnBody = burgerMain.querySelector('.firm-burger__button');
 
-burgerBtnBody.addEventListener('click', evt => {
 
-	burgerMain.classList.toggle('firm-burger_open');
+if (burgerMain) {
+	const burgerBtnBody = burgerMain.querySelector('.firm-burger__button');
+	burgerBtnBody.addEventListener('click', evt => {
 
-	burgerMain.classList.add('firm-burger_anim');
-	setTimeout(() => burgerMain.classList.remove('firm-burger_anim'), 1000);
+		burgerMain.classList.toggle('firm-burger_open');
 
-	setTimeout(() => burgerMain.classList.toggle('firm-burger_png'), 750);
-})
+		burgerMain.classList.add('firm-burger_anim');
+		setTimeout(() => burgerMain.classList.remove('firm-burger_anim'), 1000);
+
+		setTimeout(() => burgerMain.classList.toggle('firm-burger_png'), 750);
+	})
+}

@@ -1,4 +1,5 @@
 .header-part-schedule {
+	background: $color-firm-bcgrnd;
 	&__wrap {
 		padding: 30px 50px;
 		min-height: 130px;
@@ -8,12 +9,6 @@
 		grid-auto-flow: dense;
 		grid-column-gap: 45px;
 		grid-row-gap: 20px;
-	}
-
-	&__lessons-select {
-	}
-
-	&__teacher-select {
 	}
 
 	&__price {
@@ -34,35 +29,15 @@
 	.lessons-select {
 		display: flex;
 		flex-direction: column;
-		&__title {
-		}
-
-		&__select-form {
-		}
-	}
-	.header-font {
-		&_dark {
-		}
 	}
 	.select-form {
 		width: 100%;
 	}
-	.teacher-select {
-		&__title {
-		}
 
-		&__select-form {
-		}
-	}
 	.header-price {
 		&__title {
 			margin-bottom: 16px;
 		}
-
-		&__slide-container {
-		}
-	}
-	.price-slider {
 	}
 	// ----------------------------------------CHOICES
 	.choices {

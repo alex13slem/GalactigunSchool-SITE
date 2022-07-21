@@ -8,17 +8,20 @@
 <body>
 	<div class="body-wrap">
 
-		@@include('html/header-part-schedule.html')
-		@@include('html/firm-burger.html')
+		@@include('html/header-product-page.html')
 		@@include('html/side-nav.html')
 
-		<main class="main part-schedule">
+		<main class="main main-product-page">
 
-			@@include('html/sections/part-schedule-courses.html')
-			@@include('html/sections/feedback.html',{
-			"title":"<span>напиши нам о себе</span> и мы подберём для тебя подходящий курс"
+			<!-- @@include('html/sections/product-page-banner.html') -->
+			@@include('html/sections/reviews.html')
+			@@include('html/sections/FAQ.html',{
+			"title":"Часто задаваемые вопросы"
 			})
-
+			@@include('html/sections/feedback.html',{
+			"title":"обрати своё вдохновение в практическую мудрость <span>заполнив форму</span> обратной связи "
+			})
+			<!-- @@include('html/sections/part-schedule-also.html') -->
 
 		</main>
 

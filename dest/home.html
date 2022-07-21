@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220721132713">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220721232352">
 	<title>Главная</title>
 </head>
 
@@ -68,8 +68,8 @@
 
 		<main class="main main-home">
 
-			<section class="main-home__courses courses">
-	<div class="courses__scene courses-decor">
+			<section class="courses">
+	<div class="courses-decor decor-init">
 		<div data-depth="0.1" class="courses-decor__elem courses-decor__elem_1"></div>
 		<div data-depth="0.3" class="courses-decor__elem courses-decor__elem_2"></div>
 	</div>
@@ -224,7 +224,7 @@
 		</div>
 	</div>
 </section>
-			<section class="main-home__history history">
+			<section class="history">
 	<div class="history__wrap">
 		<h2 class="history__title title-banner">Наша <span>история</span></h2>
 		<h3 class="history__sub-title title-sub">Онлайн-школа Галактигун образовалась в 2020
@@ -261,7 +261,7 @@
 		<div class="hisory__btn btn"><a href="">История школы</a></div>
 	</div>
 </section>
-			<section class="main-home__intro intro">
+			<section class="intro">
 	<div class="intro__wrap">
 		<div class="intro__video">
 			<iframe width="570" height="322" loading="lazy"
@@ -297,7 +297,7 @@
 		<button class="intro__btn btn"><a href="">подробнее</a></button>
 	</div>
 </section>
-			<section class="main-home__reviews reviews">
+			<section class="reviews">
 	<div class="reviews__wrap">
 		<h2 class="reviews__title title-banner"><span>Отзывы</span> учеников</h2>
 		<div class="reviews__swiper swiper-reviews">
@@ -313,7 +313,7 @@
 		</div>
 	</div>
 </section>
-			<section class="main-home__feedback feedback">
+			<section class="feedback">
 	<div class="feedback__scene feedback-decor">
 		<div data-depth="0.1" class="feedback-decor__elem feedback-decor__elem_1"></div>
 		<div data-depth="0.05" class="feedback-decor__elem feedback-decor__elem_2"></div>
@@ -332,7 +332,7 @@
 		</div>
 	</div>
 </section>
-			<section class="main-home__interest-video interest-video">
+			<section class="interest-video">
 	<div class="interest-video__wrap">
 		<h2 class="interest-video__title-h3 title-h3">Полезные <span>видео</span></h2>
 		<div class="interest-video__swiper swiper-video">
@@ -432,7 +432,7 @@
 		</div>
 	</div>
 </section>
-			<section class="main-home__interest-acticles interest-acticles">
+			<section class="interest-acticles">
 	<div class="interest-acticles__wrap">
 		<h2 class="interest-acticles__title-h3 title-h3">Интересные <span>статьи</span></h2>
 		<div class="interest-acticles__swiper swiper-articles">
@@ -513,83 +513,96 @@
 	</div>
 </section>
 			
-			<section class="main-home__FAQ FAQ">
+			<section class="FAQ">
 	<div class="FAQ__wrap">
 		<h2 class="FAQ__title-h2 title-banner">Часто задаваемые<br><span>вопросы</span></h2>
-		<div class="FAQ__content">
+		<div class="FAQ__grid">
 
-			<div class="FAQ__column">
-				<article class="FAQ__article FAQ-article">
-					<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
-						научиться
-						ему?
-					</h3>
-					<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
-						движения.
-						Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
-						физическая
-						подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
-						сути,
-						Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
-						в
-						котором тебе будет комфортно и спокойно.</p>
-				</article>
 
-				<article class="FAQ__article FAQ-article">
-					<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
-						научиться
-						ему?
-					</h3>
-					<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
-						движения.
-						Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
-						физическая
-						подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
-						сути,
-						Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
-						в
-						котором тебе будет комфортно и спокойно.</p>
-				</article>
-			</div>
+			<article class="FAQ__article FAQ-article">
+				<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
+					научиться
+					ему?
+				</h3>
+				<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
+					движения.
+					Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
+					физическая
+					подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
+					сути,
+					Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
+					в
+					котором тебе будет комфортно и спокойно.</p>
+			</article>
 
-			<div class="FAQ__column">
-				<article class="FAQ__article FAQ-article">
-					<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
-						научиться
-						ему?
-					</h3>
-					<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
-						движения.
-						Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
-						физическая
-						подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
-						сути,
-						Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
-						в
-						котором тебе будет комфортно и спокойно.</p>
-				</article>
+			<article class="FAQ__article FAQ-article">
+				<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
+					научиться
+					ему?
+				</h3>
+				<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
+					движения.
+					Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
+					физическая
+					подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
+					сути,
+					Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
+					в
+					котором тебе будет комфортно и спокойно.</p>
+			</article>
 
-				<article class="FAQ__article FAQ-article">
-					<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
-						научиться
-						ему?
-					</h3>
-					<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
-						движения.
-						Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
-						физическая
-						подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
-						сути,
-						Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
-						в
-						котором тебе будет комфортно и спокойно.</p>
-				</article>
-			</div>
+			<article class="FAQ__article FAQ-article">
+				<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
+					научиться
+					ему?
+				</h3>
+				<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
+					движения.
+					Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
+					физическая
+					подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
+					сути,
+					Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
+					в
+					котором тебе будет комфортно и спокойно.</p>
+			</article>
+
+			<article class="FAQ__article FAQ-article">
+				<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
+					научиться
+					ему?
+				</h3>
+				<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
+					движения.
+					Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
+					физическая
+					подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
+					сути,
+					Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
+					в
+					котором тебе будет комфортно и спокойно.</p>
+			</article>
+			<article class="FAQ__article FAQ-article">
+				<h3 class="FAQ-article__title title-main">Я никогда раньше не пробовал Цигун. Легко ли
+					научиться
+					ему?
+				</h3>
+				<p class="FAQ-article__answer">В курсе мы будем выполнять с тобой плавные и довольно простые
+					движения.
+					Эти упражнения похожи на асаны из йоги. Чтобы освоить их, тебе не нужна специальная
+					физическая
+					подготовка. Не имеет значения — практиковал ты раньше что-то похожее на Цигун или нет. По
+					сути,
+					Цигун — это динамическая медитация. Всё, что тебе потребуется, чтобы освоить её — это место,
+					в
+					котором тебе будет комфортно и спокойно.</p>
+			</article>
+
 
 		</div>
 	</div>
 </section>
-			<section class="main-home__message-us message-us">
+			<section class="message-us">
 	<div class="message-us__wrap">
 		<h2 class="message-us__title-h2 title-banner">можешь <span>написать нам</span></h2>
 		<div class="message-us__body">
@@ -654,8 +667,8 @@
 </footer>
 
 	</div>
-	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220721132713" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220721132713"></script>
+	<script src="https://kit.fontawesome.com/bda9f69c70.js?_v=20220721232352" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220721232352"></script>
 </body>
 
 </html>

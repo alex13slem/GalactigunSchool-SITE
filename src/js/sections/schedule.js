@@ -4,7 +4,7 @@ import Parallax from "parallax-js";
 
 export const cloudParallax = () => {
 
-	const scene = document.querySelector('.main-schedule-decor');
+	const scene = document.querySelector('.decor-init');
 
 	if (scene) {
 		const parallaxInstance = new Parallax(scene);

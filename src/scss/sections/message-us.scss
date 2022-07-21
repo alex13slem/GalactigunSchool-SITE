@@ -1,7 +1,16 @@
-.message-us {
-	&__wrap {
+.main-home,
+.main-schedule {
+	.message-us {
+		padding-top: 60px;
+		padding-bottom: 120px;
+		@media (max-width: 480px) {
+			padding-top: 30px;
+			padding-bottom: 90px;
+		}
 	}
+}
 
+.message-us {
 	&__title-h2 {
 		z-index: 1;
 		position: relative;
@@ -20,7 +29,6 @@
 		position: relative;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		// grid-template-rows: repeat(2, auto);
 		gap: 30px;
 
 		&::after {
@@ -35,22 +43,10 @@
 		}
 	}
 
-	// &__img {
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	object-fit: cover;
-
-	// 	@media (max-width: 1065px) {
-	// 		opacity: 0.5;
-	// 	}
-	// }
-
 	&__contant {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		position: relative;
-		// margin-right: -36%;
 	}
 
 	&__speech {
@@ -78,26 +74,16 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-
-		// padding-top: 50px;
 	}
 
 	&__attention {
 		margin-top: 10px;
-	}
-	.title-banner {
 	}
 	.message-us-form {
 		&__text {
 			resize: none;
 			height: 170px;
 			padding: 10px 15px;
-		}
-
-		&__name {
-		}
-
-		&__email {
 		}
 
 		&__btn {
@@ -111,9 +97,5 @@
 				width: 280px;
 			}
 		}
-	}
-	.form-input {
-	}
-	.btn {
 	}
 }

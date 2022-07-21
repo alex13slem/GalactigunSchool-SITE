@@ -33,14 +33,15 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 // -----------------------------------------------------
 @import "./components/header";
-@import "./components/aside";
+@import "./components/side-nav";
 @import "./components/main";
 @import "./components/footer";
 // ------------------------------------------------------
 @import "./components/main-home";
 @import "./components/main-schedule";
+@import "./components/part-schedule";
+@import "./components/main-product-page";
 // ------------------------------------------------------
-@import "./sections/side-nav";
 @import "./sections/courses";
 @import "./sections/history";
 @import "./sections/intro";
@@ -53,6 +54,6 @@ $fa-brands: "Font Awesome 6 Brands";
 // ----------------------------------------------------------
 @import "./sections/header-part-schedule";
 @import "./sections/header-main-schedule";
+@import "./sections/header-product-page";
 // -------------------------------------------------------
-@import "./sections/main-schedule";
-@import "./sections/part-schedule";
+@import "./sections/schedule";
