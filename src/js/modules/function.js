@@ -14,3 +14,31 @@ export function isWebp() {
 		document.documentElement.classList.add(className);
 	});
 }
+
+export const accordion = () => {
+
+	const accordionInit = document.querySelector('.accordion-init')
+
+	if (accordionInit) {
+		const accBtns = accordionInit.querySelectorAll('.accordion-btn');
+		const accContents = accordionInit.querySelectorAll('.accordion-content');
+
+		accBtns.forEach((btn) => {
+			btn.addEventListener("click", (e) => {
+				accContents.forEach((acc) => {
+					if (
+						e.target.nextElementSibling !== acc &&
+						acc.classList.contains("active")
+					) {
+						acc.classList.remove("active")
+					}
+				});
+
+				const panel = btn.nextElementSibling;
+				panel.classList.toggle('active');
+				btn.classList.toggle('active');
+			});
+		});
+	}
+
+}

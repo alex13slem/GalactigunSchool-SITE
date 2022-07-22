@@ -1,4 +1,410 @@
 .main-product-page {
+	.product-page-banner {
+		margin: 0 -20px;
+		background: url("@img/product-page/bg-banner.jpg") 100% 50% / cover no-repeat;
+		padding: 53px 20px;
+
+		&__wrap {
+		}
+
+		&__title {
+			margin-top: 241px;
+			margin-bottom: 23px;
+		}
+
+		&__subtitle {
+			margin-bottom: 50px;
+			font-size: 20px;
+			line-height: 1.1em;
+			max-width: 570px;
+		}
+
+		&__details {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 30px;
+		}
+
+		&__btn {
+		}
+
+		&__info {
+			background: #fff;
+			border-radius: 27px;
+			span {
+				display: inline-block;
+				padding: 17px 20px;
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 0.8em;
+
+				color: #5a593e;
+
+				border-right-width: 1px;
+				border-right-style: solid;
+				border-image: linear-gradient(
+						to bottom,
+						rgba(223, 223, 223, 0) 5%,
+						rgba(211, 211, 211, 1) 50%,
+						rgba(223, 223, 223, 0) 95%
+					)
+					1 100%;
+
+				@media (max-width: 477px) {
+					border: none;
+				}
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+	}
+
+	.product-page-program {
+		padding: 120px 0 60px;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 24px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+
+			text-align: center;
+		}
+
+		&__subtitle {
+			max-width: 570px;
+			margin: 0 auto 50px;
+
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.12em;
+
+			text-align: center;
+		}
+
+		&__cards-block {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 270px);
+			grid-column-gap: 30px;
+			grid-row-gap: 50px;
+			grid-auto-flow: dense;
+			justify-content: center;
+		}
+
+		&__article {
+			img {
+				width: 270px;
+				height: 270px;
+				margin-bottom: 15px;
+				border-radius: 15px;
+				object-fit: cover;
+				overflow: hidden;
+			}
+		}
+
+		&__article-title {
+			margin-bottom: 13px;
+			font-size: 32px;
+			line-height: 1.06em;
+		}
+
+		&__article-text {
+			font-size: 16px;
+			line-height: 1.25em;
+			max-height: 8.75em;
+			overflow: hidden;
+		}
+	}
+
+	.product-page-privilege {
+		padding: 60px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin: 0 auto 77px;
+			max-width: 385px;
+			font-size: 48px;
+			line-height: 0.92em;
+
+			text-align: center;
+		}
+
+		&__content {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			img {
+				width: 582px;
+				height: 458px;
+				object-fit: cover;
+				object-position: 100% 0;
+				overflow: hidden;
+				border-radius: 0px 15px 15px 0px;
+			}
+			@media (max-width: 1393px) {
+				justify-content: center;
+				gap: 50px;
+			}
+		}
+
+		&__list {
+			max-width: 490px;
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			li {
+				padding-left: 36px;
+				position: relative;
+
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 1.1em;
+
+				color: $color-title;
+
+				span {
+					position: absolute;
+					top: -6px;
+					left: 0;
+
+					font-family: $font-title;
+					font-weight: 700;
+					font-size: 40px;
+					line-height: 1.1em;
+
+					color: $color-title-accent;
+				}
+			}
+		}
+	}
+
+	.product-page-about-teacher {
+		padding: 60px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 80px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+
+			text-align: center;
+		}
+
+		&__slider {
+			position: relative;
+		}
+
+		&__slider-item {
+			max-width: 970px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 30px;
+
+			img {
+				height: 500px;
+				width: 370px;
+				overflow: hidden;
+				object-fit: cover;
+				border-radius: 15px;
+			}
+
+			@media (max-width: 1472px) {
+				justify-content: center;
+				max-width: 500px;
+			}
+		}
+
+		&__content {
+			max-width: 570px;
+		}
+		&__name {
+			margin-bottom: 32px;
+
+			font-size: 36px;
+			line-height: 1em;
+			max-height: 1em;
+			overflow: hidden;
+			@media (max-width: 1472px) {
+				text-align: center;
+			}
+		}
+
+		&__text {
+			margin-bottom: 35px;
+
+			font-size: 14px;
+			line-height: 1.29em;
+			min-height: 10.23em;
+			overflow: hidden;
+
+			color: $color-title;
+		}
+
+		&__merit {
+			margin-bottom: 40px;
+			max-width: 505px;
+
+			display: flex;
+			flex-direction: column;
+			gap: 13px;
+
+			li {
+				position: relative;
+				padding-left: 22px;
+
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 1.14em;
+				max-height: 2.28em;
+				overflow: hidden;
+
+				color: #909090;
+
+				span {
+					position: absolute;
+					height: 12px;
+					width: 12px;
+					top: calc(50% - 7px);
+					left: 0;
+					border-radius: 50%;
+					background: $color-title-accent;
+					display: inline-block;
+				}
+			}
+		}
+
+		&__btn {
+		}
+
+		.title-h3 {
+		}
+		.splide__track--fade > .splide__list > .splide__slide {
+			left: calc(50% - 485px);
+			@media (max-width: 1472px) {
+				left: calc(50% - 250px);
+			}
+		}
+		.splide {
+			&__track {
+			}
+
+			&__list {
+			}
+
+			&__slide {
+			}
+		}
+		.title-h4 {
+		}
+		.btn-arrow {
+			z-index: 1;
+			position: absolute;
+			top: calc(50% - 45px);
+			&_l {
+				left: calc(50% - 580px);
+				@media (max-width: 1472px) {
+					left: calc(50% - 350px);
+				}
+			}
+			&_r {
+				right: calc(50% - 580px);
+				@media (max-width: 1472px) {
+					right: calc(50% - 350px);
+				}
+			}
+		}
+	}
+
+	.product-page-accordion {
+		padding: 60px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 80px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+			text-align: center;
+		}
+
+		&__block {
+			margin: 0 auto;
+			max-width: 770px;
+		}
+
+		&__item {
+			margin-bottom: 10px;
+			border-radius: 7px;
+			border: 1px solid #d2d2d2;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__item-title {
+			width: 100%;
+
+			padding: 25px 30px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 0.9em;
+			color: #383838;
+
+			background: #fff;
+			border-radius: 7px;
+
+			transition: background 0.3s ease;
+
+			&.active {
+				border-radius: 7px 7px 0px 0px;
+			}
+
+			&:hover {
+				background: #f5efff;
+			}
+		}
+
+		&__content {
+			max-height: 0;
+			padding: 0 31px;
+			overflow: hidden;
+			border-radius: 0 0 7px 7px;
+
+			transition: 0.3s ease;
+
+			&.active {
+				max-height: 1000px;
+				padding-top: 23px;
+				padding-bottom: 37px;
+				border-top: 1px solid #d2d2d2;
+			}
+		}
+
+		.title-h3 {
+		}
+
+		.accordion-init {
+		}
+
+		.accordion-btn {
+		}
+
+		.title-main {
+		}
+
+		.accordion-content {
+		}
+	}
+
 	.feedback {
 		padding: 75px 0;
 		background: url("@img/product-page/bg-feedback.jpg") 100% 0 / cover no-repeat;

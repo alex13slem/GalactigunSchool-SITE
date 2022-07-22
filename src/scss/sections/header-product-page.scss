@@ -1,6 +1,7 @@
 .header {
 }
 .header-product-page {
+	border-bottom: 1px solid rgba(144, 144, 144, 0.51);
 	&::after {
 		background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
 	}

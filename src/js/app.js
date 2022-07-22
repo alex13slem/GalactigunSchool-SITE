@@ -12,7 +12,10 @@ import * as sectionInterestArticles from "./sections/interest-acticles.js";
 
 import * as pageSchedule from "./sections/schedule.js";
 
+import * as pageProduct from './sections/main-product-page.js';
+
 prjFunctions.isWebp();
+prjFunctions.accordion()
 // ---------------------------------------
 headerSchedule.sliderPrice();
 headerSchedule.customSelect();
@@ -39,9 +42,10 @@ pageSchedule.splide();
 pageSchedule.cloudParallax();
 pageSchedule.priceFilter();
 
+// -------------------------------------------------------
+pageProduct.spliderAboutTeacher();
 
 // -------------------------------------------------------
-
 const burgerMain = document.querySelector('.firm-burger');
 
 

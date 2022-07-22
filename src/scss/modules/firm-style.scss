@@ -350,6 +350,10 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	border-bottom: 3px solid $color-btn-silv-bdr;
 
 	transition: 0.1s linear;
+
+	svg {
+		display: none;
+	}
 	&:hover {
 		background-color: $color-btn-hov-silv;
 		box-shadow: 0px -20px 20px 0px $color-btn-hov-silv-bsh inset;
