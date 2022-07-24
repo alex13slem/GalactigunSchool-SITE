@@ -1,4 +1,5 @@
 import * as prjFunctions from "./modules/function.js";
+import fslightbox from "fslightbox";
 
 import * as headerSchedule from "./sections/header-schedule.js";
 
@@ -44,6 +45,8 @@ pageSchedule.priceFilter();
 
 // -------------------------------------------------------
 pageProduct.spliderAboutTeacher();
+pageProduct.swiperLocation();
+pageProduct.splideReview();
 
 // -------------------------------------------------------
 const burgerMain = document.querySelector('.firm-burger');

@@ -154,6 +154,12 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 
 	color: $color-title-accent;
 }
+.course-text {
+	font-size: 14px;
+	line-height: 1.14em;
+
+	color: #909090;
+}
 .course-when {
 	font-size: 12px;
 	line-height: 1.5em;
@@ -299,8 +305,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 		color: $color-title;
 	}
 
-	&:hover,
-	&:focus {
+	&:hover {
 		background: $color-btn-hov-yel;
 		box-shadow: 0px -20px 20px 0px $color-btn-hov-yel-bsh inset;
 	}
@@ -313,8 +318,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 		background: $color-btn-silv;
 		box-shadow: 0px -20px 20px 0px $color-btn-silv-bsh inset;
 		border-bottom: 3px solid $color-btn-silv-bdr;
-		&:hover,
-		&:focus {
+		&:hover {
 			background: $color-btn-hov-silv;
 			box-shadow: 0px -20px 20px 0px $color-btn-hov-silv-bsh inset;
 			border-bottom: 3px solid $color-btn-hov-silv-bdr;
@@ -339,8 +343,8 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 70px;
-	height: 70px;
+	width: 70px !important;
+	height: 70px !important;
 	cursor: pointer;
 
 	border-radius: 10px;
@@ -365,7 +369,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 
 	&_l {
 		&::after {
-			content: "";
+			content: "" !important;
 			background: url("@img/arrow-l.svg") 50% 50% no-repeat;
 			width: 17px;
 			height: 27px;
@@ -375,7 +379,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	}
 	&_r {
 		&::after {
-			content: "";
+			content: "" !important;
 			background: url("@img/arrow-r.svg") 50% 50% no-repeat;
 			width: 17px;
 			height: 27px;

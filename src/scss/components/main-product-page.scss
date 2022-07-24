@@ -405,6 +405,336 @@
 		}
 	}
 
+	.product-page-location {
+		padding: 60px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 73px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+			text-align: center;
+			color: $color-title;
+		}
+
+		// &__slider {
+		// }
+
+		// &__slider-item {
+		// }
+
+		// .splide {
+		// 	// position: relative;
+		// 	// max-width: 770px;
+		// 	// height: 172px;
+		// 	&__track {
+		// 		// height: 100%;
+		// 	}
+		// 	&__arrows {
+		// 		display: none;
+		// 		position: absolute;
+		// 	}
+		// 	&__list {
+		// 	}
+
+		// 	&__slide {
+		// 		// display: inline-block;
+		// 	}
+
+		// 	&__pagination {
+		// 		gap: 13px;
+		// 		&__page {
+		// 			width: 14px;
+		// 			height: 14px;
+		// 			margin: 0;
+		// 			background: $color-title-tag;
+		// 			&.is-active {
+		// 				background: $color-title-accent;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		&__swiper {
+			max-width: 970px;
+			padding: 0 100px 70px;
+			margin-bottom: 40px;
+			.swiper-wrapper {
+			}
+			.swiper-slide {
+				p {
+					overflow: hidden;
+
+					font-size: 18px;
+					line-height: 1.22em;
+					color: #383838;
+				}
+			}
+			.swiper-pagination {
+				&-bullet {
+					margin: 0 6px;
+					background: $color-title-tag;
+					width: 14px;
+					height: 14px;
+					opacity: 0.5;
+
+					transition: transform 0.3s ease;
+					&-active {
+						background: $color-title-accent;
+						opacity: 1;
+						transform: scale(1.4);
+					}
+				}
+			}
+			.btn-arrow {
+				margin: 0;
+				top: calc(50% - 70px);
+				&_l {
+				}
+				&_r {
+				}
+			}
+		}
+
+		&__map {
+			position: relative;
+
+			iframe {
+				border-radius: 15px;
+				height: 350px;
+			}
+		}
+		&__gallery {
+			margin-bottom: 30px;
+			display: grid;
+			justify-content: center;
+			grid-template-columns: repeat(auto-fit, 270px);
+			gap: 30px;
+		}
+
+		&__gallery-item {
+			img {
+				width: 270px;
+				height: 270px;
+
+				overflow: hidden;
+				object-fit: cover;
+				border-radius: 7px;
+			}
+		}
+
+		.title-h3 {
+		}
+	}
+
+	.product-page-offers {
+		padding: 60px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 56px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+			text-align: center;
+		}
+
+		&__content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+		}
+
+		&__article {
+			width: 270px;
+
+			a {
+				text-decoration: none;
+			}
+
+			&:hover {
+				.product-page-offers__article-content {
+					box-shadow: 2px 4px 20px 4px rgba(10, 0, 28, 0.2);
+				}
+				.product-page-offers__btn {
+					background: #fff73f;
+					box-shadow: 0px -20px 20px 0px #ffac0b inset;
+				}
+			}
+		}
+
+		&__article-content {
+			margin-bottom: 10px;
+			padding: 40px 20px 30px;
+			height: 626px;
+
+			font-size: 14px;
+			line-height: 1.14em;
+
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid #eae6f1;
+			border-radius: 7px;
+
+			transition: box-shadow 0.3s ease;
+		}
+
+		&__article-title {
+			margin-bottom: 40px;
+
+			line-height: 0.91em;
+			text-align: center;
+		}
+
+		&__article-ul {
+			margin-bottom: 23px;
+
+			max-height: 17.1em;
+			display: flex;
+			flex-direction: column;
+			gap: 1.14em;
+
+			color: #383838;
+
+			overflow: hidden;
+		}
+
+		&__article-text {
+			margin-bottom: 32px;
+		}
+
+		&__article-price {
+			line-height: 0.91em;
+			text-align: center;
+			color: $color-firm-bcgrnd;
+		}
+
+		&__btn {
+			width: 100%;
+		}
+	}
+
+	.credit {
+		padding: 60px 0;
+
+		&__wrap {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			align-items: center;
+
+			@media (max-width: 1262px) {
+				justify-content: center;
+			}
+		}
+
+		&__img {
+			position: relative;
+			height: 460px;
+			flex: 0 0 370px;
+			display: flex;
+			align-items: center;
+			img {
+				width: 280px;
+				height: 260px;
+				object-fit: contain;
+			}
+
+			&::after {
+				z-index: -1;
+				position: absolute;
+				content: "";
+
+				top: calc(50% - 230px);
+				right: calc(-100% + 370px);
+				height: 100%;
+				width: 100vw;
+
+				border-radius: 0px 15px 15px 0px;
+				background: $color-btn-yel;
+			}
+		}
+
+		&__content {
+		}
+
+		&__title {
+			margin-bottom: 46px;
+			max-width: 460px;
+
+			font-size: 48px;
+			line-height: 0.92em;
+		}
+
+		&__text {
+			margin-bottom: 50px;
+			max-width: 570px;
+			max-height: 6.1em;
+			overflow: hidden;
+			font-size: 18px;
+			line-height: 1.22em;
+
+			color: $color-title;
+		}
+
+		&__btn {
+		}
+	}
+
+	.product-page-reviews {
+		padding: 60px 0 180px;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 80px;
+			font-size: 48px;
+			line-height: 0.92em;
+			text-align: center;
+		}
+
+		&__splide {
+		}
+
+		.splide {
+			position: relative;
+			margin: 0 auto;
+			&__track {
+			}
+
+			&__list {
+			}
+
+			&__slide {
+				height: 400px;
+				img {
+					object-fit: cover;
+					height: 100%;
+					border-radius: 7px;
+				}
+			}
+
+			&__arrows {
+			}
+		}
+
+		.btn-arrow {
+			position: absolute;
+			bottom: -120px;
+			&_l {
+				left: calc(50% - 85px);
+			}
+
+			&_r {
+				right: calc(50% - 85px);
+			}
+		}
+	}
+
 	.feedback {
 		padding: 75px 0;
 		background: url("@img/product-page/bg-feedback.jpg") 100% 0 / cover no-repeat;
@@ -433,6 +763,71 @@
 			span {
 				color: $color-title;
 			}
+		}
+	}
+
+	.product-page-also {
+		padding: 120px 0;
+		&__wrap {
+		}
+
+		&__title {
+			margin-bottom: 50px;
+		}
+
+		&__cards-block {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: repeat(auto-fit, 270px);
+			gap: 30px;
+		}
+
+		&__card-item {
+			height: 435px;
+			img {
+				flex: 0 0 140px;
+			}
+			border-radius: 30px;
+		}
+		.title-h3 {
+		}
+		.course-card {
+			&__info {
+				flex: 1 0 290px;
+				padding: 20px;
+				padding-bottom: 10px;
+				border-radius: 0px 0px 30px 30px;
+			}
+
+			&__title {
+				margin-top: 0;
+				margin-bottom: 12px;
+				max-height: 2.2em;
+				overflow: hidden;
+			}
+
+			&__text {
+				margin-bottom: 18px;
+				max-height: 10.26em;
+				overflow: hidden;
+			}
+
+			&__price {
+				line-height: 1em;
+			}
+
+			&__when {
+				margin-top: 0.7em;
+				line-height: 1em;
+			}
+		}
+		.course-title {
+		}
+		.course-text {
+		}
+		.course-price {
+		}
+		.course-when {
 		}
 	}
 }
