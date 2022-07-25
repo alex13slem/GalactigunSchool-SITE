@@ -471,6 +471,7 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 		background: url("@img/courses/card-glass.png") 0 0 / 100% 100% no-repeat;
 	}
 	img {
+		width: 100%;
 		object-fit: cover;
 		filter: saturate(50%);
 		transition: 0.3s ease;

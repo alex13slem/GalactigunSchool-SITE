@@ -2,15 +2,22 @@
 	background: $color-firm-bcgrnd;
 	&__wrap {
 		min-height: 195px;
-
-		padding-left: 50px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 
 		display: grid;
-		grid-template-columns: repeat(2, 370px);
+		grid-template-columns: repeat(auto-fit, 370px);
 		grid-template-rows: repeat(2, min-content);
 		align-content: center;
+		justify-content: center;
 		grid-row-gap: 20px;
-		grid-column-gap: 30px;
+		grid-column-gap: 40px;
+		grid-auto-flow: dense;
+
+		@media (orientation: portrait) {
+			grid-template-columns: repeat(auto-fit, 280px);
+			grid-row-gap: 40px;
+		}
 	}
 
 	&__lessons-select {
@@ -20,9 +27,17 @@
 	}
 
 	&__price {
+		grid-row: 2 / 3;
+		@media (orientation: portrait) {
+			grid-row: auto;
+		}
 	}
 
 	&__options {
+		grid-row: 2 / 3;
+		@media (orientation: portrait) {
+			grid-row: auto;
+		}
 	}
 
 	&__checkbox {

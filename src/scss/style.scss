@@ -21,7 +21,7 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "settings";
 // -----------------------------------------------------
 @import "./modules/firm-style";
-@import "./modules/firm-burger";
+
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/swiper/modules/effect-fade/effect-fade";
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min";
@@ -42,16 +42,17 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/part-schedule";
 @import "./components/main-product-page";
 // ------------------------------------------------------
-@import "./sections/courses";
+@import "./sections/home-courses";
+@import "./sections/home-reviews";
 @import "./sections/history";
 @import "./sections/intro";
-@import "./sections/reviews";
 @import "./sections/feedback";
 @import "./sections/interest-video";
 @import "./sections/interest-articles";
 @import "./sections/FAQ";
 @import "./sections/message-us";
 // ----------------------------------------------------------
+@import "./sections/header-home";
 @import "./sections/header-part-schedule";
 @import "./sections/header-main-schedule";
 @import "./sections/header-product-page";

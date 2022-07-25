@@ -59,6 +59,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 270px);
 		gap: 30px;
+		justify-content: center;
 	}
 
 	&__card {
@@ -148,6 +149,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 270px);
 		gap: 30px;
+		justify-content: center;
 	}
 
 	&__card-item {

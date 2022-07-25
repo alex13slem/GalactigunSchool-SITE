@@ -1,0 +1,359 @@
+.header-home-mobile {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	// left: 0;
+	height: fit-content;
+	width: 100%;
+
+	@media (orientation: portrait) {
+		display: flex;
+	}
+	@media (max-width: 1023px) {
+		display: flex;
+	}
+
+	display: none;
+	flex-direction: column;
+
+	background: $color-firm-bcgrnd;
+
+	input {
+		display: none;
+
+		&:checked ~ .header-home-mobile__body-block {
+			display: flex;
+		}
+	}
+
+	&__top-block {
+		height: 8vmax;
+
+		padding: 12px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		border-bottom: $color-title-accent solid 2px;
+	}
+
+	&__top-logo {
+		width: 143px;
+		width: 38vmin;
+		height: 4.5vmax;
+		object-fit: contain;
+		object-position: 0 50%;
+	}
+
+	&__top-btn {
+		margin-left: auto;
+		margin-right: 15px;
+		width: fit-content !important;
+		min-height: 5vmax !important;
+		padding: 8px !important;
+
+		font-size: 13px;
+		font-size: 2vmax;
+		line-height: 1.135em;
+		border-radius: 1vmin;
+	}
+
+	&__top-burger {
+		cursor: pointer;
+		&:hover {
+			path {
+				fill: $color-title-accent;
+			}
+		}
+		svg {
+			width: 5.5vmin;
+			height: 2vmax;
+
+			path {
+				transition: fill 0.3s ease;
+			}
+		}
+	}
+
+	&__body-block {
+		flex: 1 1 92vmax;
+		padding: 6vmax 5vmin 3vmax;
+		flex-direction: column;
+		display: none;
+		border-bottom: $color-title-accent solid 2px;
+	}
+
+	&__body-menu {
+		a {
+			text-decoration: none;
+			font-family: $font-title;
+			font-weight: 700;
+			font-size: 2.4vmax;
+			line-height: 1.5em;
+			color: #fff;
+		}
+
+		li {
+			a {
+				transition: color 0.3s ease;
+			}
+
+			&.active {
+				.header-home-mobile__body-submenu {
+					display: block;
+				}
+
+				.arrow {
+					transform: scale(70%) rotate(90deg);
+				}
+			}
+		}
+		.menu-dclick {
+			position: relative;
+			.arrow {
+				width: 2.4vmax;
+				height: 2.4vmax;
+
+				position: absolute;
+				top: calc(50% - 1.2vmax + 1px);
+				right: calc(100% - 0px);
+				object-fit: contain;
+				transform: scale(70%);
+
+				transition: transform 0.3s ease;
+
+				rect {
+					fill: #fff;
+
+					transition: fill 0.3s ease;
+				}
+			}
+		}
+		& > li:hover > a {
+			color: $color-title-accent;
+		}
+		& > li:hover .arrow {
+			rect {
+				fill: $color-title-accent;
+			}
+		}
+	}
+
+	&__body-submenu {
+		display: none;
+		margin: 5px -20px 10px;
+		margin: 0.7vmax -5vmin 1.4vmax;
+		padding: 10px 50px 16px;
+		padding: 1.5vmax 13vmin 1.8vmax;
+		background: rgba(175, 163, 197, 0.35);
+
+		li a {
+			color: #fff;
+		}
+		li:hover a {
+			color: $color-title-accent;
+		}
+	}
+
+	&__contacts-block {
+		margin-top: auto;
+	}
+
+	&__tel {
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 3.5vmax;
+		line-height: 1em;
+
+		color: #ffffff;
+
+		text-decoration: none;
+	}
+
+	&__social {
+		margin-top: 10px;
+		margin-top: 2vmin;
+		display: flex;
+		gap: 15px;
+
+		img {
+			height: 20px;
+			height: 3.5vmax;
+			object-fit: contain;
+		}
+	}
+}
+
+// @keyframes burger {
+// 	80% {
+// 		transform: rotate(400deg);
+// 	}
+// 	100% {
+// 		transform: rotate(360deg);
+// 	}
+// }
+
+// .firm-burger {
+// 	z-index: 1;
+// 	display: none;
+// 	position: fixed;
+// 	z-index: 100;
+
+// 	width: 80px;
+// 	height: 80px;
+// 	top: 15px;
+// 	right: 15px;
+
+// 	// clip-path: circle(65.2% at 66% 34%);
+
+// 	transition: box-shadow 0.5s ease;
+
+// 	&__button {
+// 		z-index: 5;
+// 		position: relative;
+// 		width: 100%;
+// 		height: 100%;
+
+// 		font-family: $fa-free;
+// 		font-weight: 900;
+// 		font-size: 40px;
+// 		color: $color-title-accent;
+
+// 		background: $color-firm-bcgrnd;
+// 		border-radius: 50%;
+// 		transition: color 1s ease, background 1s ease, box-shadow 0.5s ease;
+// 		&::after {
+// 			display: flex;
+// 			justify-content: center;
+// 			align-items: center;
+
+// 			content: "\f0c9";
+// 		}
+// 		&:hover {
+// 			color: $color-btn-hov-yel-bsh;
+// 			box-shadow: 2px 4px 20px 4px rgba(10, 0, 28, 0.2);
+// 		}
+// 	}
+
+// 	&__nav {
+// 		z-index: 2;
+// 		position: fixed;
+// 		width: 100vmin;
+// 		height: 100vmax;
+// 		top: 0;
+// 		left: 0;
+// 		clip-path: circle(0px at calc(100% - 9%) 6%);
+
+// 		transition: 0.4s ease-in-out;
+
+// 		display: flex;
+// 		justify-content: center;
+
+// 		background: $color-firm-bcgrnd;
+// 	}
+// 	&__input:checked ~ &__ul_1 {
+// 		display: block;
+// 	}
+// 	&__input:checked ~ &__li_main::before {
+// 		content: "\f0d8";
+// 	}
+
+// 	&__ul {
+// 		&_main {
+// 			margin-top: 120px;
+// 			visibility: hidden;
+// 		}
+// 		&_1 {
+// 			display: none;
+
+// 			border: 2px solid $color-title-accent;
+// 			border-radius: 0 0 15px 15px;
+// 			padding: 15px;
+// 		}
+// 	}
+
+// 	&__li {
+// 		font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+// 		font-weight: 700;
+// 		font-size: 30px;
+// 		line-height: 1.38em;
+// 		color: $color-white;
+// 		cursor: pointer;
+// 		text-decoration: none;
+// 		transition: 0.3s ease;
+// 		a {
+// 			font-family: inherit;
+// 			font-weight: inherit;
+// 			font-size: inherit;
+// 			line-height: inherit;
+// 			color: inherit;
+// 			text-decoration: inherit;
+// 		}
+
+// 		input {
+// 			width: 0;
+// 			height: 0;
+// 			position: absolute;
+// 		}
+// 		&_main {
+// 			position: relative;
+
+// 			&::before {
+// 				font-family: $fa-free;
+// 				font-weight: 900;
+// 				position: absolute;
+// 				content: "\f0d7";
+// 				right: -50px;
+// 			}
+// 		}
+
+// 		&:hover {
+// 			color: $color-title-accent;
+// 		}
+// 	}
+
+// 	&_open {
+// 		.firm-burger {
+// 			&__button {
+// 				color: $color-firm-bcgrnd;
+// 				background: $color-title-accent;
+// 				&:hover {
+// 					color: $color-firm-bcgrnd;
+// 				}
+// 				// &::after {
+// 				// 	content: "\f00d";
+// 				// }
+// 			}
+// 			&__nav {
+// 				top: 0;
+// 				right: 0;
+// 				clip-path: circle(100%);
+// 			}
+// 			&__ul {
+// 				&_main {
+// 					visibility: visible;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	&_png {
+// 		.firm-burger {
+// 			&__button {
+// 				&::after {
+// 					content: "\f00d";
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	&_anim {
+// 		.firm-burger__button::after {
+// 			animation: burger 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) 1;
+// 		}
+// 	}
+
+// 	@media (max-width: 821px) {
+// 		display: block;
+// 	}
+// }

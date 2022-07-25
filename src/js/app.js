@@ -28,7 +28,7 @@ sectionSideNav.currentLink();
 sectionCourses.cloudParallax();
 sectionCourses.swiper();
 
-sectionReviews.swiper();
+sectionReviews.splideReview();
 
 sectionFaq.accordionFaq();
 
@@ -52,15 +52,39 @@ pageProduct.splideReview();
 const burgerMain = document.querySelector('.firm-burger');
 
 
-if (burgerMain) {
-	const burgerBtnBody = burgerMain.querySelector('.firm-burger__button');
-	burgerBtnBody.addEventListener('click', evt => {
+// if (burgerMain) {
+// 	const burgerBtnBody = burgerMain.querySelector('.firm-burger__button');
+// 	burgerBtnBody.addEventListener('click', evt => {
 
-		burgerMain.classList.toggle('firm-burger_open');
+// 		burgerMain.classList.toggle('firm-burger_open');
 
-		burgerMain.classList.add('firm-burger_anim');
-		setTimeout(() => burgerMain.classList.remove('firm-burger_anim'), 1000);
+// 		burgerMain.classList.add('firm-burger_anim');
+// 		setTimeout(() => burgerMain.classList.remove('firm-burger_anim'), 1000);
 
-		setTimeout(() => burgerMain.classList.toggle('firm-burger_png'), 750);
+// 		setTimeout(() => burgerMain.classList.toggle('firm-burger_png'), 750);
+// 	})
+// }
+
+const menuDclick = document.querySelector(".menu-dclick");
+
+if (menuDclick) {
+	menuDclick.onclick = function (e) {
+		e.preventDefault();  // Блокирует переход по ссылке
+		this.onclick = null; // После первого клика, обработчик удаляется.
+	};
+}
+
+const headerMenuList = document.querySelector('.header-home-mobile__body-menu')
+
+if (headerMenuList) {
+	const elem = headerMenuList.querySelectorAll('li')
+
+	elem.forEach(el => {
+		el.addEventListener('click', evt => {
+			el.classList.toggle('active')
+		})
+
 	})
 }
+
+

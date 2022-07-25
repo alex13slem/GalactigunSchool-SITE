@@ -682,6 +682,12 @@
 		}
 
 		&__btn {
+			@media (orientation: portrait) {
+				margin: 0 auto;
+			}
+			@media (max-width: 1023px) {
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -776,9 +782,9 @@
 		}
 
 		&__cards-block {
-			display: grid;
+			display: flex;
 			justify-content: center;
-			grid-template-columns: repeat(auto-fit, 270px);
+			flex-wrap: wrap;
 			gap: 30px;
 		}
 

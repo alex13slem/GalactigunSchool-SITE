@@ -1,9 +1,9 @@
 import Parallax from "parallax-js";
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
 export const cloudParallax = () => {
 
-	const scene = document.querySelector('.courses-decor');
+	const scene = document.querySelector('.home-courses-decor');
 
 	if (scene) {
 		const parallaxInstance = new Parallax(scene);
@@ -14,8 +14,8 @@ export const cloudParallax = () => {
 
 export const swiper = () => {
 
-	const swiper = new Swiper('.swiper-courses', {
-		modules: [Navigation, Pagination],
+	const swiper = new Swiper('.swiper-home-courses', {
+		modules: [Navigation],
 
 		loop: true,
 		slidesPerView: 1,
@@ -38,13 +38,9 @@ export const swiper = () => {
 			},
 		},
 
-		pagination: {
-			el: '.swiper-pagination',
-		},
-
 		navigation: {
-			nextEl: '.swiper-button-next-courses',
-			prevEl: '.swiper-button-prev-courses',
+			nextEl: '.swiper-button-next-home-courses',
+			prevEl: '.swiper-button-prev-home-courses',
 		},
 	});
 }

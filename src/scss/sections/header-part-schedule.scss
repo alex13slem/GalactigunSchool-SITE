@@ -9,6 +9,10 @@
 		grid-auto-flow: dense;
 		grid-column-gap: 45px;
 		grid-row-gap: 20px;
+		@media (orientation: portrait) {
+			grid-template-columns: repeat(auto-fit, 280px);
+			// grid-row-gap: 40px;
+		}
 	}
 
 	&__price {

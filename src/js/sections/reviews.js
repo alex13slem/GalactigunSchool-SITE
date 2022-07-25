@@ -1,35 +1,26 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import { Splide } from "@splidejs/splide";
 
-export const swiper = () => {
-	const swiper = new Swiper('.swiper-reviews', {
-		modules: [Navigation, Pagination],
+export const splideReview = () => {
+	const splideInit = document.querySelector('.home-reviews--splide-init')
 
-		loop: true,
-		// autoHeight: true,
-		slidesPerView: 1,
-		spaceBetween: 30,
-		breakpoints: {
-			1361: {
-				slidesPerView: 3,
+	if (splideInit) {
+		new Splide(splideInit, {
+			perPage: 4,
+			gap: 30,
+			type: "loop",
+			pagination: false,
+			speed: 1000,
+			breakpoints: {
+				1600: { perPage: 3, width: 870 },
+				1200: { perPage: 2, width: 570 },
+				885: { perPage: 1, width: 270 },
 			},
-			989: {
-				slidesPerView: 2,
+			classes: {
+				arrows: 'splide__arrows',
+				arrow: `btn-arrow`,
+				prev: `splide__arrow--prev btn-arrow_l`,
+				next: `splide__arrow--next btn-arrow_r`,
 			},
-			822: {
-				slidesPerView: 1,
-			},
-			600: {
-				slidesPerView: 2,
-			},
-		},
-
-		pagination: {
-			el: '.swiper-pagination',
-		},
-
-		navigation: {
-			nextEl: '.swiper-button-next-reviews',
-			prevEl: '.swiper-button-prev-reviews',
-		},
-	});
+		}).mount();
+	}
 }

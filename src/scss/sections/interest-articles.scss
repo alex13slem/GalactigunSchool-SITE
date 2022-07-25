@@ -49,4 +49,14 @@
 			line-height: 1em;
 		}
 	}
+
+	&__buttons {
+		.btn-arrow {
+			position: static;
+			margin: 0;
+			&_l {
+				margin-right: 10px;
+			}
+		}
+	}
 }
