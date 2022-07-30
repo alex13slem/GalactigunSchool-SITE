@@ -1,0 +1,126 @@
+.our-masters {
+	padding-top: 123px;
+	padding-bottom: 62px;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 100px;
+
+		text-align: center;
+	}
+
+	&__card {
+	}
+}
+
+.master-card {
+	margin-bottom: 84px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	@media (max-width: 1365px) {
+		justify-content: center;
+	}
+	&__image {
+		flex: 0 0 auto;
+		.teacher-img {
+			margin-bottom: 20px;
+			width: 370px;
+			height: 500px;
+
+			object-fit: cover;
+			border-radius: 15px;
+
+			@media (max-width: 400px) {
+				width: 280px;
+				height: 380px;
+			}
+		}
+	}
+
+	&__links {
+	}
+
+	&__link {
+		display: inline-block;
+		margin-right: 14px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__contant {
+		flex: 0 1 670px;
+	}
+
+	&__title {
+		margin-bottom: 27px;
+		font-size: 48px;
+		line-height: 1em;
+		color: $color-firm-bcgrnd;
+	}
+
+	&__text {
+		margin-bottom: 14px;
+		&:last-child {
+			margin-bottom: 40px;
+		}
+
+		font-size: 14px;
+		line-height: 1.29em;
+		color: $color-title;
+	}
+
+	&__list {
+		margin-bottom: 40px;
+		max-width: 504px;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14em;
+
+		li {
+			margin-bottom: 12px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			position: relative;
+
+			padding-left: 22px;
+
+			&::before {
+				position: absolute;
+				content: "";
+				background: $color-title-accent;
+				border-radius: 50%;
+				width: 12px;
+				height: 12px;
+
+				left: 0;
+				top: calc(50% - 6px);
+			}
+		}
+	}
+
+	&__quote {
+		margin-bottom: 40px;
+
+		font-family: $font-italic;
+		font-size: 24px;
+		line-height: 1.2em;
+		letter-spacing: 0.045em;
+		text-transform: none;
+
+		color: $color-firm-bcgrnd;
+		transform: rotate(-0.5deg);
+	}
+
+	&__btn {
+		width: auto;
+		max-width: 470px;
+	}
+}

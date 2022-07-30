@@ -1,5 +1,10 @@
 .main-about-school {
 	position: relative;
+
+	@media (orientation: portrait) {
+		margin-top: 8vmax;
+	}
+
 	&::after {
 		z-index: -1;
 		position: absolute;

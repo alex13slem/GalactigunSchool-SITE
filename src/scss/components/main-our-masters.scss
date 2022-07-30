@@ -1,0 +1,94 @@
+.main-our-masters {
+	z-index: 0;
+	position: relative;
+
+	@media (orientation: portrait) {
+		margin-top: 8vmax;
+	}
+
+	background: url("@img/our-masters/bg-top.png") 0 0 / 100% 502px no-repeat;
+
+	&__decor {
+		z-index: -1;
+		animation: clouds_anim 20s ease-in-out infinite;
+	}
+
+	&__decor-elem {
+		position: absolute !important;
+		background: url("@img/our-masters/decor-cloud.png") 0 0 / contain no-repeat;
+		&_1 {
+			top: -124px !important;
+			left: calc(50% - 1063px) !important;
+			width: 803px;
+			height: 356px;
+		}
+
+		&_2 {
+			top: 0px !important;
+			left: auto !important;
+			right: calc(50% - 1063px) !important;
+			width: 754px;
+			height: 334px;
+		}
+	}
+}
+
+.our-masters-advantages {
+	padding: 60px 0;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		text-align: center;
+		line-height: 0.9em;
+	}
+
+	&__contant {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	&__item {
+		flex: 0 1 370px;
+	}
+
+	&__item-title {
+		margin-bottom: 23px;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1em;
+
+		color: $color-title;
+	}
+
+	&__item-text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.25em;
+
+		letter-spacing: -0.02em;
+	}
+}
+
+.our-masters-selection {
+	padding: 60px 0 40px;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		text-align: center;
+	}
+
+	&__text {
+		margin: 0 auto;
+		max-width: 770px;
+		text-align: center;
+		color: $color-title;
+	}
+}
+.title-banner {
+}

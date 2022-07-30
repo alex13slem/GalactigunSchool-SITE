@@ -1,4 +1,5 @@
 import Parallax from "parallax-js";
+import Choices from 'choices.js';
 
 /*Проверка поддержки webp, добавление класса webp или no-webp для HTML*/
 export function isWebp() {
@@ -54,6 +55,47 @@ export const parallax = () => {
 	if (scene) {
 		const parallaxInstance = new Parallax(scene);
 	}
+
+}
+
+export function customSelect() {
+	const element = document.querySelectorAll('.select-form');
+
+	element.forEach((el) => {
+		const choices = new Choices(el, {
+			searchEnabled: false,
+			itemSelectText: '',
+			shouldSort: false,
+		});
+	})
+
+}
+
+export const toggleAside = () => {
+
+	const sideNav = document.querySelector('.side-nav');
+
+	if (sideNav) {
+
+		const header = document.querySelector('.header');
+		const main = document.querySelector('.main');
+		const footer = document.querySelector('.footer');
+		const pageBody = [header, main, footer].filter(Boolean);
+
+		pageBody.forEach((el) => {
+			el.classList.add('side-nav-switch');
+		})
+	}
+}
+
+export const currentLink = () => {
+
+	const sideNav = document.querySelector('.side-nav');
+
+	if (sideNav) {
+		sideNav.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
+	}
+
 
 
 }

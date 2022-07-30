@@ -20,7 +20,6 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "fonts";
 @import "settings";
 // -----------------------------------------------------
-@import "./modules/firm-style";
 
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/swiper/modules/effect-fade/effect-fade";
@@ -32,6 +31,8 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 // -----------------------------------------------------
+@import "./modules/firm-style";
+
 @import "./components/header";
 @import "./components/side-nav";
 @import "./components/main";
@@ -42,6 +43,8 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/part-schedule";
 @import "./components/main-product-page";
 @import "./components/main-about-school";
+@import "./components/main-our-masters";
+@import "./components/main-partners";
 // ------------------------------------------------------
 @import "./sections/home-courses";
 @import "./sections/home-reviews";
@@ -57,9 +60,14 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/header-part-schedule";
 @import "./sections/header-main-schedule";
 @import "./sections/header-product-page";
+@import "./sections/header-articles";
 // -------------------------------------------------------
 @import "./sections/schedule";
 // ----------------------------------------------
 @import "./sections/about-school-banner";
 @import "./sections/about-school-history";
 @import "./sections/ideology";
+// ---------------------------------------------------
+@import "./sections/our-masters";
+
+@import "./modules/choices";

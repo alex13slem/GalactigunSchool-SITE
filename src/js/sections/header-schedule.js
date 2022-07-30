@@ -1,6 +1,6 @@
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
-import Choices from 'choices.js';
+
 
 export function sliderPrice() {
 
@@ -26,18 +26,7 @@ export function sliderPrice() {
 	}
 }
 
-export function customSelect() {
-	const element = document.querySelectorAll('.select-form');
 
-	element.forEach((el) => {
-		const choices = new Choices(el, {
-			searchEnabled: false,
-			itemSelectText: '',
-			shouldSort: false,
-		});
-	})
-
-}
 
 export const courseFilter = () => {
 

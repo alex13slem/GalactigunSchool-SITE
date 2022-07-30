@@ -3,10 +3,8 @@ import fslightbox from "fslightbox";
 
 import * as headerSchedule from "./sections/header-schedule.js";
 
-import * as sectionSideNav from "./sections/side-nav.js";
 import * as sectionCourses from "./sections/courses.js";
 import * as sectionReviews from "./sections/reviews.js";
-import * as sectionFaq from "./sections/FAQ.js";
 import * as sectionFeedback from "./sections/feedback.js";
 import * as sectionInterestVideo from "./sections/interest-video.js";
 import * as sectionInterestArticles from "./sections/interest-acticles.js";
@@ -18,20 +16,18 @@ import * as pageProduct from './sections/main-product-page.js';
 prjFunctions.isWebp();
 prjFunctions.accordion()
 prjFunctions.parallax()
+prjFunctions.customSelect();
+prjFunctions.toggleAside();
+prjFunctions.currentLink();
 // ---------------------------------------
 headerSchedule.sliderPrice();
-headerSchedule.customSelect();
 // headerSchedule.courseFilter();
 // ---------------------------------------
-sectionSideNav.toggleAside();
-sectionSideNav.currentLink();
 
 sectionCourses.cloudParallax();
 sectionCourses.swiper();
 
 sectionReviews.splideReview();
-
-sectionFaq.accordionFaq();
 
 sectionFeedback.cloudParallax();
 
