@@ -1,15 +1,11 @@
-.main-home {
-	.home-reviews {
-		padding-top: 60px;
-		padding-bottom: 160px;
-		@media (max-width: 480px) {
-			padding-top: 31px;
-			padding-bottom: 130px;
-		}
-	}
-}
-
 .home-reviews {
+	padding-top: 60px;
+	padding-bottom: 160px;
+	@media (max-width: 480px) {
+		padding-top: 31px;
+		padding-bottom: 130px;
+	}
+
 	&__wrap {
 	}
 

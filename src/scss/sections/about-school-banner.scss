@@ -1,0 +1,79 @@
+.about-school-banner {
+	position: relative;
+	background: url("@img/about-school-page/bg-top.png") 50% 0 / auto 100% no-repeat;
+	margin-left: -25px;
+	padding: 123px 0 95px;
+	padding-left: 25px;
+
+	&__wrap {
+	}
+	&__decor {
+	}
+	&__title-h1 {
+		margin-bottom: 73px;
+		text-align: center;
+		color: $color-title-accent;
+	}
+
+	&__about-text {
+		margin: 0 auto 60px;
+		max-width: 770px;
+
+		font-weight: 500;
+		text-align: center;
+		color: #fff;
+	}
+
+	&__advantages-block {
+	}
+
+	.about-decor {
+		&__el {
+			position: absolute !important;
+
+			&_1 {
+				top: calc(50% + 32px) !important;
+				left: calc(50% - 568px) !important;
+			}
+			&_2 {
+				top: calc(50% + -275px) !important;
+				left: calc(50% - 490px) !important;
+			}
+			&_3 {
+				top: calc(50% + -275px) !important;
+				left: calc(50% + 192px) !important;
+			}
+			&_4 {
+				top: calc(50% - 207px) !important;
+				right: -185px !important;
+				left: auto !important;
+			}
+		}
+	}
+
+	.about-advantages {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+
+		@media (max-width: 700px) {
+			justify-content: start;
+		}
+		&__item {
+		}
+
+		&__number {
+			color: $color-title-accent;
+		}
+
+		&__text {
+			font-family: $font-title;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 1em;
+
+			color: #afa3c5;
+		}
+	}
+}

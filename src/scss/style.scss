@@ -41,6 +41,7 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/main-schedule";
 @import "./components/part-schedule";
 @import "./components/main-product-page";
+@import "./components/main-about-school";
 // ------------------------------------------------------
 @import "./sections/home-courses";
 @import "./sections/home-reviews";
@@ -58,3 +59,7 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/header-product-page";
 // -------------------------------------------------------
 @import "./sections/schedule";
+// ----------------------------------------------
+@import "./sections/about-school-banner";
+@import "./sections/about-school-history";
+@import "./sections/ideology";

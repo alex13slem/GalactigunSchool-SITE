@@ -1,0 +1,17 @@
+.main-about-school {
+	position: relative;
+	&::after {
+		z-index: -1;
+		position: absolute;
+		content: "";
+		background: url("@img/about-school-page/bg-decor.png") 0 0 / contain no-repeat;
+		top: 50%;
+		right: calc(50% - 1254px);
+		width: 618px;
+		height: 550px;
+	}
+
+	.intro__video {
+		display: none;
+	}
+}

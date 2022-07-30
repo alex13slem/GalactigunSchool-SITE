@@ -1,16 +1,11 @@
-.main-home,
-.main-product-page {
-	.FAQ {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		@media (max-width: 480px) {
-			padding-top: 30px;
-			padding-bottom: 30px;
-		}
-	}
-}
-
 .FAQ {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@media (max-width: 480px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
 	&__title-h2 {
 		margin: 0 auto 60px;
 		text-align: center;

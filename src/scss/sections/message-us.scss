@@ -1,16 +1,11 @@
-.main-home,
-.main-schedule {
-	.message-us {
-		padding-top: 60px;
-		padding-bottom: 120px;
-		@media (max-width: 480px) {
-			padding-top: 30px;
-			padding-bottom: 90px;
-		}
-	}
-}
-
 .message-us {
+	padding-top: 60px;
+	padding-bottom: 120px;
+	@media (max-width: 480px) {
+		padding-top: 30px;
+		padding-bottom: 90px;
+	}
+
 	&__title-h2 {
 		z-index: 1;
 		position: relative;

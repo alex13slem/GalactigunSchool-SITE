@@ -1,0 +1,56 @@
+.about-school-history {
+	padding-top: 120px;
+	padding-bottom: 60px;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 73px;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin: 0 auto 80px;
+		max-width: 770px;
+
+		font-weight: 500;
+		text-align: center;
+		color: $color-title;
+	}
+
+	&__founder-block {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		@media (max-width: 767px) {
+			flex-wrap: wrap;
+			img {
+				margin: 0 auto !important;
+			}
+		}
+
+		img {
+			margin-left: -130px;
+		}
+	}
+
+	&__founder-content {
+		flex: 0 1 570px;
+
+		p {
+			margin-bottom: 23px;
+			color: $color-title;
+
+			span {
+				color: rgba(70, 145, 188, 1);
+			}
+		}
+	}
+
+	&__founder-title {
+		margin-bottom: 33px;
+		font-size: 40px;
+		line-height: 1em;
+	}
+}

@@ -17,6 +17,7 @@ import * as pageProduct from './sections/main-product-page.js';
 
 prjFunctions.isWebp();
 prjFunctions.accordion()
+prjFunctions.parallax()
 // ---------------------------------------
 headerSchedule.sliderPrice();
 headerSchedule.customSelect();

@@ -1,3 +1,5 @@
+import Parallax from "parallax-js";
+
 /*Проверка поддержки webp, добавление класса webp или no-webp для HTML*/
 export function isWebp() {
 	// Проверка поддержки webp
@@ -40,5 +42,18 @@ export const accordion = () => {
 			});
 		});
 	}
+
+}
+
+
+
+export const parallax = () => {
+
+	const scene = document.querySelector('#scene');
+
+	if (scene) {
+		const parallaxInstance = new Parallax(scene);
+	}
+
 
 }

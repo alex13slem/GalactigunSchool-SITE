@@ -1,15 +1,11 @@
-.main-home {
-	.intro {
-		padding-top: 62px;
-		padding-bottom: 60px;
-		@media (max-width: 480px) {
-			padding-top: 31px;
-			padding-bottom: 30px;
-		}
-	}
-}
-
 .intro {
+	padding-top: 62px;
+	padding-bottom: 60px;
+	@media (max-width: 480px) {
+		padding-top: 31px;
+		padding-bottom: 30px;
+	}
+
 	&__video {
 		position: relative;
 		display: flex;

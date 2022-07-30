@@ -1,15 +1,11 @@
-.main-home {
-	.home-courses {
-		padding-top: 60px;
-		padding-bottom: 76px;
-		@media (max-width: 480px) {
-			padding-top: 30px;
-			padding-bottom: 37px;
-		}
-	}
-}
-
 .home-courses {
+	padding-top: 60px;
+	padding-bottom: 76px;
+	@media (max-width: 480px) {
+		padding-top: 30px;
+		padding-bottom: 37px;
+	}
+
 	position: relative;
 
 	margin-left: -30px;

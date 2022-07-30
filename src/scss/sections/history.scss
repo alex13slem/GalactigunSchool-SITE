@@ -1,15 +1,11 @@
-.main-home {
-	.history {
-		padding-top: 76px;
-		padding-bottom: 60px;
-		@media (max-width: 480px) {
-			padding-top: 37px;
-			padding-bottom: 30px;
-		}
-	}
-}
-
 .history {
+	padding-top: 76px;
+	padding-bottom: 60px;
+	@media (max-width: 480px) {
+		padding-top: 37px;
+		padding-bottom: 30px;
+	}
+
 	&__title {
 		text-align: center;
 		margin-bottom: 2rem;
