@@ -46,8 +46,6 @@ export const accordion = () => {
 
 }
 
-
-
 export const parallax = () => {
 
 	const scene = document.querySelector('#scene');
@@ -90,12 +88,6 @@ export const toggleAside = () => {
 
 export const currentLink = () => {
 
-	const sideNav = document.querySelector('.side-nav');
-
-	if (sideNav) {
-		sideNav.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
-	}
-
-
+	document.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
 
 }
