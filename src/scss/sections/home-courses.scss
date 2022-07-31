@@ -32,11 +32,15 @@
 	}
 
 	.course-card {
+		a {
+		}
 		img {
-			max-height: 133px;
+			flex: 0 0 133px;
+			object-fit: cover;
 			border-radius: 15px 15px 0px 0px;
 		}
 		&__info {
+			height: 100%;
 			display: grid;
 			// grid-template-columns: 1fr;
 			grid-template-rows: auto 1fr auto auto;
