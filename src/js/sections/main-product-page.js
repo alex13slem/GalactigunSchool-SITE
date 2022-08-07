@@ -14,9 +14,9 @@ export const spliderAboutTeacher = () => {
 			speed: 1000,
 			classes: {
 				arrows: 'splide__arrows',
-				arrow: `btn-arrow`,
-				prev: `splide__arrow--prev btn-arrow_l`,
-				next: `splide__arrow--next btn-arrow_r`,
+				arrow: `firm-btn-arrow`,
+				prev: `splide__arrow--prev firm-btn-arrow_l`,
+				next: `splide__arrow--next firm-btn-arrow_r`,
 			},
 		}).mount();
 	}
@@ -33,9 +33,9 @@ export const spliderAboutTeacher = () => {
 // 			speed: 1000,
 // 			classes: {
 // 				arrows: 'splide__arrows',
-// 				arrow: `btn-arrow`,
-// 				prev: `splide__arrow--prev btn-arrow_l`,
-// 				next: `splide__arrow--next btn-arrow_r`,
+// 				arrow: `firm-btn-arrow`,
+// 				prev: `splide__arrow--prev firm-btn-arrow_l`,
+// 				next: `splide__arrow--next firm-btn-arrow_r`,
 // 			},
 // 		}).mount();
 // 	}
@@ -89,9 +89,9 @@ export const splideReview = () => {
 			},
 			classes: {
 				arrows: 'splide__arrows',
-				arrow: `btn-arrow`,
-				prev: `splide__arrow--prev btn-arrow_l`,
-				next: `splide__arrow--next btn-arrow_r`,
+				arrow: `firm-btn-arrow`,
+				prev: `splide__arrow--prev firm-btn-arrow_l`,
+				next: `splide__arrow--next firm-btn-arrow_r`,
 			},
 		}).mount();
 	}

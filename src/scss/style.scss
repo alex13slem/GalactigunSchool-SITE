@@ -15,12 +15,6 @@ $fa-font-path: "./fonts";
 $fa-free: "Font Awesome 6 Free";
 $fa-brands: "Font Awesome 6 Brands";
 
-// -----------------------------------------------------
-@import "./normalize.scss";
-@import "fonts";
-@import "settings";
-// -----------------------------------------------------
-
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/swiper/modules/effect-fade/effect-fade";
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min";
@@ -30,8 +24,16 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// -----------------------------------------------------
+// -----------------------------------------------------
+@import "./normalize.scss";
+@import "fonts";
+@import "settings";
 // -----------------------------------------------------
 @import "./modules/firm-style";
+@import "./modules/choices";
+@import "./modules/modal";
 
 @import "./components/header";
 @import "./components/side-nav";
@@ -46,6 +48,12 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/main-our-masters";
 @import "./components/main-partners";
 @import "./components/main-articles";
+// -------------------------------------------------
+@import "./components/header-mobile";
+@import "./components/header-part-schedule";
+@import "./components/header-main-schedule";
+@import "./components/header-product-page";
+@import "./components/header-articles-videos";
 // ------------------------------------------------------
 @import "./sections/home-courses";
 @import "./sections/home-reviews";
@@ -58,11 +66,7 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/message-us";
 @import "./sections/videos-page";
 // ----------------------------------------------------------
-@import "./sections/header-home";
-@import "./sections/header-part-schedule";
-@import "./sections/header-main-schedule";
-@import "./sections/header-product-page";
-@import "./sections/header-articles-videos";
+
 // -------------------------------------------------------
 @import "./sections/schedule";
 // ----------------------------------------------
@@ -71,5 +75,3 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/ideology";
 // ---------------------------------------------------
 @import "./sections/our-masters";
-
-@import "./modules/choices";

@@ -91,3 +91,9 @@
 		}
 	}
 }
+
+@media (max-width: 1023px), (orientation: portrait) {
+	.main-schedule {
+		margin-top: 13.8vmax;
+	}
+}

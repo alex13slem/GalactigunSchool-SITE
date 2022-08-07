@@ -2,9 +2,9 @@
 	z-index: 0;
 	position: relative;
 
-	// @media (orientation: portrait) {
-	// 	margin-top: 8vmax;
-	// }
+	@media (max-width: 1023px), (orientation: portrait) {
+		margin-top: 13.8vmax;
+	}
 
 	background: url("@img/decor/bg-top-h502.png") 0 0 / 100% 502px no-repeat;
 
@@ -154,7 +154,8 @@
 			}
 		}
 
-		&__image {
+		&__image,
+		picture {
 			z-index: -1;
 			position: absolute;
 			object-fit: cover;
@@ -319,7 +320,8 @@
 				}
 			}
 
-			&__image {
+			&__image,
+			picture {
 				z-index: -1;
 				position: absolute;
 				object-fit: cover;

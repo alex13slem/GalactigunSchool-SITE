@@ -1,40 +1,46 @@
-<header class="header header-part-schedule">
-
-	<div class="header-part-schedule__wrap" id="header-filters">
-
-		<div class="header-part-schedule__lessons-select lessons-select">
-			<h3 class="header-part-schedule__title lessons-select__title header-font header-font_dark">
-				Выбрать подгруппу
-			</h3>
-			<select class="lessons-select__select-form select-form" name="subgroup">
-
-				<option value="Онлайн">Онлайн</option>
-				<option value="Дома">Дома</option>
-				<option value="На природе">На природе</option>
-				<option value="" selected>Все</option>
-
-			</select>
+<header class="header header-schedule">
+	@@include('header-mobile.html')
+	<div class="header-schedule__wrap">
+		<input type="checkbox" id="filter-burger">
+		<div class="header-schedule__top">
+			<label for="filter-burger">Фильтр</label>
 		</div>
+		<div class="header-part-schedule">
 
-		<div class="header-part-schedule__teacher-select teacher-select">
-			<h3 class="header-part-schedule__title teacher-select__title header-font header-font_dark">
-				Выбрать учителя
-			</h3>
-			<select class="teacher-select__select-form select-form" name="teachers">
+			<div class="header-part-schedule__lessons-select lessons-select">
+				<h3 class="header-part-schedule__title lessons-select__title header-font header-font_dark">
+					Выбрать подгруппу
+				</h3>
+				<select class="lessons-select__select-form select-form" name="subgroup">
 
-				<option value="Человек1">Человек1</option>
-				<option value="Человек2">Человек2</option>
-				<option value="" selected>Все</option>
+					<option value="Онлайн">Онлайн</option>
+					<option value="Дома">Дома</option>
+					<option value="На природе">На природе</option>
+					<option value="" selected>Все</option>
 
-			</select>
+				</select>
+			</div>
+
+			<div class="header-part-schedule__teacher-select teacher-select">
+				<h3 class="header-part-schedule__title teacher-select__title header-font header-font_dark">
+					Выбрать учителя
+				</h3>
+				<select class="teacher-select__select-form select-form" name="teachers">
+
+					<option value="Человек1">Человек1</option>
+					<option value="Человек2">Человек2</option>
+					<option value="" selected>Все</option>
+
+				</select>
+			</div>
+
+			<div class="header-part-schedule__price header-price">
+				<h3 class="header-part-schedule__title header-price__title header-font header-font_dark">
+					Цена
+				</h3>
+				<div class="header-price__slide-container price-slider" id="price-slider"></div>
+			</div>
+
 		</div>
-
-		<div class="header-part-schedule__price header-price">
-			<h3 class="header-part-schedule__title header-price__title header-font header-font_dark">
-				Цена
-			</h3>
-			<div class="header-price__slide-container price-slider" id="price-slider"></div>
-		</div>
-
 	</div>
 </header>

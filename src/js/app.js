@@ -1,5 +1,6 @@
 import * as prjFunctions from "./modules/function.js";
 import fslightbox from "fslightbox";
+import bootstrap from 'bootstrap'
 
 import * as headerSchedule from "./sections/header-schedule.js";
 
@@ -71,7 +72,7 @@ if (menuDclick) {
 	};
 }
 
-const headerMenuList = document.querySelector('.header-home-mobile__body-menu')
+const headerMenuList = document.querySelector('.header-mobile__body-menu')
 
 if (headerMenuList) {
 	const elem = headerMenuList.querySelectorAll('li')
@@ -83,5 +84,3 @@ if (headerMenuList) {
 
 	})
 }
-
-

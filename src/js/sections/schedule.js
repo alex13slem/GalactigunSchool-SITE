@@ -83,9 +83,9 @@ export const splide = () => {
 				},
 				classes: {
 					arrows: 'splide__arrows',
-					arrow: `btn-arrow`,
-					prev: `splide__arrow--prev btn-arrow_l`,
-					next: `splide__arrow--next btn-arrow_r`,
+					arrow: `firm-btn-arrow`,
+					prev: `splide__arrow--prev firm-btn-arrow_l`,
+					next: `splide__arrow--next firm-btn-arrow_r`,
 				},
 			}).mount({ Grid });
 		}
@@ -143,9 +143,9 @@ export const splide = () => {
 				},
 				classes: {
 					arrows: 'splide__arrows',
-					arrow: `btn-arrow`,
-					prev: `splide__arrow--prev btn-arrow_l`,
-					next: `splide__arrow--next btn-arrow_r`,
+					arrow: `firm-btn-arrow`,
+					prev: `splide__arrow--prev firm-btn-arrow_l`,
+					next: `splide__arrow--next firm-btn-arrow_r`,
 				},
 			}).mount({ Grid });
 		}
@@ -204,9 +204,9 @@ export const splide = () => {
 
 				classes: {
 					arrows: 'splide__arrows',
-					arrow: `btn-arrow`,
-					prev: `splide__arrow--prev btn-arrow_l`,
-					next: `splide__arrow--next btn-arrow_r`,
+					arrow: `firm-btn-arrow`,
+					prev: `splide__arrow--prev firm-btn-arrow_l`,
+					next: `splide__arrow--next firm-btn-arrow_r`,
 				},
 			}).mount({ Grid });
 

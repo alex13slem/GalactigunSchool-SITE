@@ -5,37 +5,36 @@
 "title":"Курсы"
 })
 
-<body>
-	<div class="body-wrap">
+<body class="body">
 
-		@@include('html/header-product-page.html')
-		@@include('html/side-nav.html')
+	@@include('html/header-product-page.html')
+	@@include('html/side-nav.html')
 
-		<main class="main main-product-page">
+	<main class="main main-product-page">
 
-			@@include('html/sections/product-page-banner.html')
-			@@include('html/sections/product-page-program.html')
-			@@include('html/sections/product-page-privilege.html')
-			@@include('html/sections/product-page-about-teacher.html')
-			@@include('html/sections/product-page-accordion.html')
-			@@include('html/sections/product-page-location.html')
-			@@include('html/sections/product-page-offers.html')
-			@@include('html/sections/credit.html')
-			@@include('html/sections/product-page-reviews.html')
+		@@include('html/sections/product-page-banner.html')
+		@@include('html/sections/product-page-program.html')
+		@@include('html/sections/product-page-privilege.html')
+		@@include('html/sections/product-page-about-teacher.html')
+		@@include('html/sections/product-page-accordion.html')
+		@@include('html/sections/product-page-location.html')
+		@@include('html/sections/product-page-offers.html')
+		@@include('html/sections/credit.html')
+		@@include('html/sections/product-page-reviews.html')
 
-			@@include('html/sections/FAQ.html',{
-			"title":"Часто задаваемые вопросы"
-			})
-			@@include('html/sections/feedback.html',{
-			"title":"обрати своё вдохновение в практическую мудрость <span>заполнив форму</span> обратной связи "
-			})
-			@@include('html/sections/product-page-also.html')
+		@@include('html/sections/FAQ.html',{
+		"title":"Часто задаваемые вопросы"
+		})
+		@@include('html/sections/feedback.html',{
+		"title":"обрати своё вдохновение в практическую мудрость <span>заполнив форму</span> обратной связи "
+		})
+		@@include('html/sections/product-page-also.html')
 
-		</main>
+	</main>
 
-		@@include('html/footer.html')
+	@@include('html/footer.html')
 
-	</div>
+
 	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
 	<script src="js/app.min.js"></script>
 </body>

@@ -24,6 +24,7 @@
     "wnumb": "^1.2.0"
   },
   "devDependencies": {
+    "bootstrap": "^5.2.0",
     "browser-sync": "latest",
     "del": "latest",
     "fs": "latest",

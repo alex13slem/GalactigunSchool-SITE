@@ -5,30 +5,28 @@
 "title":"Курсы"
 })
 
-<body>
-	<div class="body-wrap">
+<body class="body">
 
-		@@include('html/header-part-schedule.html')
-		<!-- @@include('html/header-home.html') -->
-		@@include('html/side-nav.html')
+	@@include('html/header-part-schedule.html')
+	@@include('html/side-nav.html')
 
-		<main class="main part-schedule">
-			<div class="part-schedule-decor decor-init">
-				<div data-depth="0.1" class="part-schedule-decor__elem part-schedule-decor__elem_1"></div>
-				<div data-depth="0.3" class="part-schedule-decor__elem part-schedule-decor__elem_2"></div>
-			</div>
+	<main class="main part-schedule">
+		<div class="part-schedule-decor decor-init">
+			<div data-depth="0.1" class="part-schedule-decor__elem part-schedule-decor__elem_1"></div>
+			<div data-depth="0.3" class="part-schedule-decor__elem part-schedule-decor__elem_2"></div>
+		</div>
 
-			@@include('html/sections/part-schedule-courses.html')
-			@@include('html/sections/feedback.html',{
-			"title":"<span>напиши нам о себе</span> и мы подберём для тебя подходящий курс"
-			})
-			@@include('html/sections/part-schedule-also.html')
+		@@include('html/sections/part-schedule-courses.html')
+		@@include('html/sections/feedback.html',{
+		"title":"<span>напиши нам о себе</span> и мы подберём для тебя подходящий курс"
+		})
+		@@include('html/sections/part-schedule-also.html')
 
-		</main>
+	</main>
 
-		@@include('html/footer.html')
+	@@include('html/footer.html')
 
-	</div>
+
 	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
 	<script src="js/app.min.js"></script>
 </body>
