@@ -122,7 +122,7 @@
 	}
 
 	.product-page-privilege {
-		padding: 60px 0;
+		padding-top: 60px;
 		&__wrap {
 		}
 
@@ -185,7 +185,7 @@
 	}
 
 	.product-page-about-teacher {
-		padding: 60px 0;
+		padding-top: 120px;
 		&__wrap {
 		}
 
@@ -325,7 +325,7 @@
 	}
 
 	.product-page-accordion {
-		padding: 60px 0;
+		padding-top: 120px;
 		&__wrap {
 		}
 
@@ -407,7 +407,7 @@
 	}
 
 	.product-page-location {
-		padding: 60px 0;
+		padding-top: 120px;
 		&__wrap {
 		}
 
@@ -537,7 +537,7 @@
 	}
 
 	.product-page-offers {
-		padding: 60px 0;
+		padding-top: 120px;
 		&__wrap {
 		}
 
@@ -626,7 +626,7 @@
 	}
 
 	.credit {
-		padding: 60px 0;
+		padding-top: 120px;
 
 		&__wrap {
 			display: flex;
@@ -699,7 +699,8 @@
 	}
 
 	.product-page-reviews {
-		padding: 60px 0 180px;
+		padding-top: 120px;
+		padding-bottom: 150px;
 		&__wrap {
 		}
 
@@ -756,7 +757,7 @@
 	}
 
 	.feedback {
-		padding: 75px 0;
+		padding-top: 105px;
 		background: url("@img/product-page/bg-feedback.jpg") 100% 0 / cover no-repeat;
 		&__scene {
 			display: none;
@@ -776,6 +777,8 @@
 	}
 
 	.FAQ {
+		padding-top: 120px;
+		padding-bottom: 0;
 		&__title-h2 {
 			font-size: 48px;
 			line-height: 0.92em;

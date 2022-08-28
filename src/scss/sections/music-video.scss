@@ -1,0 +1,82 @@
+.sect-music-video {
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		text-align: center;
+	}
+
+	&__content {
+		display: flex;
+		gap: 30px;
+		justify-content: center;
+		@media (max-width: 767px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__article {
+		max-width: 570px;
+		background: #fff;
+		border: 1px solid #eae6f1;
+		border-radius: 20px;
+	}
+
+	&__article-video {
+		position: relative;
+		a {
+			height: 100%;
+			&::after {
+				top: calc(50% - 81px);
+				left: calc(50% - 108px);
+				position: absolute;
+				content: "";
+				width: 216px;
+				height: 162px;
+				opacity: 0.7;
+				background: url("@img/icons/youtube.png") 0 0 / cover no-repeat;
+				transition: opacity 0.3s ease;
+			}
+			&:hover::after {
+				opacity: 1;
+			}
+		}
+		img,
+		picture {
+			height: 300px;
+			object-fit: cover;
+			border-radius: 20px 20px 0 0;
+		}
+	}
+	&__article-info {
+		padding: 24px 30px 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__article-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+
+		color: $color-title;
+	}
+
+	&__article-info-left,
+	&__article-info-right {
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1;
+
+		color: $color-title-accent;
+	}
+
+	&__btn {
+		margin: 50px auto 0;
+	}
+}

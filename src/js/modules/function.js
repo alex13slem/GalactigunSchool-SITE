@@ -20,28 +20,32 @@ export function isWebp() {
 
 export const accordion = () => {
 
-	const accordionInit = document.querySelector('.accordion-init')
+	const accordionInit = document.querySelectorAll('.accordion-init')
 
 	if (accordionInit) {
-		const accBtns = accordionInit.querySelectorAll('.accordion-btn');
-		const accContents = accordionInit.querySelectorAll('.accordion-content');
+		accordionInit.forEach((accordionBlock) => {
+			const accBtns = accordionBlock.querySelectorAll('.accordion-btn');
+			const accContents = accordionBlock.querySelectorAll('.accordion-content');
 
-		accBtns.forEach((btn) => {
-			btn.addEventListener("click", (e) => {
-				accContents.forEach((acc) => {
-					if (
-						e.target.nextElementSibling !== acc &&
-						acc.classList.contains("active")
-					) {
-						acc.classList.remove("active")
-					}
+			accBtns.forEach((btn) => {
+				btn.addEventListener("click", (e) => {
+					accContents.forEach((acc) => {
+						if (
+							e.target.nextElementSibling !== acc &&
+							acc.classList.contains("active")
+						) {
+							acc.classList.remove("active")
+						}
+					});
+
+					const panel = btn.nextElementSibling;
+					panel.classList.toggle('active');
+					btn.classList.toggle('active');
 				});
-
-				const panel = btn.nextElementSibling;
-				panel.classList.toggle('active');
-				btn.classList.toggle('active');
 			});
-		});
+		})
+
+
 	}
 
 }
@@ -88,6 +92,7 @@ export const toggleAside = () => {
 
 export const currentLink = () => {
 
-	document.querySelectorAll('a[href="' + document.URL + '"]').forEach(elem => { elem.className += ' current-link' });
+	document.querySelectorAll('a[href="' + location.pathname + '"]').forEach(elem => { elem.className += ' current-link' });
+	console.log('a[href="' + location.pathname + '"]')
 
 }

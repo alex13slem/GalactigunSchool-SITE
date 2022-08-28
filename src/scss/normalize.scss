@@ -10,6 +10,7 @@ ol {
 }
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body,
 h1,
@@ -42,10 +43,6 @@ ol[class] {
 
 a:not([class]) {
 	text-decoration-skip-ink: auto;
-}
-
-a:hover {
-	color: initial;
 }
 
 img {

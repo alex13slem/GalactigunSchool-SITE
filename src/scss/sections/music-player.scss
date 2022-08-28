@@ -1,0 +1,125 @@
+.sect-music-player {
+	&__wrap {
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__body {
+		margin: 0 auto 80px;
+	}
+
+	.player-slider {
+		max-width: 770px;
+		&__item {
+		}
+
+		&__img {
+			position: relative;
+			margin: 80px auto;
+			width: 370px;
+			height: 370px;
+
+			@media (max-width: 767px) {
+				width: 225px;
+				height: 225px;
+			}
+
+			filter: drop-shadow(-2px 4px 40px rgba(14, 2, 37, 0.3));
+			border-radius: 25px;
+			border: 2px solid #f0ebf8;
+			img,
+			picture {
+				height: 100%;
+				object-fit: cover;
+				border-radius: 25px;
+			}
+			&::after,
+			&::before {
+				position: absolute;
+				content: "";
+				border-radius: 25px;
+			}
+			&::after {
+				box-shadow: inset 0px 0px 35px rgba(12, 0, 33, 0.55);
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			&::before {
+				background: url("@img/music-page/decor-player.png") 0 0 no-repeat;
+				width: 98%;
+				height: 50%;
+				top: 1%;
+				left: 1%;
+			}
+		}
+
+		&__song-list {
+			margin: 0 auto;
+			max-width: 570px;
+		}
+
+		&__song {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+		}
+		&__song-name {
+			flex: 1 1 465px;
+			border-bottom: 1px solid rgba(189, 165, 232, 0.2);
+		}
+		&__song-time {
+			font-family: "Bebas Neue";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 16px;
+			/* or 57% */
+
+			text-align: right;
+
+			color: #909090;
+		}
+		&__player-btn {
+			margin-right: 10px;
+			flex: 0 0 auto;
+		}
+
+		.splide {
+			&__track {
+			}
+
+			&__list {
+			}
+
+			&__slide {
+			}
+
+			&__arrows {
+				z-index: 1;
+				position: absolute;
+				width: 100%;
+				top: 220px;
+				left: 0;
+				@media (max-width: 767px) {
+					top: 160px;
+				}
+			}
+			&__arrow {
+				&--prev {
+					position: static;
+					float: left;
+				}
+				&--next {
+					position: static;
+					float: right;
+				}
+			}
+		}
+	}
+}

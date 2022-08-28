@@ -13,6 +13,7 @@ import * as sectionInterestArticles from "./sections/interest-acticles.js";
 import * as pageSchedule from "./sections/schedule.js";
 
 import * as pageProduct from './sections/main-product-page.js';
+import * as pageMusic from './sections/music-page.js';
 
 prjFunctions.isWebp();
 prjFunctions.accordion()
@@ -45,6 +46,10 @@ pageSchedule.priceFilter();
 pageProduct.spliderAboutTeacher();
 pageProduct.swiperLocation();
 pageProduct.splideReview();
+
+pageMusic.splideGallery();
+pageMusic.splidePlayer();
+pageMusic.swiperEventPage();
 
 // -------------------------------------------------------
 const burgerMain = document.querySelector('.firm-burger');
@@ -84,3 +89,4 @@ if (headerMenuList) {
 
 	})
 }
+

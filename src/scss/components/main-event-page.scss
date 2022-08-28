@@ -1,0 +1,147 @@
+.event-page {
+	&__text-block {
+		max-width: 770px;
+		padding-top: 80px;
+		p {
+			margin-bottom: 26px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__wrap {
+	}
+
+	&__gallery {
+		padding-top: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	&__gallery-item {
+		border-radius: 7px;
+		img {
+			width: 170px;
+			height: 170px;
+			border-radius: 7px;
+			object-fit: cover;
+		}
+	}
+
+	.message-us {
+		padding-top: 120px;
+	}
+}
+.event-page-banner {
+	padding-top: 120px;
+	padding-bottom: 50px;
+	background: url("@img/music-page/event-banner.jpg") 0 0 / cover no-repeat;
+
+	&__wrap {
+	}
+
+	&__breadcrumb {
+		&,
+		a {
+			color: #fff;
+		}
+	}
+
+	&__h1 {
+	}
+
+	&__info {
+		margin-top: 1.5em;
+		display: flex;
+		gap: 30px;
+
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1;
+
+		color: $color-title-accent;
+	}
+
+	.breadcrumb {
+	}
+
+	.article-part {
+	}
+}
+
+.event-page-slider {
+	padding-top: 120px;
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		font-size: 48px;
+		text-align: center;
+	}
+
+	&__btns {
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.swiper {
+		margin-bottom: 50px;
+		a {
+			margin: 0 auto;
+			text-decoration: none;
+		}
+	}
+	.swiper-wrapper {
+	}
+	.swiper-slide {
+		.music-card {
+			margin: 0 auto;
+			&__img {
+			}
+
+			&__title {
+			}
+
+			&__location {
+			}
+
+			&__date {
+			}
+		}
+	}
+}
+.title-h3 {
+}
+
+.title-h3 {
+}
+.splide {
+	&__track {
+	}
+
+	&__list {
+	}
+
+	&__slide {
+	}
+}
+.event-page-slider--splide-init {
+}
+.music-card {
+	&__img {
+	}
+
+	&__title {
+	}
+
+	&__location {
+	}
+
+	&__date {
+	}
+}

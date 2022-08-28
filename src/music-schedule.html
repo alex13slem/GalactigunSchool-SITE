@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Музыка | Мероприятия"
+})
+
+<body class="body">
+
+	@@include('html/side-nav.html')
+	@@include('html/header-articles.html')
+
+	<main class="main music-schedule">
+
+		<div class="music-schedule__decor" id="scene">
+			<div data-depth="0.1" class="music-schedule__decor-elem music-schedule__decor-elem_1"></div>
+			<div data-depth="0.3" class="music-schedule__decor-elem music-schedule__decor-elem_2"></div>
+		</div>
+
+		<section class="sect-actual-events">
+			<div class="sect-actual-events__wrap">
+				<h2 class="music-schedule__title title-h3">
+					<span>Ближайшие</span> мероприятия
+				</h2>
+				<p class="music-schedule__attention">
+					В ближайшее время запланированных мероприятий нет
+				</p>
+			</div>
+		</section>
+		<section class="sect-past-events">
+			<div class="sect-past-events__wrap">
+				<h2 class="music-schedule__title title-h3">
+					<span>Прошедшие</span> мероприятия
+				</h2>
+				<div class="music-schedule__cards-block">
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+					<a href="/event-page.html">
+						<article class="music-card">
+							<img src="@img/music-page/card-img.jpg" alt="" class="music-card__img">
+							<h4 class="music-card__title">Название мероприятия</h4>
+							<p class="music-card__location">Место проведения</p>
+							<p class="music-card__date">22 апреля 2022</p>
+						</article>
+					</a>
+				</div>
+
+				<div class="videos-page__pagination-block pagination">
+					<button class="pagination__prev firm-btn-arrow firm-btn-arrow_l"></button>
+					<button class="pagination__number">1</button>
+					<button class="pagination__number">2</button>
+					<button class="pagination__number">3</button>
+					<button class="pagination__number">4</button>
+					<span>..</span>
+					<button class="pagination__number">12</button>
+					<button class="pagination__next firm-btn-arrow firm-btn-arrow_r"></button>
+				</div>
+			</div>
+		</section>
+		@@include('html/sections/music-player.html')
+
+	</main>
+
+	@@include('html/footer.html')
+
+
+	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

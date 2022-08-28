@@ -1,0 +1,116 @@
+.sect-music-band {
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 50px;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 128px;
+		line-height: 1em;
+
+		text-align: center;
+
+		background: linear-gradient(38.01deg, #290173 17.63%, #fba52a 181.92%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	&__subtitle {
+		margin: 0 auto 80px;
+		max-width: 770px;
+		text-align: center;
+		color: $color-title;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	&__gallery {
+		flex: 0 1 570px;
+	}
+
+	&__info {
+		max-width: 570px;
+		// flex: 0 1 48.5%;
+	}
+
+	&__info-title {
+		margin-bottom: 43px;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1em;
+		color: $color-title;
+
+		span {
+			color: $color-title-accent;
+		}
+	}
+
+	&__info-text {
+		margin-bottom: 23px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.25em;
+		letter-spacing: -0.02em;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	.splide {
+		position: relative;
+		margin: 0 auto;
+
+		&__slide {
+			// border-radius: 74% 26% 100% 0% / 48% 100% 0% 52%;
+			img {
+				// border-radius: 74% 26% 100% 0% / 48% 100% 0% 52%;
+			}
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			top: -2px;
+			left: -2px;
+			width: 101%;
+			height: 100%;
+			background: url("@img/decor/Slider-Ellipse.png") 0 0 / cover no-repeat;
+		}
+	}
+
+	.thumbnails {
+		display: flex;
+		margin: 1rem auto 0;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.thumbnail {
+		// width: 70px;
+		// height: 70px;
+		overflow: hidden;
+		list-style: none;
+		margin: 0 0.2rem;
+		cursor: pointer;
+		opacity: 0.3;
+	}
+
+	.thumbnail.is-active {
+		opacity: 1;
+	}
+
+	.thumbnail img {
+		width: 100%;
+		height: auto;
+	}
+}

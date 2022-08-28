@@ -1,0 +1,28 @@
+.sect-music-banner {
+	&__wrap {
+		min-height: 220px;
+		padding: 70px 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
+		background: url("@img/music-page/banner.jpg") 0 0 / cover no-repeat;
+	}
+
+	&__title,
+	&__info {
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 1em;
+		color: #fff;
+		text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+		span {
+			color: $color-title-accent;
+		}
+	}
+
+	&__info {
+	}
+}

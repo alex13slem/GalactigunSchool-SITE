@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Музыка"
+})
+
+<body class="body">
+
+
+	@@include('html/side-nav.html')
+	@@include('html/header-mobile.html')
+
+	<main class="main main-music">
+
+		@@include('html/sections/music-banner.html')
+		@@include('html/sections/music-band.html')
+		@@include('html/sections/music-player.html')
+		@@include('html/sections/music-video.html')
+		@@include('html/sections/our-events.html')
+		@@include('html/sections/message-us.html')
+
+	</main>
+
+	@@include('html/footer.html')
+
+
+	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

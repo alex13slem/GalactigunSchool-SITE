@@ -1,0 +1,96 @@
+.music-schedule {
+	z-index: 0;
+	position: relative;
+
+	@media (max-width: 1023px), (orientation: portrait) {
+		margin-top: 13.8vmax;
+	}
+
+	background: url("@img/decor/bg-top-h502.png") 0 0 / 100% 502px no-repeat;
+
+	&__decor {
+		z-index: -1;
+		animation: clouds_anim 20s ease-in-out infinite;
+	}
+
+	&__decor-elem {
+		position: absolute !important;
+		background: url("@img/decor/decor-cloud.png") 0 0 / contain no-repeat;
+		&_1 {
+			top: -124px !important;
+			left: calc(50% - 1063px) !important;
+			width: 803px;
+			height: 356px;
+		}
+
+		&_2 {
+			top: 0px !important;
+			left: auto !important;
+			right: calc(50% - 1063px) !important;
+			width: 754px;
+			height: 334px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		text-align: center;
+		font-size: 48px;
+	}
+
+	&__attention {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.08;
+		letter-spacing: -0.02em;
+		color: $color-title-tag;
+	}
+
+	&__cards-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.sect-actual-events {
+		padding-top: 80px;
+		&__wrap {
+		}
+
+		&__title {
+		}
+	}
+	.sect-past-events {
+		padding-top: 120px;
+		&__wrap {
+		}
+
+		&__title {
+		}
+	}
+	.sect-music-player {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	.pagination {
+		margin-top: 80px;
+	}
+}
+
+.music-card {
+	&__img {
+	}
+
+	&__title {
+	}
+
+	&__location {
+	}
+
+	&__date {
+	}
+}

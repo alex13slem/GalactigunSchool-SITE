@@ -15,31 +15,63 @@ $fa-font-path: "./fonts";
 $fa-free: "Font Awesome 6 Free";
 $fa-brands: "Font Awesome 6 Brands";
 
+/*---------------- 1.NODE MODULES START ----------------------*/
+/*---------------- Swiper.js START ----------------------*/
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/swiper/modules/effect-fade/effect-fade";
+/*---------------- Swiper.js END -------------------------*/
+/*---------------- Splide.js START -------------------------*/
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min";
+/*---------------- Splide.js END -------------------------*/
 @import "../../node_modules/nouislider/dist/nouislider";
+/*---------------- Choises.js START -------------------------*/
 @import "../../node_modules/choices.js/public/assets/styles/choices";
+/*---------------- Choises.js END -------------------------*/
+/*---------------- Font Awesome START -------------------------*/
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+/*---------------- Font Awesome END -------------------------*/
+/*---------------- Bootstrap START -------------------------*/
 @import "../../node_modules/bootstrap/scss/bootstrap";
-// -----------------------------------------------------
-// -----------------------------------------------------
+/*---------------- Bootstrap END -------------------------*/
+/*---------------- 1.NODE MODULES END ----------------------*/
+
+/*---------------- 2.PROJECT SETTINGS START ----------------------*/
+/*---------------- Normilize START -------------------------*/
 @import "./normalize.scss";
+/*---------------- Normilize END ---------------------------*/
+/*---------------- Fonts START -----------------------------*/
 @import "fonts";
+/*---------------- Fonts END -------------------------------*/
+/*---------------- Settings START -------------------------------*/
 @import "settings";
-// -----------------------------------------------------
+/*---------------- Settings END -------------------------------*/
+/*---------------- 2.PROJECT SETTINGS END ----------------------*/
+
+/*---------------- 3.FIRM STYLE START ----------------------*/
 @import "./modules/firm-style";
 @import "./modules/choices";
 @import "./modules/modal";
+/*---------------- 3.FIRM STYLE END ------------------------*/
 
+/*----------------- 4.COMPONENTS START -----------------------*/
+/*----------------- 4.1 HEADER START ---------------------*/
 @import "./components/header";
+@import "./components/header-mobile";
+@import "./components/header-part-schedule";
+@import "./components/header-main-schedule";
+@import "./components/header-product-page";
+@import "./components/header-articles-videos";
+/*----------------- 4.1 HEADER END ------------------------*/
+
+/*----------------- 4.2 ASIDE START ------------------------*/
 @import "./components/side-nav";
+/*----------------- 4.2 ASIDE END --------------------------*/
+
+/*----------------- 4.3 MAIN START --------------------------*/
 @import "./components/main";
-@import "./components/footer";
-// ------------------------------------------------------
 @import "./components/main-home";
 @import "./components/main-schedule";
 @import "./components/part-schedule";
@@ -47,14 +79,20 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./components/main-about-school";
 @import "./components/main-our-masters";
 @import "./components/main-partners";
-@import "./components/main-articles";
-// -------------------------------------------------
-@import "./components/header-mobile";
-@import "./components/header-part-schedule";
-@import "./components/header-main-schedule";
-@import "./components/header-product-page";
-@import "./components/header-articles-videos";
-// ------------------------------------------------------
+@import "./components/main-articles-videos";
+@import "./components/main-music";
+@import "./components/main-songs-page";
+@import "./components/main-music-schedule";
+@import "./components/main-event-page";
+/*----------------- 4.3 MAIN END -----------------------------*/
+
+/*----------------- 4.4 FOOTER START -------------------------*/
+@import "./components/footer";
+/*----------------- 4.4 FOOTER END ---------------------------*/
+
+/*----------------- 4.COMPONENTS END -----------------------*/
+
+/*----------------- 5.SECTIONS START -----------------------*/
 @import "./sections/home-courses";
 @import "./sections/home-reviews";
 @import "./sections/history";
@@ -65,13 +103,20 @@ $fa-brands: "Font Awesome 6 Brands";
 @import "./sections/FAQ";
 @import "./sections/message-us";
 @import "./sections/videos-page";
-// ----------------------------------------------------------
 
-// -------------------------------------------------------
 @import "./sections/schedule";
-// ----------------------------------------------
+
 @import "./sections/about-school-banner";
 @import "./sections/about-school-history";
 @import "./sections/ideology";
-// ---------------------------------------------------
+
 @import "./sections/our-masters";
+
+@import "./sections/our-events";
+@import "./sections/music-banner";
+@import "./sections/music-band";
+@import "./sections/music-player";
+@import "./sections/music-video";
+@import "./sections/music-albums";
+
+/*----------------- 5.SECTIONS END -------------------------*/

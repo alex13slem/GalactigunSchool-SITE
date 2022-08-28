@@ -1,0 +1,30 @@
+.our-events {
+	&__wrap {
+	}
+
+	&__title {
+		margin-bottom: 80px;
+		text-align: center;
+	}
+
+	&__cards-block {
+		margin-bottom: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	&__look-all {
+		margin: 0 auto;
+	}
+}
+.title-banner {
+}
+
+.btn {
+}

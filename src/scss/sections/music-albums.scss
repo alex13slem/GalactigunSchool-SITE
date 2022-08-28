@@ -1,0 +1,218 @@
+.sect-music-albums {
+	&__wrap {
+	}
+
+	&__album {
+	}
+}
+.music-album {
+	display: grid;
+	grid-template-columns: 370px 570px;
+	grid-column-gap: 30px;
+	grid-row-gap: 50px;
+	padding-top: 120px;
+	justify-content: center;
+	@media (max-width: 1365px) {
+		grid-template-columns: 1fr;
+	}
+	&__header {
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	&__img {
+		position: relative;
+		width: 370px;
+		height: 370px;
+		flex: 0 0 370px;
+
+		@media (max-width: 767px) {
+			width: 225px;
+			height: 225px;
+			flex: 0 0 225px;
+		}
+
+		filter: drop-shadow(-2px 4px 40px rgba(14, 2, 37, 0.3));
+		border-radius: 25px;
+		border: 2px solid #f0ebf8;
+		img,
+		picture {
+			height: 100%;
+			object-fit: cover;
+			border-radius: 25px;
+		}
+		&::after,
+		&::before {
+			position: absolute;
+			content: "";
+			border-radius: 25px;
+		}
+		&::after {
+			box-shadow: inset 0px 0px 35px rgba(12, 0, 33, 0.55);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&::before {
+			background: url("@img/music-page/decor-player.png") 0 0 no-repeat;
+			width: 98%;
+			height: 50%;
+			top: 1%;
+			left: 1%;
+		}
+	}
+
+	&__info {
+		max-width: 570px;
+	}
+
+	&__title {
+		margin: 5px 0 15px;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1;
+		color: $color-title;
+		// @media (orientation: portrait) {
+		// 	text-align: center;
+		// }
+	}
+
+	&__year {
+		margin-bottom: 30px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 125%;
+		letter-spacing: -0.02em;
+		color: $color-title-tag;
+		// @media (orientation: portrait) {
+		// 	text-align: center;
+		// }
+	}
+
+	&__about {
+		margin-bottom: 32px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 125%;
+		letter-spacing: -0.02em;
+	}
+
+	&__dload-zip {
+		font-size: 16px;
+		line-height: 1;
+		color: $color-title-tag;
+
+		transition: 0.3s ease;
+		&:hover {
+			color: $color-title-accent;
+		}
+	}
+
+	&__body {
+		grid-column: span 2;
+		@media (max-width: 1365px) {
+			grid-column: span 1;
+		}
+	}
+
+	&__song {
+		margin-bottom: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		// justify-content: center;
+
+		display: flex;
+		gap: 10px;
+		// gap: 30px;
+	}
+
+	&__player {
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	&__player-name {
+		flex: 0 1 465px;
+		color: #383838;
+		border-bottom: 1px solid rgba(189, 165, 232, 0.2);
+	}
+	&__player-time {
+		margin-right: 20px;
+		font-family: "Bebas Neue";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 28px;
+
+		text-align: right;
+
+		color: #909090;
+	}
+	&__player-btn {
+		flex: 0 0 auto;
+		margin-right: 10px;
+	}
+
+	&__text-btn {
+		padding-right: 35px;
+		position: relative;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 1;
+		background: transparent;
+
+		transition: color 0.3s ease;
+		&::after {
+			position: absolute;
+			right: 0px;
+			font-family: $fa-free;
+			font-weight: 700;
+			content: "\f107";
+
+			transition: transform 0.3s ease;
+		}
+		&.active {
+			&::after {
+				transform: rotate(-180deg);
+			}
+		}
+		&:hover {
+			color: $color-title-accent;
+		}
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		max-height: 0px;
+		display: none;
+		overflow: hidden;
+		padding-left: 7%;
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: -0.02em;
+
+		transition: max-height 0.7s ease;
+
+		p {
+			margin-bottom: 1.25em;
+		}
+
+		span {
+			font-weight: 700;
+			color: $color-title-accent;
+		}
+
+		&.active {
+			max-height: 5000px;
+			transition: max-height 0.7s ease;
+			display: block;
+		}
+	}
+}

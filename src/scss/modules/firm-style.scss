@@ -389,6 +389,52 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	}
 }
 
+.firm-btn-player {
+	position: relative;
+	width: 35px;
+	height: 35px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	border-bottom: #290173 solid 2px;
+	background: linear-gradient(225deg, #a777ff 14.29%, #5a1bcf 100%);
+
+	transition: transform 0.3s ease;
+	svg {
+		transition: fill 0.3s ease;
+	}
+	.pause {
+		display: none;
+		opacity: 0;
+		transition: 0.3s ease;
+	}
+	.play {
+		transition: 0.3s ease;
+	}
+	&:hover {
+		svg {
+			fill: $color-title-accent;
+		}
+	}
+	&:active {
+		border-bottom: #290173 solid 1.5px;
+		transform: translateY(0.5px);
+	}
+	&.active {
+		.pause {
+			display: block;
+			opacity: 1;
+		}
+		.play {
+			display: none;
+			opacity: 0;
+		}
+	}
+}
+
 .a {
 	text-decoration: underline;
 	font-size: 1rem;
@@ -415,6 +461,155 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 		box-shadow: 2px 4px 20px 4px rgba(10, 0, 28, 0.2);
 	}
 }
+
+.music-card {
+	position: relative;
+	max-width: 370px;
+	min-height: 550px;
+
+	padding: 30px 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	justify-content: space-between;
+	gap: 8px;
+
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.6) 0%,
+		rgba(255, 255, 255, 0) 20%,
+		rgba(41, 1, 115, 0) 57.27%,
+		#290173 100%
+	);
+	border-radius: 15px;
+
+	transition: box-shadow 0.3s ease;
+
+	picture {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__img {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: saturate(50%);
+		border-radius: 15px;
+
+		transition: filter 0.3s ease;
+	}
+
+	&__title {
+		margin-bottom: 42px;
+		font-size: 36px;
+		color: #fff;
+	}
+
+	&__title,
+	&__location,
+	&__date {
+		font-family: $font-title;
+		font-weight: 700;
+		line-height: 1em;
+	}
+	&__location,
+	&__date {
+		font-size: 24px;
+		color: $color-title-accent;
+	}
+
+	&:hover {
+		box-shadow: 2px 4px 20px 4px rgba(10, 0, 28, 0.35);
+		& .music-card__img {
+			filter: saturate(100%);
+		}
+	}
+}
+.music-see-card {
+	position: relative;
+	max-width: 770px;
+	padding: 20px;
+	border-radius: 15px;
+	background: url("@img/music-page/look-bg.jpg") 50% 0 / cover no-repeat;
+	&__title {
+		padding: 12px 20px 30px;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1em;
+		color: #ffffff;
+	}
+
+	&__img {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+
+	&__btn {
+	}
+}
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	a,
+	span {
+		font-size: 12px;
+		line-height: 1em;
+
+		transition: color 0.3s ease;
+	}
+	a:hover,
+	a.current-link {
+		color: $color-title-accent;
+	}
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+
+	span {
+		font-family: $font-title;
+		font-size: 36px;
+		line-height: 45px;
+		text-align: center;
+
+		color: $color-title;
+	}
+	&__number {
+		font-family: $font-title;
+		font-size: 36px;
+		line-height: 45px;
+		text-align: center;
+
+		color: $color-title;
+		background: transparent;
+
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $color-title-accent;
+		}
+	}
+}
+
 .form-input {
 	display: flex;
 	align-items: center;

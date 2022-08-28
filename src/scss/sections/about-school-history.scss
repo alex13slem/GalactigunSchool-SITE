@@ -30,7 +30,8 @@
 			}
 		}
 
-		img {
+		& > img,
+		& > picture {
 			margin-left: -130px;
 		}
 	}

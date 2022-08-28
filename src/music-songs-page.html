@@ -1,0 +1,3233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Музыка | Песни"
+})
+
+<body class="body">
+
+
+	@@include('html/side-nav.html')
+	@@include('html/header-mobile.html')
+
+	<main class="main main-songs-page">
+
+
+
+		<section class="sect-music-banner">
+			<div class="sect-music-banner__wrap">
+
+			</div>
+		</section>
+
+		<section class="sect-music-albums">
+			<div class="sect-music-albums__wrap">
+
+				<div class="main-songs-page__breadcrumb breadcrumb">
+					<a href="/index.html">Главная</a>
+					<span>-</span>
+					<a href="/main-articles.html">Музыка</a>
+					<span>-</span>
+					<a href="">Песни</a>
+				</div>
+
+				<div class="sect-music-albums__album music-album">
+					<div class="music-album__img"><img src="@img/product-page/bg-banner.jpg" alt=""></div>
+					<div class="music-album__info">
+						<h3 class="music-album__title">ПУТЬ ДОМОЙ</h3>
+						<p class="music-album__year">2020</p>
+						<p class="music-album__about">
+							Описание рецензия на альбом. Делясь полезными знаниями, ты помогаешь людям привносить в свою
+							жизнь здоровье, любовь и осознанность!
+							Все просто и прозрачно — просто размести партнерскую ссылку в своих соцсетях, передай ее
+							друзьям, знакомым, расскажи о своих результатах после занятий.
+						</p>
+						<a href="javascript:void(0)" class="music-album__dload-zip">скачать архив</a>
+					</div>
+					<div class="music-album__body accordion-init">
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="sect-music-albums__album music-album">
+					<div class="music-album__img"><img src="@img/product-page/bg-banner.jpg" alt=""></div>
+					<div class="music-album__info">
+						<h3 class="music-album__title">ПУТЬ ДОМОЙ</h3>
+						<p class="music-album__year">2020</p>
+						<p class="music-album__about">
+							Описание рецензия на альбом. Делясь полезными знаниями, ты помогаешь людям привносить в свою
+							жизнь здоровье, любовь и осознанность!
+							Все просто и прозрачно — просто размести партнерскую ссылку в своих соцсетях, передай ее
+							друзьям, знакомым, расскажи о своих результатах после занятий.
+						</p>
+						<a href="javascript:void(0)" class="music-album__dload-zip">скачать архив</a>
+					</div>
+					<div class="music-album__body accordion-init">
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="sect-music-albums__album music-album">
+					<div class="music-album__img"><img src="@img/product-page/bg-banner.jpg" alt=""></div>
+					<div class="music-album__info">
+						<h3 class="music-album__title">ПУТЬ ДОМОЙ</h3>
+						<p class="music-album__year">2020</p>
+						<p class="music-album__about">
+							Описание рецензия на альбом. Делясь полезными знаниями, ты помогаешь людям привносить в свою
+							жизнь здоровье, любовь и осознанность!
+							Все просто и прозрачно — просто размести партнерскую ссылку в своих соцсетях, передай ее
+							друзьям, знакомым, расскажи о своих результатах после занятий.
+						</p>
+						<a href="javascript:void(0)" class="music-album__dload-zip">скачать архив</a>
+					</div>
+					<div class="music-album__body accordion-init">
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+						<div class="music-album__song">
+							<button class="music-album__player-btn firm-btn-player">
+								<svg class="play" width="11" height="13" viewBox="0 0 11 13" fill="#E0D1FD"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_5337_1874)">
+										<path
+											d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91666 12.899 0.249999 11.9367 0.249999 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101034 3.25 0.870834L10 4.76795Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_5337_1874" x="-0.75" y="0.599854" width="11.75" height="12.8003"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_5337_1874" />
+										</filter>
+									</defs>
+								</svg>
+								<svg class="pause" width="9" height="12" viewBox="0 0 9 12" fill="#D0B6FF"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_i_4276_1523)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.5 0C0.671573 0 0 0.671573 0 1.5V10.5C0 11.3284 0.671573 12 1.5 12C2.32843 12 3 11.3284 3 10.5V1.5C3 0.671573 2.32843 0 1.5 0ZM7.5 0C6.67157 0 6 0.671573 6 1.5V10.5C6 11.3284 6.67157 12 7.5 12C8.32843 12 9 11.3284 9 10.5V1.5C9 0.671573 8.32843 0 7.5 0Z" />
+									</g>
+									<defs>
+										<filter id="filter0_i_4276_1523" x="-1" y="0" width="10" height="13"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dx="-1" dy="1" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0" />
+											<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4276_1523" />
+										</filter>
+									</defs>
+								</svg>
+							</button>
+							<div class="music-album__player-name">
+								1. Белый лебедь
+							</div>
+							<div class="music-album__player-time">4:20</div>
+							<button class="music-album__text-btn accordion-btn">
+								текст с аккордами
+							</button>
+							<div class="music-album__text accordion-content">
+								<p>
+									<span>Em D C C</span><br>
+									Наш мир насыщен, разен, необычен,<br>
+									<span>Em D C D</span><br>
+									И каждый по нему идёт своим путём. <br>
+									Но если хоть на миг, хоть раз представить, <br>
+									Что смерть мы стороною обойдём. <br>
+									И понесёмся в космос изучая <br>
+									Иные необычные миры. <br>
+									Предела нет и я об этом знаю <br>
+									Есть правила космической игры.
+								</p>
+
+								<p>
+									<span>Em D</span><br>
+									Закрой глаза и успокойся <br>
+									<span>C D</span><br>
+									И посмотри что у тебя внутри <br>
+									<span>Em D</span><br>
+									Сердце ты своё открой <br>
+									<span>C D</span><br>
+									Там любовь, её найди. <br>
+									<span>Em C D D</span><br>
+									И Люби.
+								</p>
+
+								<p>
+									А изучить законы помогают <br>
+									Учителя, посланники пути, <br>
+									Их мало очень, но я точно знаю, <br>
+									С открытым сердцем можно их найти <br>
+									Не нужно смыслом жизни делать средства <br>
+									Они лишь помощь на твоём пути. <br>
+									А чистота, любовь и вдохновенье - <br>
+									Вот то, куда лети, мой друг, лети.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Там любовь, её найди. <br>
+									И Люби.
+								</p>
+
+								<p>
+									Закрой глаза и успокойся <br>
+									И посмотри, что у тебя внутри <br>
+									Сердце ты своё открой <br>
+									Здесь любовь, её найди. <br>
+									И Люби. <br>
+									Просто люби <br>
+									Этот мир
+								</p>
+
+								<p>Последнее исполнение припева: Шепотом и спокойно</p>
+
+								<p>
+									Вариант текста, аккордов и исполнения с концерта в Анапе.
+									В оригинальной песне возможно что-то может немного отличаться.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+		@@include('html/sections/music-video.html')
+
+	</main>
+
+	@@include('html/footer.html')
+
+
+	<script src="https://kit.fontawesome.com/bda9f69c70.js" crossorigin="anonymous"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
