@@ -1,9 +1,6 @@
 .main-about-school {
-	overflow-x: hidden;
-	position: relative;
-
 	@media (orientation: portrait) {
-		margin-top: 8vmax;
+		// margin-top: 8vmax;
 		&::after {
 			display: none;
 		}
@@ -15,7 +12,7 @@
 		content: "";
 		background: url("@img/about-school-page/bg-decor.png") 0 0 / contain no-repeat;
 		top: 50%;
-		left: calc(100% - 330px);
+		left: calc(50% + 440px);
 		width: 618px;
 		height: 550px;
 	}

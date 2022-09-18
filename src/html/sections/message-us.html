@@ -10,15 +10,16 @@
 
 				<form class="message-us__form message-us-form" action="" method="post">
 					<textarea class="message-us-form__text form-input"></textarea>
-					<input type="text" name="name" class="message-us-form__name form-input" placeholder="Ваше имя">
+					<input type="text" name="name" class="message-us-form__name form-input" placeholder="Ваше имя" required>
 					<input name="email" class="message-us-form__email form-input" inputmode="email" type="email"
-						placeholder="Ваш email">
-					<input class="message-us-form__btn firm-btn" type="submit" value="отправить">
-					<p class="message-us__attention attention">Нажимая на кнопку Вы соглашаетесь на обработку
-						данных.
+						placeholder="Ваш email" required>
+					<input class="message-us-form__btn firm-btn" type="submit" value="отправить" required>
+					<div class="message-us-form__attention attention">
+						<input type="checkbox" name="attention" id="attention" required>
+						<span>Нажимая на кнопку Вы соглашаетесь на обработку данных.</span>
+					</div>
 				</form>
 
-				</p>
 			</div>
 		</div>
 	</div>

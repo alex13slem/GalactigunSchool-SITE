@@ -6,6 +6,35 @@
 
 	&__breadcrumb {
 		margin-top: 10px;
+		margin-bottom: 20px;
 		margin-left: -16px;
+	}
+
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+	&__link {
+		// overflow: hidden;
+
+		&:active img {
+			border-bottom: 1px solid #bebebe;
+			transform: translateY(1px);
+		}
+
+		img {
+			border-bottom: 2px solid #bebebe;
+			border-radius: 4px;
+
+			transition: transform 0.3s ease;
+		}
+	}
+
+	.sect-music-albums {
+		&__album:first-child {
+			padding-top: 55px;
+		}
 	}
 }

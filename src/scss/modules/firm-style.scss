@@ -197,6 +197,8 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 	font-size: 28px;
 	line-height: 1;
 
+	white-space: nowrap;
+
 	color: $color-white;
 }
 
@@ -262,8 +264,20 @@ $font-italic: "Eskal Font4You", Arial, Helvetica, sans-serif;
 }
 
 .attention {
+	position: relative;
+
 	font-size: 11px;
 	line-height: 1.1;
+
+	input {
+		position: absolute;
+		left: 0;
+
+		cursor: pointer;
+	}
+	span {
+		padding-left: 17px;
+	}
 }
 // --------------------------------------------BUTTONS
 

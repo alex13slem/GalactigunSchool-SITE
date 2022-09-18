@@ -8,12 +8,15 @@
 		<div class="feedback__contant">
 			<h3 class="feedback__title title-h3">@@title</h3>
 			<form class="feedback__form" action="" method="post">
-				<input class="feedback__form-input form-input" name="name" type="text" placeholder="Ваше имя">
-				<input class="feedback__form-input form-input" name="email" type="email" inputmode="email"
-					placeholder="Ваша почта">
+				<input class="feedback__form-input form-input" name="name" type="text" placeholder="Ваше имя" required>
+				<input class="feedback__form-input form-input" name="email" type="email" inputmode="emai"
+					placeholder="Ваша почта" required>
 				<input class="feedback__form-btn firm-btn" type="submit" value="отправить">
+				<div class="feedback__attention attention">
+					<input type="checkbox" name="attention" id="attention" required>
+					<span>Нажимая на кнопку Вы соглашаетесь на обработку данных.</span>
+				</div>
 			</form>
-			<p class="feedback__attention">Нажимая на кнопку Вы соглашаетесь на обработку данных.</p>
 		</div>
 	</div>
 </section>

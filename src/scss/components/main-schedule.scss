@@ -1,5 +1,4 @@
 .main-schedule {
-	position: relative;
 	z-index: 0;
 
 	background: url("@img/schedule/bg-schedule.png") 0 0 / 100% 1253px no-repeat,
@@ -92,8 +91,8 @@
 	}
 }
 
-@media (max-width: 1023px), (orientation: portrait) {
-	.main-schedule {
-		margin-top: 13.8vmax;
-	}
-}
+// @media (max-width: 1023px), (orientation: portrait) {
+// 	.main-schedule {
+// 		margin-top: 13.8vmax;
+// 	}
+// }

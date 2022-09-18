@@ -1,6 +1,4 @@
 .header-product-page {
-	position: fixed;
-	width: 100%;
 	background: $color-white;
 	border-bottom: 1px solid rgba(144, 144, 144, 0.51);
 	&::after {
@@ -41,7 +39,7 @@
 
 @media (max-width: 1023px), (orientation: portrait) {
 	.header-product-page {
-		margin-top: 8vmax;
+		// margin-top: 8vmax;
 
 		&__navigate {
 			ul {

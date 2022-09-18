@@ -9,7 +9,7 @@
 
 
 	@@include('html/side-nav.html')
-	@@include('html/header-mobile.html')
+	<header class="header">@@include('html/header-mobile.html')</header>
 
 	<main class="main main-songs-page">
 
@@ -21,16 +21,41 @@
 			</div>
 		</section>
 
+		<div class="main-songs-page__wrap">
+			<div class="main-songs-page__breadcrumb breadcrumb">
+				<a href="/index.html">Главная</a>
+				<span>-</span>
+				<a href="/main-articles.html">Музыка</a>
+				<span>-</span>
+				<a href="">Песни</a>
+			</div>
+
+			<div class="main-songs-page__links">
+				<a class="main-songs-page__link" href="https://music.apple.com/ru/artist/spirits/252134492" target="_blank">
+					<img src="@img/music-page/apple-music.png" alt="">
+				</a>
+				<a class="main-songs-page__link" href="https://vk.com/artist/spirits_mtuzmzqxodk5ma" target="_blank">
+					<img src="@img/music-page/vk-music.png" alt="">
+				</a>
+				<a class="main-songs-page__link" href="https://music.yandex.ru/artist/1192231" target="_blank">
+					<img src="@img/music-page/yandex-music.png" alt="">
+				</a>
+				<a class="main-songs-page__link" href="https://soundcloud.com/user-587162131" target="_blank">
+					<img src="@img/music-page/soundcloud.png" alt="">
+				</a>
+				<a class="main-songs-page__link" href="https://music.youtube.com/channel/UCw09bnCv-dfSeY3Z-KaBThw"
+					target="_blank">
+					<img src="@img/music-page/youtube-music.png" alt="">
+				</a>
+				<a class="main-songs-page__link" href="https://open.spotify.com/album/3wcbSwb271rmZFKt5ZkG2W"
+					target="_blank">
+					<img src="@img/music-page/spotify.png" alt="">
+				</a>
+			</div>
+		</div>
+
 		<section class="sect-music-albums">
 			<div class="sect-music-albums__wrap">
-
-				<div class="main-songs-page__breadcrumb breadcrumb">
-					<a href="/index.html">Главная</a>
-					<span>-</span>
-					<a href="/main-articles.html">Музыка</a>
-					<span>-</span>
-					<a href="">Песни</a>
-				</div>
 
 				<div class="sect-music-albums__album music-album">
 					<div class="music-album__img"><img src="@img/product-page/bg-banner.jpg" alt=""></div>

@@ -6,8 +6,7 @@
 	height: 100vmin;
 	z-index: 100;
 
-	padding: 10px;
-	padding-bottom: 43px;
+	padding: 20px 10px;
 
 	border-radius: 0px 17px 0px 0px;
 	border-bottom: $color-title-accent solid 5px;
@@ -30,6 +29,9 @@
 		}
 	}
 
+	&__logo {
+		height: 171px;
+	}
 	&__btn {
 		width: auto;
 	}
@@ -40,18 +42,24 @@
 		margin-top: 20px;
 	}
 
-	&__soc-icons {
-		padding-left: 10px;
-		margin-top: 10px;
+	&__contacts {
 		display: flex;
-
+		flex-wrap: wrap;
+		gap: 17px;
+		padding: 0 10px;
 		a {
-			margin-right: 20px;
+			text-decoration: none;
 		}
+	}
+	&__soc-icons {
+		margin-bottom: 23px;
+
+		display: flex;
+		gap: 17px;
 	}
 
 	&__navigate {
-		padding: 55px 0;
+		padding: 73px 0;
 	}
 
 	.navigate {
