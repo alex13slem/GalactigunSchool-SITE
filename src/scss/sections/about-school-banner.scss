@@ -1,10 +1,10 @@
 .about-school-banner {
 	position: relative;
-	background: url("@img/about-school-page/bg-top.png") 50% 0 / 100% 100% no-repeat;
+	background: url("@img/about-school-page/bg-top.png") 50% 100% / cover no-repeat;
 
-	@media (max-height: 1024px) {
-		background: url("@img/about-school-page/bg-top.png") 50% 0 / auto 100% no-repeat;
-	}
+	// @media (max-height: 1024px) {
+	// 	background: url("@img/about-school-page/bg-top.png") 50% 0 / auto 100% no-repeat;
+	// }
 
 	margin-left: -25px;
 	padding: 123px 0 95px;

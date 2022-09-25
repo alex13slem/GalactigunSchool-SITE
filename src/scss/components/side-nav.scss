@@ -31,6 +31,10 @@
 
 	&__logo {
 		height: 171px;
+		margin: 0 auto;
+		@media (max-width: 1600px) {
+			height: 105px;
+		}
 	}
 	&__btn {
 		width: auto;
@@ -59,13 +63,13 @@
 	}
 
 	&__navigate {
-		padding: 73px 0;
 	}
 
 	.navigate {
 		flex: 1 1 auto;
 		margin-right: -10px;
 
+		padding: 73px 0;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -73,6 +77,10 @@
 		text-align: right;
 
 		background: $color-firm-bcgrnd;
+
+		@media (max-width: 1600px) {
+			padding: 40px 0;
+		}
 
 		li,
 		a {
